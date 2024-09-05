@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/jtherras/static/css/main.a931aa74.css",
+    "main.js": "/jtherras/static/js/main.f10047f9.js",
+    "static/js/453.020631f3.chunk.js": "/jtherras/static/js/453.020631f3.chunk.js",
+    "static/media/image.png": "/jtherras/static/media/image.7b25bfd7a44d10c7a63f.png",
+    "index.html": "/jtherras/index.html",
+    "main.a931aa74.css.map": "/jtherras/static/css/main.a931aa74.css.map",
+    "main.f10047f9.js.map": "/jtherras/static/js/main.f10047f9.js.map",
+    "453.020631f3.chunk.js.map": "/jtherras/static/js/453.020631f3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a931aa74.css",
+    "static/js/main.f10047f9.js"
+  ]
+}

@@ -1,0 +1,35 @@
+:root {
+    --primary-color: #ff9900;
+    --link-color: #61dafb;
+  }
+
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.circle {
+    width: 200px;
+    height: 300px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    /* Positioning */
+    bottom: 0;
+    left: 0;
+    transform: translate(0%, 0%);  /* Move the circle partially behind the image */
+  }
+  
+  .position-relative {
+    position: relative;
+  }
+  
+  .position-absolute {
+    position: absolute;
+  }
+  
+  .z-index-1 {
+    z-index: 1;  /* Ensures the image is on top */
+  }
+  
+  .z-index-0 {
+    z-index: 0;  /* Ensures the circle is behind the image */
+  }

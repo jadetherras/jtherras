@@ -1,8 +1,17 @@
+:root {
+    --primary-color: #ff9900;
+    --secondary-color : rgb(2, 0, 27);
+    --blanck-color : hsl(0, 0%, 100%);
+    --link-color: #61dafb;
+    --bg-color: #f0f4fa;
+    
+  }
+
 .App {
     min-height: 100vh;
     text-align: center;
-    background-color: #282c34;
-    color: white;
+    background-color: var(--bg-color);
+    color: var(--secondary-color);
     display: flex;
     flex-direction: column;
 }

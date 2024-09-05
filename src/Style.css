@@ -1,7 +1,7 @@
-:root {
-    --primary-color: #ff9900;
-    --link-color: #61dafb;
-  }
+.divider {
+  border-top: 3px solid var(--secondary-color);
+  border-radius: 5px;
+}
 
 .navbar {
     background-color: var(--primary-color);

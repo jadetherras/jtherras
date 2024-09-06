@@ -17,8 +17,12 @@ const About = () => {
         <Col xs={12} md={8}  className="text-start">  
           <h2>About Me</h2> 
           <p>
-            Hi ! I'm Jade. I'm a student at EPFL, currently finishing a master degree in neurotechnology.
-            I'm highly interested in assistive technology. 
+            Hi ! I'm Jade. <br/>
+            <br/>
+            I'm a student at EPFL. I did a bachelor in life sciences ingenieuring, and I'm currently finishing a master degree in neurotechnology.<br/>
+            I'm highly interested in assistive technology, as well as education and prototyping.<br/>
+            <br/>
+            You will find below a collection of past projects.
           </p>  
         </Col>
       </Row>

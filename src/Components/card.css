@@ -5,7 +5,7 @@
   }
   
   body {
-    min-height: 100vh;
+    min-height: 50vh;
     line-height: 1.6;
     font-family: sans-serif;
     padding-right: 0;
@@ -13,21 +13,72 @@
   
   .card {
     color: var(--blanck-color);
-    background-image: url(https://media.contentapi.ea.com/content/dam/eacom/images/2020/09/ea-featured-image-ea-desktop-beta.jpg.adapt.crop191x100.1200w.jpg);
+    background-image: var(--background-image, url(https://media.contentapi.ea.com/content/dam/eacom/images/2020/09/ea-featured-image-ea-desktop-beta.jpg.adapt.crop191x100.1200w.jpg));
     background-size: cover;
-    padding: 10rem 0 0;
-    max-width: 35ch;
+    padding: 5rem 0 0;
+    max-width: 35ch; /* Initial max-width */
+    width: 100%; /* Adjust to container width */
     border-radius: 0.5rem;
     overflow: hidden;
-    transition: transform 500ms ease;
+    transition: transform 1s ease, max-width 1s ease, padding 1s ease; /* Add max-width transition */
   }
+
+  .card.expanded {
+    max-width: 100%; /* When expanded, card takes full width */
+    padding: 1rem;
+    transition: max-width 2s ease; /* Control expansion duration */
+  }
+
+  /* Title moves to top-left in expanded state */
+.card.expanded .card-title {
+  position: absolute;
+  top: 1rem; /* Move title to top of the card */
+  left: 1rem; /* Align title to the left */
+  margin: 0;
+  transform: none;
+  font-size: 1.5rem; /* Adjust font size if needed */
+  transition: top 1s ease, left 1s ease, font-size 1s ease;
+  transition-delay: 1s; /* Trigger after card expansion */
+}
+
+/* Body text moves below the title and above the container */
+.card-body {
+  color: rgb(255, 255, 255 / 0.85);
+  transition: transform 1s ease;
+  opacity: 1;
+  transform: translateY(0);
+  margin: 0
+  }
+
+  .card.expanded .card-body {
+    position: absolute;
+    left: 1rem;
+    top: 2rem;
+    opacity: 1;
+    transition: top 1s ease, left 1s ease;
+  }
+
+/* Container initially hidden, then fades in */
+.card-content-container {
+  display: none; /* Hidden by default */
+  opacity: 0;
+  transition: opacity 1s ease;
+  transition-delay: 4s ease; /* Appear after title moves */
+}
+
+/* Show the container once the card is expanded */
+.card.expanded .card-content-container {
+  display: block;
+  opacity: 1;
+}
   
-  .card:hover,
-  .card:focus-within {
+  .card:not(.expanded):hover,
+  .card:not(.expanded):focus-within {
     transform: scale(1.05);
   }
   
   .card-content {
+    position: relative;
     --padding: 1.5rem;
     padding: var(--padding);
     background: linear-gradient(
@@ -42,8 +93,8 @@
     width: max-content;
   }
   
-  .card:hover .card-title::after,
-  .card:focus-within .card-title::after {
+  .card:not(.expanded):hover .card-title::after,
+  .card:not(.expanded):focus-within .card-title::after {
     transform: scaleX(1);
   }
   
@@ -105,10 +156,7 @@
   .button:focus {
     background-color: var(--blanck-color);
   }
-  
-  .card-body {
-    color: rgb(255, 255, 255/0.85);
-  }
+
   
   @media (prefers-reduced-motion: reduce) {
     *,

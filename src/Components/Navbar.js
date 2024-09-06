@@ -21,15 +21,6 @@ const Header = () => {
       setShow(!show);
       setTarget(event.target);
     };
-
-    const onCVClick = () => {
-    const pdfUrl = {cven};
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-};
   return (
     <>
       <Navbar className='navbar' data-bs-theme="dark" sticky="top" >
@@ -49,14 +40,14 @@ const Header = () => {
               <Popover id="popover-contained">
               <Popover.Body>
                 <Row>
-                <Col href={cven} download="pavel_cv"><strong>English</strong></Col>
-                <Col href={cven} download="pavel_cv"><strong>Français</strong></Col>
+                <Col onClick={() =>window.open(cven)}><strong>English</strong></Col>
+                <Col onClick={() =>window.open(cvfr)}><strong>Français</strong></Col>
                 </Row>
               </Popover.Body>
               </Popover>
               </Overlay>
             </div>
-            <Nav.Link href="https://github.com/jadetherras">Github</Nav.Link>
+            <Nav.Link onClick={() =>window.open("https://github.com/jadetherras")}>Github</Nav.Link>
             <Nav.Link href="#Contacts">Contacts</Nav.Link>
           </Nav>
         </Container>

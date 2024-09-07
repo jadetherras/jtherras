@@ -5,6 +5,9 @@ import Row from 'react-bootstrap/Row';
 import "../Style.css";
 
 import Helpie from './Projects/Helpie/Helpie';
+import JumpingRobot from './Projects/JumpingRobot/JumpingRobot';
+import NeuralInterface from './Projects/NeuralInterface/NeuralInterface';
+import LAPD from './Projects/ML/LAPD';
 
 
 const Showcase = () => {
@@ -14,6 +17,9 @@ const Showcase = () => {
         <Col> 
         <Row className="justify-content-md-center gap-3">
         <Helpie/>
+        <JumpingRobot/>
+        <NeuralInterface/>
+        <LAPD/>
         </Row>
         </Col>
     </Container>

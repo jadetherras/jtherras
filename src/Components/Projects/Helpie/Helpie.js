@@ -33,20 +33,29 @@ const Helpie = () => {
         cardContent={<div>
             
             <br/><br/><br/>
-            <h3>The project</h3>
-            <p>
+            <h3 align="left">The project</h3>
+            <p align="left">
             Nowerdays in switzerland, public transport can get you nearly everywhere.
-            We use it daily, to go to work, see friends, make groceries...
-            We use the SBB app, the swiss transport app, to buy the ticket, plan and follow the course. 
-            However, the use of such complex app can be difficult and stressing for some peoples. Delay and others can be additional stress.
-            This is where Helpie come from. 
-            </p><p>
-            Helpie have been developped within the HackaHealth program, in collaboration with the SBB and SBB inclusive. The developpement process have been
+            We use it daily, to go to work, see friends, make groceries...<br/>
+            The swiss transport app, <hard>SBB</hard> allow us to buy the ticket, plan and follow the course. 
+            However, the use of such complex app can be difficult and stressing for some peoples.<br/>
+            This is where Helpie come from.
+            </p><p align="left">
+            Helpie have been developped within the <hard>HackaHealth</hard> program, in collaboration with the SBB and SBB inclusive. The developpement process have been
             conducted in collaboration with a real life potential user.<br/>
-            The project have been selected to participate to the 2024 EuroTeQaThon in Paris.
+            The project have been selected to participate to the 2024 EuroTeQaThon in Paris, organized by <hard>EuroTeQ</hard>.
           </p>
-          <h3>Technical overview</h3>
-          <p>Prototyped in Figma, developped in Android studio. </p> <br/>
+          <h3 align="left">Technical overview</h3>
+          <p align="left">Prototyped in Figma, developped in Android studio.<br/>
+          Helpie allow to navigate the travel step by step. The app use the SBB api to extract the 
+          transport step, and Google maps for walking step. The app have multiple setting that 
+          can be customized for the users such as the langage, how to take the ticket, preregistred destinations... <br/>
+          To know more about the use of the app, take a look at the <hard>User guide</hard><br/>
+          To know more about the developpement process, take a look at the <hard>Git repository and report</hard></p>
+          <h3 align="left">Personal work</h3>
+          <p align="left">I was the coding leader on this projects. I notably implemented the transport part and the structure of the app. 
+            I was also involved in the meeting with the challenger and in multiple presentation of the project. 
+          </p>
           <Row className="justify-content-md-center gap-1">
           <Col align-items= "center">
               <p>
@@ -62,7 +71,8 @@ const Helpie = () => {
                 </Row>
                 <br/><br/>
                 <Image src={team} alt="EPFL ATC team at EuroTeQ" rounded fluid className="position-relative z-index-1" />
-                <br/><br/>
+                <br/>
+                <p>The EPFL team at the EuroTeQaThon</p>
                 <div>
                 <button class="button-48" role="button" onClick={() =>window.open(git)}><span class="text"><FaGithub /> Go to git repository</span></button><br/>
                 <button class="button-48" role="button" onClick={() =>window.open(report)}><span class="text"><FaFileAlt />See project report</span></button><br/>

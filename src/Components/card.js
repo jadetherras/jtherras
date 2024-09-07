@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './card.css';
 
+
 const Card = ({ title, bodyText, linkText, cardContent, backgroundImage }) => {
   const [Expansion, setExpand] = useState(false); // Track card expansion state
   const [isExpanded, setIsExpanded] = useState(false); // Track card expansion state
@@ -37,7 +38,6 @@ const Card = ({ title, bodyText, linkText, cardContent, backgroundImage }) => {
             {cardContent}
           </div>
         )}
-
         <button className="button" onClick={handleExpandClick}>
           {isExpanded ? 'Collapse' : linkText}
         </button>

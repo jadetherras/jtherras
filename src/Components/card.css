@@ -5,13 +5,14 @@
   }
   
   body {
-    min-height: 50vh;
+    min-height: 100vh;
     line-height: 1.6;
     font-family: sans-serif;
     padding-right: 0;
   }
   
   .card {
+    
     color: var(--blanck-color);
     background-image: var(--background-image, url(https://media.contentapi.ea.com/content/dam/eacom/images/2020/09/ea-featured-image-ea-desktop-beta.jpg.adapt.crop191x100.1200w.jpg));
     background-size: cover;
@@ -89,6 +90,7 @@
   }
 
   .card-content {
+    min-height: 33vh;
     position: relative;
     --padding: 1.5rem;
     padding: var(--padding);

@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/jtherras/static/css/main.8e4a2ccc.css",
-    "main.js": "/jtherras/static/js/main.b3ad30cf.js",
+    "main.css": "/jtherras/static/css/main.c976ff50.css",
+    "main.js": "/jtherras/static/js/main.d267536a.js",
     "static/js/453.020631f3.chunk.js": "/jtherras/static/js/453.020631f3.chunk.js",
     "static/media/image.png": "/jtherras/static/media/image.7b25bfd7a44d10c7a63f.png",
     "static/media/CVfr.pdf": "/jtherras/static/media/CVfr.dd5d83a620136e45b1ef.pdf",
     "static/media/CVen.pdf": "/jtherras/static/media/CVen.d206146ec995ebbf75cf.pdf",
     "static/media/ATC.pdf": "/jtherras/static/media/ATC.55ead97d2b97bb4a8df8.pdf",
+    "static/media/team.png": "/jtherras/static/media/team.8d8501882d53fe1ea6d8.png",
+    "static/media/screen.png": "/jtherras/static/media/screen.8185e7f456daf21b7caf.png",
     "static/media/helpie.png": "/jtherras/static/media/helpie.6229a1c3a85a6baff3ec.png",
     "index.html": "/jtherras/index.html",
-    "main.8e4a2ccc.css.map": "/jtherras/static/css/main.8e4a2ccc.css.map",
-    "main.b3ad30cf.js.map": "/jtherras/static/js/main.b3ad30cf.js.map",
+    "main.c976ff50.css.map": "/jtherras/static/css/main.c976ff50.css.map",
+    "main.d267536a.js.map": "/jtherras/static/js/main.d267536a.js.map",
     "453.020631f3.chunk.js.map": "/jtherras/static/js/453.020631f3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e4a2ccc.css",
-    "static/js/main.b3ad30cf.js"
+    "static/css/main.c976ff50.css",
+    "static/js/main.d267536a.js"
   ]
 }

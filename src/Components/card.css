@@ -26,66 +26,12 @@
   .card.expanded {
     max-width: 100%; /* When expanded, card takes full width */
     padding: 1rem;
-    transition: max-width 2s ease; /* Control expansion duration */
+    transition: max-width 3s ease; /* Control expansion duration */
   }
-
-  /* Title moves to top-left in expanded state */
-.card.expanded .card-title {
-  position: absolute;
-  top: 1rem; /* Move title to top of the card */
-  left: 1rem; /* Align title to the left */
-  margin: 0;
-  transform: none;
-  font-size: 1.5rem; /* Adjust font size if needed */
-  transition: top 1s ease, left 1s ease, font-size 1s ease;
-  transition-delay: 1s; /* Trigger after card expansion */
-}
-
-/* Body text moves below the title and above the container */
-.card-body {
-  color: rgb(255, 255, 255 / 0.85);
-  transition: transform 1s ease;
-  opacity: 1;
-  transform: translateY(0);
-  margin: 0
-  }
-
-  .card.expanded .card-body {
-    position: absolute;
-    left: 1rem;
-    top: 2rem;
-    opacity: 1;
-    transition: top 1s ease, left 1s ease;
-  }
-
-/* Container initially hidden, then fades in */
-.card-content-container {
-  display: none; /* Hidden by default */
-  opacity: 0;
-  transition: opacity 1s ease;
-  transition-delay: 4s ease; /* Appear after title moves */
-}
-
-/* Show the container once the card is expanded */
-.card.expanded .card-content-container {
-  display: block;
-  opacity: 1;
-}
   
   .card:not(.expanded):hover,
   .card:not(.expanded):focus-within {
     transform: scale(1.05);
-  }
-  
-  .card-content {
-    position: relative;
-    --padding: 1.5rem;
-    padding: var(--padding);
-    background: linear-gradient(
-      hsl(0 0% 0% / 0),
-      hsl(20 0% 0% / 0.3) 20%,
-      hsl(0 0% 0% / 1)
-    );
   }
   
   .card-title {
@@ -109,28 +55,82 @@
     transform-origin: left;
     transition: transform 500ms ease;
   }
+
+    /* Title moves to top-left in expanded state */
+.card.expanded .card-title {
+  position: absolute;
+  top: 1rem; /* Move title to top of the card */
+  left: 1rem; /* Align title to the left */
+  margin: 0;
+  transform: none;
+  transition: top 1s ease, left 1s ease;
+}
+
+/* Body text moves below the title and above the container */
+.card-body {
+  color: rgb(255, 255, 255 / 0.85);
+  opacity: 1;
+  transform: translateY(0);
+  margin: 0;
+  transition: opacity 1s ease;
+  }
+
+  .card-body.invisible {
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+
+  .card-body.visible {
+    position: absolute;
+    left: 1rem;
+    top: 2rem;
+    opacity: 1;
+    transition: opacity 1s ease;
+  }
+
+  .card-content {
+    position: relative;
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+      hsl(0 0% 0% / 0),
+      hsl(20 0% 0% / 0.3) 20%,
+      hsl(0 0% 0% / 1)
+    );
+  }
+
+
+/* Container initially hidden, then fades in */
+.card-content-container {
+  display: none; /* Hidden by default */
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+/* Show the container once the card is expanded */
+.card-content-container.invisible {
+  display: block;
+}
+
+/* Show the container once the card is expanded */
+.card-content-container.visible {
+  display: block;
+  opacity: 1;
+}
   
   @media (hover) {
-    .card-content {
-      transform: translateY(65%);
-      transition: transform 500ms ease;
-    }
   
-    .card-content > *:not(.card-title) {
-      opacity: 0;
-      transition: opacity 500ms linear;
-    }
-  
-    .card:hover .card-content > *:not(.card-title),
-    .card:focus-within .card-content > *:not(.card-title) {
+    .card:hover .card-content > *:not(.card-title .card-content-container),
+    .card:focus-within .card-content > *:not(.card-title .card-content-container) {
       opacity: 1;
-      transition-delay: 700ms;
+      transition: opacity 1s ease;
+      transition-delay: 0ms;
     }
   
     .card:hover .card-content,
     .card:focus-within .card-content {
       transform: translateY(0);
-      transition-delay: 500ms;
+      transition-delay: 00ms;
     }
   
     .card:focus-within .card-content {
@@ -150,6 +150,7 @@
     background-color: var(--primary-color);
     padding: 0.5em 1.25em;
     border-radius: 0.25rem;
+    opacity: 0;
   }
   
   .button:hover,
@@ -157,16 +158,4 @@
     background-color: var(--blanck-color);
   }
 
-  
-  @media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
-      transition-delay: 0ms !important;
-    }
-  }
   

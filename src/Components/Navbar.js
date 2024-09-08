@@ -3,12 +3,12 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Overlay from 'react-bootstrap/Overlay';
-import Button from 'react-bootstrap/Button';
 import Popover from 'react-bootstrap/Popover';
 import '../Style.css';
 import { Col,Row } from 'react-bootstrap';
 import cvfr from "../Assets/CVfr.pdf";
 import cven from "../Assets/CVen.pdf";
+import './Navbar.css';
 
 
 const Header = () => {
@@ -40,8 +40,8 @@ const Header = () => {
               <Popover id="popover-contained">
               <Popover.Body>
                 <Row>
-                <Col onClick={() =>window.open(cven)}><strong>English</strong></Col>
-                <Col onClick={() =>window.open(cvfr)}><strong>Français</strong></Col>
+                <Col onClick={() =>window.open(cven)}><span className='langage'>English</span></Col>
+                <Col onClick={() =>window.open(cvfr)}><span className='langage'>Français</span></Col>
                 </Row>
               </Popover.Body>
               </Popover>

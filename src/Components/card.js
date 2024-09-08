@@ -1,43 +1,71 @@
 import React, { useState, useEffect } from 'react';
 import './card.css';
 
-
 const Card = ({ title, bodyText, linkText, cardContent, backgroundImage }) => {
-  const [Expansion, setExpand] = useState(false); // Track card expansion state
-  const [isExpanded, setIsExpanded] = useState(false); // Track card expansion state
-  const [showBody, setShowBody] = useState(false);     // Control showing of the body text after expansion
-  
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [animationState, setAnimationState] = useState('initial');
+  const [bodyState, setBodyState] = useState('visible');
+  const [containerState, setContainerState] = useState('hidden');
+
   const handleExpandClick = () => {
     if (isExpanded) {
-      // If collapsing, reset states immediately
-      setShowBody(false);
-      setIsExpanded(false);
-      setExpand(false)
+      setContainerState('visible');
+      setBodyState('fading-out');
+      setTimeout(() => {
+        setAnimationState('collapsing');
+      }, 1000);
+        setTimeout(() => {
+          setContainerState('hidden');
+          setTimeout(() => {
+            setBodyState('fading-in');
+          }, 1000);
+        }, 1000);
     } else {
-      setExpand(true);
+      setAnimationState('expanding');
+      setBodyState('fading-out');
       setTimeout(() => {
-        setIsExpanded(true);
-      }, 1500);
-      setTimeout(() => {
-        setShowBody(true);   // Step 3: Show the body after card expands
-      }, 5000);
+        setContainerState('visible');
+        setTimeout(() => {
+          setBodyState('fading-in');
+          setContainerState('fading-in');
+        }, 2000); 
+      }, 1000);
     }
   };
 
+  useEffect(() => {
+    let timer;
+    if (animationState === 'expanding') {
+      timer = setTimeout(() => {
+        setAnimationState('expanded');
+        setIsExpanded(true);
+      }, 1000);
+    } else if (animationState === 'collapsing') {
+      timer = setTimeout(() => {
+        setAnimationState('initial');
+        setIsExpanded(false);
+      }, 1500);
+    }
+    return () => clearTimeout(timer);
+  }, [animationState]);
+
   return (
     <div
-      className={`card ${isExpanded ? 'expanded' : ''}`}
+      className={`card ${animationState}`}
       style={{ '--background-image': `url(${backgroundImage})` }}
     >
       <div className="card-content">
-        <h2 className="card-title">{title}</h2>
-        <p className={`card-body ${Expansion ? (showBody ? 'visible' : 'invisible') : ''}`}>{bodyText}</p>
+        <div className="card-main-content">
+          <h2 className="card-title">{title}</h2>
+          <p className={`card-body ${bodyState}`}>
+              {bodyText}
+            </p>
+          
 
-        {isExpanded && (
-          <div className={`card-content-container ${isExpanded ? (showBody ? 'visible' : 'invisible') : ''}`}>
+          <div className={`card-content-container ${containerState}`}>
             {cardContent}
           </div>
-        )}
+        </div>
         <button className="button" onClick={handleExpandClick}>
           {isExpanded ? 'Collapse' : linkText}
         </button>

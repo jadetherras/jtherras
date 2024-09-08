@@ -11,8 +11,8 @@
     padding-right: 0;
   }
   
+  
   .card {
-    
     color: var(--blanck-color);
     background-image: var(--background-image, url(https://media.contentapi.ea.com/content/dam/eacom/images/2020/09/ea-featured-image-ea-desktop-beta.jpg.adapt.crop191x100.1200w.jpg));
     background-size: cover;
@@ -21,29 +21,24 @@
     width: 100%; /* Adjust to container width */
     border-radius: 0.5rem;
     overflow: hidden;
-    transition: transform 1s ease, max-width 1s ease, padding 1s ease; /* Add max-width transition */
-  }
+    transition: transform 0.3s ease, max-width 1s ease, padding 1s ease;
+    }
 
-  .card.expanded {
-    max-width: 100%; /* When expanded, card takes full width */
-    padding: 1rem;
-    transition: max-width 3s ease; /* Control expansion duration */
-  }
-  
-  .card:not(.expanded):hover,
-  .card:not(.expanded):focus-within {
-    transform: scale(1.05);
-  }
+    .card.expanded {
+      max-width: 100%;
+      padding: 1rem;
+    }
+
+    .card:not(.expanded):not(.expanding):hover,
+.card:not(.expanded):not(.expanding):focus-within {
+  transform: scale(1.05);
+}
   
   .card-title {
     position: relative;
     width: max-content;
   }
   
-  .card:not(.expanded):hover .card-title::after,
-  .card:not(.expanded):focus-within .card-title::after {
-    transform: scaleX(1);
-  }
   
   .card-title::after {
     content: "";
@@ -55,17 +50,8 @@
     background: var(--primary-color);
     transform-origin: left;
     transition: transform 500ms ease;
+    transform: scaleX(0);
   }
-
-    /* Title moves to top-left in expanded state */
-.card.expanded .card-title {
-  position: absolute;
-  top: 1rem; /* Move title to top of the card */
-  left: 1rem; /* Align title to the left */
-  margin: 0;
-  transform: none;
-  transition: top 1s ease, left 1s ease;
-}
 
 /* Body text moves below the title and above the container */
 .card-body {
@@ -73,23 +59,22 @@
   opacity: 1;
   transform: translateY(0);
   margin: 0;
-  transition: opacity 1s ease;
+  transition: opacity 0.5s ease;
   }
 
-  .card-body.invisible {
+  .card-body.fading-out {
     opacity: 0;
-    transition: opacity 1s ease;
   }
-
-  .card-body.visible {
-    position: absolute;
-    left: 1rem;
-    top: 2rem;
+  
+  .card-body.fading-in {
     opacity: 1;
-    transition: opacity 1s ease;
   }
 
   .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     min-height: 33vh;
     position: relative;
     --padding: 1.5rem;
@@ -101,25 +86,34 @@
     );
   }
 
+  .card-main-content {
+    flex-grow: 1;
+  }
+
 
 /* Container initially hidden, then fades in */
 .card-content-container {
-  display: none; /* Hidden by default */
+  visibility: hidden;
   opacity: 0;
-  transition: opacity 2s ease;
+  transition: opacity 0.5s ease, visibility 0s 0.5s;
+  height: 0;
+  overflow: hidden;
 }
 
-/* Show the container once the card is expanded */
-.card-content-container.invisible {
-  display: block;
-}
-
-/* Show the container once the card is expanded */
 .card-content-container.visible {
-  display: block;
-  opacity: 1;
+  visibility: visible;
+  opacity: 0;
+  height: auto;
+  transition: visibility 0.5s ease, opacity 0.5s ease;
 }
-  
+
+.card-content-container.fading-in {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  transition: opacity 0.5s ease;
+}
+
   @media (hover) {
   
     .card:hover .card-content > *:not(.card-title .card-content-container),
@@ -138,15 +132,18 @@
     .card:focus-within .card-content {
       transition-duration: 0ms;
     }
+
+    .card:hover .card-title::after,
+  .card:focus-within .card-title::after {
+    transform: scaleX(1);
+  }
   
-    .card-title::after {
-      transform: scaleX(0);
-    }
   }
   
   .button {
+    align-self: center;
+    margin-top: auto;
     cursor: pointer;
-    display: inline-block;
     text-decoration: none;
     color: var(--secondary-color);
     background-color: var(--primary-color);

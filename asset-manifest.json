@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jtherras/static/css/main.d9f23d9b.css",
-    "main.js": "/jtherras/static/js/main.267dfd13.js",
+    "main.css": "/jtherras/static/css/main.8d377eb7.css",
+    "main.js": "/jtherras/static/js/main.7427ee11.js",
     "static/js/453.020631f3.chunk.js": "/jtherras/static/js/453.020631f3.chunk.js",
     "static/media/image.png": "/jtherras/static/media/image.7b25bfd7a44d10c7a63f.png",
     "static/media/ML4Science.pdf": "/jtherras/static/media/ML4Science.cbfb212efa3f003139d2.pdf",
@@ -17,12 +17,12 @@
     "static/media/sky.png": "/jtherras/static/media/sky.8143e7ad543fbd216a3c.png",
     "static/media/helpie.png": "/jtherras/static/media/helpie.6229a1c3a85a6baff3ec.png",
     "index.html": "/jtherras/index.html",
-    "main.d9f23d9b.css.map": "/jtherras/static/css/main.d9f23d9b.css.map",
-    "main.267dfd13.js.map": "/jtherras/static/js/main.267dfd13.js.map",
+    "main.8d377eb7.css.map": "/jtherras/static/css/main.8d377eb7.css.map",
+    "main.7427ee11.js.map": "/jtherras/static/js/main.7427ee11.js.map",
     "453.020631f3.chunk.js.map": "/jtherras/static/js/453.020631f3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9f23d9b.css",
-    "static/js/main.267dfd13.js"
+    "static/css/main.8d377eb7.css",
+    "static/js/main.7427ee11.js"
   ]
 }

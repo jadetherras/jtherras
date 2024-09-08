@@ -8,6 +8,7 @@ import Helpie from './Projects/Helpie/Helpie';
 import JumpingRobot from './Projects/JumpingRobot/JumpingRobot';
 import NeuralInterface from './Projects/NeuralInterface/NeuralInterface';
 import LAPD from './Projects/ML/LAPD';
+import Bachelor from './Projects/Bachelor/bachelor';
 
 
 const Showcase = () => {
@@ -20,6 +21,7 @@ const Showcase = () => {
         <JumpingRobot/>
         <NeuralInterface/>
         <LAPD/>
+        <Bachelor/>
         </Row>
         </Col>
     </Container>

@@ -29,18 +29,20 @@ const JumpingRobot = () => {
             </div>}
         linkText="Learn More"
         cardContent={<div>
-            
-            <br/><br/><br/>
             <h3 align="left">The project</h3>
             <p align="left">
-            
-          </p>
-          <h3 align="left">Technical overview</h3>
-          <p align="left">
+ This project focuses on the data-driven optimization and fabrication of a jumping robot designed to maximize
+jumping distance while minimizing energy consumption. Using a configurable simulation environment in
+PyBullet, we investigated the effects of varying key parameters, including link lengths, spring stiffness, and
+compression, on the robot's performance. Through iterative simulations and optimization algorithms, we
+identified an optimal set of parameters that achieved the desired balance between jumping distance and energy
+efficiency. The results were validated through the fabrication of a physical prototype, demonstrating the
+practical applicability of our optimized design. This study showcases the potential of combining simulation-based optimization with real-world implementation in robotic design.
           </p>
           <h3 align="left">Personal work</h3>
           <p align="left">
-            
+ I was charged with the data-driven optimization part, implementing Genetic algorithm and Bayesian optimisation in Python, and developing a workflow to find the best parameters. 
+ I was also involved in preliminary research, problem definition and parameters choice. 
             </p>
                 <div>
                 <button class="button-48" role="button" onClick={() =>window.open(git)}><span class="text"><FaGithub /> Go to git repository</span></button><br/>

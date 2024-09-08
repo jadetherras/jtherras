@@ -33,3 +33,8 @@
   .z-index-0 {
     z-index: 0;  /* Ensures the circle is behind the image */
   }
+
+  .wrap {
+    float: right; 
+    margin: 5px;
+   }

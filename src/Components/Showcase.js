@@ -9,6 +9,8 @@ import JumpingRobot from './Projects/JumpingRobot/JumpingRobot';
 import NeuralInterface from './Projects/NeuralInterface/NeuralInterface';
 import LAPD from './Projects/ML/LAPD';
 import Bachelor from './Projects/Bachelor/bachelor';
+import TNE from './Projects/TNE/TNE';
+import IGEM from './Projects/IGEM/IGEM';
 
 
 const Showcase = () => {
@@ -18,10 +20,13 @@ const Showcase = () => {
         <Col> 
         <Row className="justify-content-md-center gap-3">
         <Helpie/>
+        <IGEM/>
         <JumpingRobot/>
         <NeuralInterface/>
         <LAPD/>
         <Bachelor/>
+        <TNE/>
+        
         </Row>
         </Col>
     </Container>

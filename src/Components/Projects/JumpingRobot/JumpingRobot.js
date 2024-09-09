@@ -1,10 +1,7 @@
 import React from 'react'
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 import "../../../Style.css";
 import Card from '../../card';
 import "../../button.css";
-import { Image } from 'react-bootstrap';
 
 import JR from "./JR.png"
 

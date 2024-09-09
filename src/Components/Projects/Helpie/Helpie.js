@@ -1,6 +1,4 @@
 import React from 'react'
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 import "../../../Style.css";
 import Card from '../../card';
 import "../../button.css";
@@ -16,6 +14,12 @@ import { FaGithub } from "react-icons/fa";
 import { FaFileAlt } from "react-icons/fa";
 import { RiGuideFill } from "react-icons/ri";
 import { MdArticle } from "react-icons/md";
+import { GiTargetPrize } from "react-icons/gi";
+import { GiHealthNormal } from "react-icons/gi";
+
+
+
+
 
 const Helpie = () => {
   const git ="https://github.com/ejayromero/ATC-Helpie-2024/tree/main"
@@ -65,6 +69,11 @@ const Helpie = () => {
                 <button class="button-48" role="button" onClick={() =>window.open(report)}><span class="text"><FaFileAlt />See project report</span></button><br/>
                 <button class="button-48" role="button" onClick={() =>window.open(user)}><span class="text"><RiGuideFill />See user guide</span></button><br/>
                 <button class="button-48" role="button" onClick={() =>window.open(epfl)}><span class="text"><MdArticle />See epfl article</span></button><br/>
+                <button class="button-48" role="button" onClick={() =>window.open(euroteck)}><span class="text"><GiTargetPrize />
+                See EuroTeQ competition</span></button><br/>
+                
+                <button class="button-48" role="button" onClick={() =>window.open(HH)}><span class="text"><GiHealthNormal />
+                See HackaHealth</span></button><br/>
                 </div>
                 </div>
           }

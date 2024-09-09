@@ -12,21 +12,23 @@
   }
   
   
-  .card {
+.card {
+    position: relative;
     color: var(--blanck-color);
-    background-image: var(--background-image, url(https://media.contentapi.ea.com/content/dam/eacom/images/2020/09/ea-featured-image-ea-desktop-beta.jpg.adapt.crop191x100.1200w.jpg));
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),var(--background-image, url(https://media.contentapi.ea.com/content/dam/eacom/images/2020/09/ea-featured-image-ea-desktop-beta.jpg.adapt.crop191x100.1200w.jpg));
     background-size: cover;
     padding: 5rem 0 0;
-    max-width: 35ch; /* Initial max-width */
-    width: 100%; /* Adjust to container width */
+    max-width: 35ch;
+    width: 100%;
     border-radius: 0.5rem;
     overflow: hidden;
-    transition: transform 0.3s ease, max-width 1s ease, padding 1s ease;
-    }
+    transition: transform 0.3s ease, max-width 1s ease, padding 1s ease, background-image 0.5s ease;
+}
 
     .card.expanded {
       max-width: 100%;
       padding: 1rem;
+      background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), var(--background-image, url(https://media.contentapi.ea.com/content/dam/eacom/images/2020/09/ea-featured-image-ea-desktop-beta.jpg.adapt.crop191x100.1200w.jpg));
     }
 
     .card:not(.expanded):not(.expanding):hover,

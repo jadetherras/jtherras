@@ -4,7 +4,7 @@ import Card from '../../card';
 import "../../button.css";
 
 import couv from "./couv.jpg"
-import report from "./Neural_interface__rendu.pdf"
+import report from "./Neural_interface___rendu.pdf"
 
 import { FaFileAlt } from "react-icons/fa";
 import { PiPresentationChart } from "react-icons/pi";

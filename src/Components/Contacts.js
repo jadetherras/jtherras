@@ -31,7 +31,7 @@ const Contacts = () => {
         </Button>
         </Col>
         <Col> 
-        <Button variant="primary" href={linkedin}>
+        <Button variant="primary" onClick={() =>window.open(linkedin)}>
                 <FaLinkedin />&nbsp;
                 jade therras
         </Button>

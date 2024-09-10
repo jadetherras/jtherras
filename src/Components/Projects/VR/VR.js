@@ -5,7 +5,7 @@ import "../../button.css";
 
 import logo from "./tree.jpg"
 import report from "./I_don_t_want_to_be_human_anymore_.pdf"
-import video from "./VRproject.mp4"
+import ReactPlayer from 'react-player/youtube'
 
 
 import { FaGithub } from "react-icons/fa";
@@ -15,16 +15,14 @@ import { FaFileAlt } from "react-icons/fa";
 const VR = () => {
   const git ="https://github.com/jadetherras/HOVR"
   const course="https://edu.epfl.ch/coursebook/fr/virtual-reality-CS-444"
+  const video="https://youtu.be/cdpJOEH0v8c"
   return (
         <Card
         title={<p align= "left">I don't want to be <br/>  human anymore !</p> }
         bodyText="A virtual reality puzzle game"
         linkText="Learn More"
         cardContent={<div>
-            <div align="center"><video width="100%" controls>
-        <source src={video} type="video/mp4" />
-        Your browser does not support the video tag.
-    </video></div> <br/>
+          <div align="center"><ReactPlayer url={video} width="100%" /></div> <br/>
            <h3 align="left">Context</h3>
            <p align="left">
             "I don't want to be human anymore" is a virtual reality puzzle game developped in C# within Unity3D, made in the context of the VR course of EPFL.<br/>

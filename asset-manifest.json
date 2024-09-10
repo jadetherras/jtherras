@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/jtherras/static/css/main.f9bd18b7.css",
-    "main.js": "/jtherras/static/js/main.d12d4479.js",
-    "reactPlayerPreview.js": "/jtherras/static/js/reactPlayerPreview.be54eca6.chunk.js",
-    "static/js/453.020631f3.chunk.js": "/jtherras/static/js/453.020631f3.chunk.js",
+    "main.css": "/jtherras/static/css/main.ec537144.css",
+    "main.js": "/jtherras/static/js/main.d21a5064.js",
+    "reactPlayerPreview.js": "/jtherras/static/js/reactPlayerPreview.8775a16a.chunk.js",
+    "static/js/453.c42b2d90.chunk.js": "/jtherras/static/js/453.c42b2d90.chunk.js",
     "static/media/bachelor_project.pdf": "/jtherras/static/media/bachelor_project.b48f38a220313152c068.pdf",
     "static/media/image.png": "/jtherras/static/media/image.dd60020ba806b1e79d64.png",
     "static/media/Clinical_vignette.pdf": "/jtherras/static/media/Clinical_vignette.e0eadd53ba07ecb41add.pdf",
@@ -13,7 +13,10 @@
     "static/media/CVen.pdf": "/jtherras/static/media/CVen.d206146ec995ebbf75cf.pdf",
     "static/media/ATC.pdf": "/jtherras/static/media/ATC.55ead97d2b97bb4a8df8.pdf",
     "static/media/JumpingRobot.pdf": "/jtherras/static/media/JumpingRobot.985bf2758ea55d286afe.pdf",
+    "static/media/I_don_t_want_to_be_human_anymore_.pdf": "/jtherras/static/media/I_don_t_want_to_be_human_anymore_.ad773717b0914a6b1bc3.pdf",
     "static/media/team.png": "/jtherras/static/media/team.8d8501882d53fe1ea6d8.png",
+    "static/media/First_draft.pdf": "/jtherras/static/media/First_draft.a2313a4992dabe398a6b.pdf",
+    "static/media/tree.jpg": "/jtherras/static/media/tree.7a346ba3d4d45c516c29.jpg",
     "static/media/IMG_6710.JPG": "/jtherras/static/media/IMG_6710.d23890e6e6c58fc37177.JPG",
     "static/media/icon.svg": "/jtherras/static/media/icon.1ccfefc97a080e8cce74a42e0ef48adb.svg",
     "static/media/JR.png": "/jtherras/static/media/JR.9a2e5ecdda8cc79f7ee3.png",
@@ -24,13 +27,13 @@
     "static/media/sky.png": "/jtherras/static/media/sky.8143e7ad543fbd216a3c.png",
     "static/media/helpie.png": "/jtherras/static/media/helpie.6229a1c3a85a6baff3ec.png",
     "index.html": "/jtherras/index.html",
-    "main.f9bd18b7.css.map": "/jtherras/static/css/main.f9bd18b7.css.map",
-    "main.d12d4479.js.map": "/jtherras/static/js/main.d12d4479.js.map",
-    "reactPlayerPreview.be54eca6.chunk.js.map": "/jtherras/static/js/reactPlayerPreview.be54eca6.chunk.js.map",
-    "453.020631f3.chunk.js.map": "/jtherras/static/js/453.020631f3.chunk.js.map"
+    "main.ec537144.css.map": "/jtherras/static/css/main.ec537144.css.map",
+    "main.d21a5064.js.map": "/jtherras/static/js/main.d21a5064.js.map",
+    "reactPlayerPreview.8775a16a.chunk.js.map": "/jtherras/static/js/reactPlayerPreview.8775a16a.chunk.js.map",
+    "453.c42b2d90.chunk.js.map": "/jtherras/static/js/453.c42b2d90.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9bd18b7.css",
-    "static/js/main.d12d4479.js"
+    "static/css/main.ec537144.css",
+    "static/js/main.d21a5064.js"
   ]
 }

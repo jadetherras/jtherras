@@ -13,6 +13,8 @@ import TNE from './Projects/TNE/TNE';
 import IGEM from './Projects/IGEM/IGEM';
 import { Box } from '@mui/material';
 import VR from './Projects/VR/VR';
+import Parapully from './Projects/Parapully/parapully';
+import Haptic from './Projects/HapticEMG/Haptic';
 
 
 const Showcase = () => {
@@ -31,11 +33,12 @@ const Showcase = () => {
           <br/><br/>
           <Row className="justify-content-md-center gap-3">
           <JumpingRobot/>
-        
         <TNE/>
         <LAPD/>
         <VR/>
         <Bachelor/>
+        <Parapully/>
+        <Haptic/>
         </Row>
         </Col>
     </Container>

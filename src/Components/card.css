@@ -30,8 +30,8 @@
     .card.expanded {
       max-width: 100%;
       padding: 1rem;
-      background-color: aliceblue;
       background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), var(--background-image, url(https://media.contentapi.ea.com/content/dam/eacom/images/2020/09/ea-featured-image-ea-desktop-beta.jpg.adapt.crop191x100.1200w.jpg));
+      background-color: aliceblue;
     }
 
     .card:not(.expanded):not(.expanding):hover,

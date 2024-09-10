@@ -4,7 +4,7 @@ import Card from '../../card';
 import "../../button.css";
 
 import couv from "./couv.jpg"
-import report from "./First_draft.pdf"
+import report from "./Neural_interface__rendu.pdf"
 
 import { FaFileAlt } from "react-icons/fa";
 import { PiPresentationChart } from "react-icons/pi";
@@ -32,7 +32,6 @@ const NeuralInterface = () => {
             
             </p>
                 <div>
-                <button class="button-48" role="button" onClick={() =>window.open(report)}><span class="text"><FaFileAlt />See project proposition</span></button><br/>
                 <button class="button-48" role="button" onClick={() =>window.open(report)}><span class="text"><FaFileAlt />See project report</span></button><br/>  
                 <button class="button-48" role="button"><span class="text"><ImLab />See hosting lab</span></button><br/>
                 <button class="button-48" role="button" onClick={() =>window.open(course)}><span class="text"><PiPresentationChart />See corresponding course</span></button><br/>

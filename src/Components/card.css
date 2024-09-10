@@ -61,7 +61,7 @@
   opacity: 1;
   transform: translateY(0);
   margin: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 1s ease;
   }
 
   .card-body.fading-out {
@@ -113,7 +113,7 @@
   visibility: visible;
   opacity: 1;
   height: auto;
-  transition: opacity 0.5s ease;
+  transition: opacity 1s ease;
 }
 
   @media (hover) {

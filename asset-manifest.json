@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jtherras/static/css/main.ec537144.css",
-    "main.js": "/jtherras/static/js/main.6a0e93ac.js",
+    "main.css": "/jtherras/static/css/main.ef9345fc.css",
+    "main.js": "/jtherras/static/js/main.36c0401d.js",
     "reactPlayerPreview.js": "/jtherras/static/js/reactPlayerPreview.8775a16a.chunk.js",
     "static/js/453.c42b2d90.chunk.js": "/jtherras/static/js/453.c42b2d90.chunk.js",
     "static/media/bachelor_project.pdf": "/jtherras/static/media/bachelor_project.b48f38a220313152c068.pdf",
@@ -27,13 +27,13 @@
     "static/media/sky.png": "/jtherras/static/media/sky.8143e7ad543fbd216a3c.png",
     "static/media/helpie.png": "/jtherras/static/media/helpie.6229a1c3a85a6baff3ec.png",
     "index.html": "/jtherras/index.html",
-    "main.ec537144.css.map": "/jtherras/static/css/main.ec537144.css.map",
-    "main.6a0e93ac.js.map": "/jtherras/static/js/main.6a0e93ac.js.map",
+    "main.ef9345fc.css.map": "/jtherras/static/css/main.ef9345fc.css.map",
+    "main.36c0401d.js.map": "/jtherras/static/js/main.36c0401d.js.map",
     "reactPlayerPreview.8775a16a.chunk.js.map": "/jtherras/static/js/reactPlayerPreview.8775a16a.chunk.js.map",
     "453.c42b2d90.chunk.js.map": "/jtherras/static/js/453.c42b2d90.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec537144.css",
-    "static/js/main.6a0e93ac.js"
+    "static/css/main.ef9345fc.css",
+    "static/js/main.36c0401d.js"
   ]
 }

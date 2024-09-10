@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './card.css';
 
-const Card = ({ title, bodyText, linkText, cardContent, backgroundImage }) => {
+const Card = ({ title, bodyText, linkText, cardContent, backgroundImage, onExpand }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [animationState, setAnimationState] = useState('initial');
   const [bodyState, setBodyState] = useState('visible');
@@ -13,6 +13,7 @@ const Card = ({ title, bodyText, linkText, cardContent, backgroundImage }) => {
       setBodyState('fading-out');
       setTimeout(() => {
         setAnimationState('collapsing');
+        onExpand(false);
       }, 1000);
         setTimeout(() => {
           setContainerState('hidden');
@@ -30,6 +31,7 @@ const Card = ({ title, bodyText, linkText, cardContent, backgroundImage }) => {
           setContainerState('fading-in');
         }, 2000); 
       }, 1000);
+      onExpand(true);
     }
   };
 

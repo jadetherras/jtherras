@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Home from './Components/Home';
 
+import Background from './Components/Background';
+
 function App() {
   return (
     <div className="App">

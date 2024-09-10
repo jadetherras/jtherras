@@ -22,14 +22,14 @@ import { FaVideo } from "react-icons/fa";
 
 
 
-const IGEM = () => {
+const IGEM = ({ isIGEMExpanded, setIsIGEMExpanded }) => {
+
   const wiki = "https://2023.igem.wiki/epfl/"
   const igem = "https://igem.org/"
   const introdvideo = "https://www.youtube.com/watch?v=g9VCcqWoUBQ"
   const video = "https://www.youtube.com/watch?v=SaA0YtPz03s"
   const git ="https://gitlab.igem.org/2023/software-tools/epfl"
   const videobioquest = "https://static.igem.wiki/teams/4888/wiki/tutorial-xk8tsjb4.gif"
-  
   
   return (
         <Card
@@ -92,6 +92,7 @@ As a safety precaution, the production of the SpaC protein is halted once it ent
                 </div>
           }
         backgroundImage={logo}
+        onExpand ={setIsIGEMExpanded}
       />
   );
 }

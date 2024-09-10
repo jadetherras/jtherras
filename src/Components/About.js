@@ -12,7 +12,7 @@ const About = () => {
     <Container className="my-5 mx-10">
       <Row>
         <Col xs={12} md={4} className="position-relative">  
-          <Image src={me} alt="Responsive image" roundedCircle fluid className="position-relative z-index-1 me" />
+          <Image style={{zIndex: 2}} src={me} alt="Responsive image" roundedCircle fluid className="position-relative z-index-1 me" />
           
         </Col>
         <Col xs={12} md={8}  className="text-start">  

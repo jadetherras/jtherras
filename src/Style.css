@@ -7,6 +7,15 @@
     background-color: var(--primary-color);
 }
 
+.highlight {
+  background-color: var(--primary-color);
+  padding: 2rem;
+  border-radius: 2rem;
+  width: auto;
+  height: auto;
+  color: var(--blanck-color);
+}
+
 .circle {
     width: 200px;
     height: 300px;

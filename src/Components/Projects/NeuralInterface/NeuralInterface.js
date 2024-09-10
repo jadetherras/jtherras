@@ -1,15 +1,12 @@
 import React from 'react'
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 import "../../../Style.css";
 import Card from '../../card';
 import "../../button.css";
-import { Image } from 'react-bootstrap';
 
 import couv from "./couv.jpg"
+import report from "./First_draft.pdf"
 
 import { FaFileAlt } from "react-icons/fa";
-import { TfiLayoutSlider } from "react-icons/tfi";
 import { PiPresentationChart } from "react-icons/pi";
 import { ImLab } from "react-icons/im";
 
@@ -35,7 +32,8 @@ const NeuralInterface = () => {
             
             </p>
                 <div>
-                <button class="button-48" role="button" ><span class="text"><FaFileAlt />See project report</span></button><br/>
+                <button class="button-48" role="button" onClick={() =>window.open(report)}><span class="text"><FaFileAlt />See project proposition</span></button><br/>
+                <button class="button-48" role="button" onClick={() =>window.open(report)}><span class="text"><FaFileAlt />See project report</span></button><br/>  
                 <button class="button-48" role="button"><span class="text"><ImLab />See hosting lab</span></button><br/>
                 <button class="button-48" role="button" onClick={() =>window.open(course)}><span class="text"><PiPresentationChart />See corresponding course</span></button><br/>
                 </div>

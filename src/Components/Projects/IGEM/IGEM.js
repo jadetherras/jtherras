@@ -37,7 +37,7 @@ const IGEM = () => {
         bodyText="A cadmium catcher live biotherapeutic product"
         linkText="Learn More"
         cardContent={<div>
-           <ReactPlayer url={introdvideo} /> <br/>
+           <div align="center"><ReactPlayer url={introdvideo} width="100%" /></div> <br/>
            <h3 align="left">What is 48C ?</h3>
            <p align="left">
             IGEM is an international synthetic biology competition in which teams design and implement engineered biological-based systems to address problems. <br/>
@@ -54,13 +54,21 @@ The mucus-binding protein will implant our probiotic into the intestine and our 
 As a safety precaution, the production of the SpaC protein is halted once it enters the body, and the protein naturally degrades over time, allowing the bacteria to be released. To prevent environmental spread and genetic exchange with other organisms, the bacteria are auxotrophic and have specific genetic mutations that prevent horizontal gene transfer.
            </p>
           <h3 align="left">Bioquest - An educational game !</h3>
-          <div class="wrap" align="right" style={{ paddingLeft: '0' }}><Image src={bioquest} alt="bioquest logo" width="50%" rounded fluid style={{ paddingLeft: '0' }}/></div>
+          <table cellspacing="50">
+          <tr>
+          <td>
           <p align="left">Education about synthetic biology is a major concern. 48C have deep into vulgarisation by developping and proposing a game, Bioquest, introducing synthetic biology basics to the public. <br/>
           The game is divided into two different parts. <br/>
           The main game takes the player into the discovery of some of synthetic biology’s main advancement (such as GFP, ampicillin…) through 48C’s project: catching cadmium. 
           Fifteen different minigames will take the player through lab work and safety as well as some biological concepts. <br/>
           Moreover, 48C have created a mini-IGEM competition, BSGV, for younger student in our local town in switzerland.
           </p>
+          </td>
+          <td>
+          <Image src={bioquest} alt="bioquest logo" width="150%" rounded fluid/>
+          </td>
+          </tr>
+          </table>
           <img src={videobioquest} alt="tutorial of bioquest" width="75%" ></img>
           <h3 align="left">Awards</h3>
           <p align="left">

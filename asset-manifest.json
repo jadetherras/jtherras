@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jtherras/static/css/main.e0bbe0e7.css",
-    "main.js": "/jtherras/static/js/main.576eee13.js",
+    "main.css": "/jtherras/static/css/main.a50021cf.css",
+    "main.js": "/jtherras/static/js/main.42529619.js",
     "reactPlayerPreview.js": "/jtherras/static/js/reactPlayerPreview.8775a16a.chunk.js",
     "static/js/453.c42b2d90.chunk.js": "/jtherras/static/js/453.c42b2d90.chunk.js",
     "static/media/bachelor_project.pdf": "/jtherras/static/media/bachelor_project.b48f38a220313152c068.pdf",
@@ -30,17 +30,19 @@
     "static/media/IMG_6712.JPG": "/jtherras/static/media/IMG_6712.040851ae9e73d738f92b.JPG",
     "static/media/overview_device.png": "/jtherras/static/media/overview_device.6c0c8b974242c37d2570.png",
     "static/media/couv.jpg": "/jtherras/static/media/couv.f897d8d8e6f5614d35bb.jpg",
+    "static/media/SpaCLred.png": "/jtherras/static/media/SpaCLred.dd58c0d8001b999bd634.png",
+    "static/media/SpaCLgreen.png": "/jtherras/static/media/SpaCLgreen.f64457e345eff9255133.png",
     "static/media/sky.png": "/jtherras/static/media/sky.8143e7ad543fbd216a3c.png",
     "static/media/paddle.jpg": "/jtherras/static/media/paddle.37fbf055030902eb6088.jpg",
     "static/media/helpie.png": "/jtherras/static/media/helpie.6229a1c3a85a6baff3ec.png",
     "index.html": "/jtherras/index.html",
-    "main.e0bbe0e7.css.map": "/jtherras/static/css/main.e0bbe0e7.css.map",
-    "main.576eee13.js.map": "/jtherras/static/js/main.576eee13.js.map",
+    "main.a50021cf.css.map": "/jtherras/static/css/main.a50021cf.css.map",
+    "main.42529619.js.map": "/jtherras/static/js/main.42529619.js.map",
     "reactPlayerPreview.8775a16a.chunk.js.map": "/jtherras/static/js/reactPlayerPreview.8775a16a.chunk.js.map",
     "453.c42b2d90.chunk.js.map": "/jtherras/static/js/453.c42b2d90.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e0bbe0e7.css",
-    "static/js/main.576eee13.js"
+    "static/css/main.a50021cf.css",
+    "static/js/main.42529619.js"
   ]
 }

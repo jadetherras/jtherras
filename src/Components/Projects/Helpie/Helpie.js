@@ -36,7 +36,7 @@ const Helpie = () => {
         bodyText="An app to help neurodivergent and mental impaired people use public transport"
         linkText="Learn More"
         cardContent={<div>
-          <h3 align="left">The project</h3>
+          <h3 align="left">Why Helpie ? </h3>
           <p align="left">
  Nowadays in Switzerland, public transport can get you nearly everywhere.
  We use it daily, to go to work, see friends, make groceries...<br/>
@@ -46,10 +46,9 @@ const Helpie = () => {
             </p><p align="left">
  Helpie has been developed within the <hard>HackaHealth</hard> program, collaborating with the SBB and SBB inclusive. The development process has been
  conducted with a potential real-life user.<br/>
- The project has been selected to participate in the 2024 EuroTeQaThon in Paris, organized by <hard>EuroTeQ</hard>.
-          </p>
+         </p>
           <div class="wrap"><Image src={screen} alt="Home screen of Helpie" width="60%" rounded fluid className="position-relative z-index-1" /></div>
-          <h3 align="left">Technical overview</h3>
+          <h3 align="left">How does it work ? </h3>
           <p align="left">Prototyped in Figma, developed in Android studio.<br/>
  Helpie allow us to navigate step by step. The app uses the SBB API to extract the 
  transport step, and Google Maps for the walking step. The app has multiple settings that 
@@ -60,6 +59,10 @@ const Helpie = () => {
           <p align="left">I was the coding leader on this project. I notably implemented the transport part and the structure of the app. 
  I was also involved in the meeting with the challenger and in multiple presentations of the project. 
           </p>
+          <h3 align="left">EuroTeQ </h3>
+          <p align="left">
+          The project had the honnor to be selected to represent EPFL in the 2024 EuroTeQaThon in Paris, organized by <hard>EuroTeQ</hard>. </p>
+ 
           
                 <br/>
                 <Image src={team} alt="EPFL ATC team at EuroTeQ" rounded fluid className="position-relative z-index-1" />

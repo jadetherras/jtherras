@@ -20,6 +20,7 @@ import Rocket from './Projects/RocketTeam/Rocket';
 import Bacteria from '../Animation/Bacteria';
 import Lantern from '../Animation/Lantern/Lantern';
 import TheRocket from '../Animation/Rocket/rocket';
+import Ossur from './Projects/Ossur/Ossur';
 
 
 const Showcase = () => {
@@ -46,14 +47,15 @@ const Showcase = () => {
           </Box>
           <br/><br/>
           <Row className="justify-content-md-center gap-3">
-          <JumpingRobot />
+            <Ossur/>
+          <Haptic />
         <TNE />
         <LAPD />
         <VR isVRExpanded={isVRExpanded} setIsVRExpanded={setIsVRExpanded} />
-        <Bachelor />
-        <Parapully />
-        <Haptic />
+        <JumpingRobot />
+       <Bachelor />
         <Rocket isRocketExpanded={isRocketExpanded} setIsRocketExpanded={setIsRocketExpanded} />
+        <Parapully />
         </Row>
         </Col>
     </Container>

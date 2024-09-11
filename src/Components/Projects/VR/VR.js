@@ -22,16 +22,16 @@ const VR = ({isVRExpanded, setIsVRExpanded}) => {
         bodyText="A virtual reality puzzle game"
         linkText="Learn More"
         cardContent={<div>
-          <h3 align="left">Click on "lantern" on the screen !</h3>
+          <h3 align="center" >If a lantern (diamonds) appear, click to activate !</h3>
           <div align="center"><ReactPlayer url={video} width="100%" /></div> <br/>
            <h3 align="left">Context</h3>
            <p align="left">
             "I don't want to be human anymore" is a virtual reality puzzle game developped in C# within Unity3D, made in the context of the VR course of EPFL.<br/>
-            We implemended multiple 3D real-time interactions and gathered them into a puzzle game, with appropriate visual and haptic feedback. 
+            We implemended multiple 3D real-time interactions and gathered them into a puzzle game, with appropriate visual and haptic feedback.
             </p>
             <h3 align="left">The game</h3>
            <p align="left">
-           The aim is to find and activate all lanterns in order to regain enough
+           Find and activate all lanterns in order to regain enough
 divine energy to activate the teletransporter and get to the
 next level. <br/>
 The game play a lot with size and interaction, as you have 2 mode. In human mode, you are on the island and can interact with objects, enter buldings, activate lanterns... 

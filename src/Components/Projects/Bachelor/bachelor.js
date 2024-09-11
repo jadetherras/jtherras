@@ -18,10 +18,10 @@ const Bachelor = () => {
   return (
         <Card
         title={<p>A STUDY OF TDA<br/> METHODS FOR<br/> SCRNA VELOCITY</p>}
-        bodyText="Use topology to predict cell differentiation - Bachelor project"
+        bodyText="Use topology to reduce dimension on biological data - Bachelor project"
         linkText="Learn More"
         cardContent={<div>
-            <h3 align="left">The project</h3>
+            <h3 align="left">Context</h3>
             <p align="left">
             The project have been hosted by the laboratory of topology and neurosciences of EPFL. <br/><br/>
             Reducing and visualizing high dimensional data is a complex challenge, yet is an essential element of
@@ -34,6 +34,7 @@ algorithm is the ScVelo algorithm. These methods experience two main problems. F
 embeddings depend on many arbitrary parameters, where it is difficult to get the best combination
 for visualization. Secondly, we have no way to quantify the distortion of the data by the embedding.
 Accordingly.<br/><br/>
+<h3 align="left">Result</h3>
 This report presents how the RNA velocity embedding works, and make suggestions for its
 improvement. Then, it explore the influence of parameters in UMAP and the ScVelo algorithm in both biological
 and synthetic datasets. As a comparison, we tested learnable UMAP, a version of UMAP

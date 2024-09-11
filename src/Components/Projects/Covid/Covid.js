@@ -4,21 +4,21 @@ import Card from '../../card.js';
 import "../../button.css";
 
 import sky from "./leman.jpeg"
-import report from "./Report_ParaPully_project.pdf"
+import report from "./Covid_19_Project.pdf"
 
 import { FaFileAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { PiPresentationChart } from "react-icons/pi";
 
 
-const Parapully = () => {
+const Covid = () => {
   const git="https://github.com/jadetherras/ParaPully"
   const course="https://edu.epfl.ch/coursebook/en/introduction-to-machine-learning-for-bioengineers-BIO-322"
 
   return (
         <Card
-        title="Parapully"
-        bodyText="Will it rain tomorrow at Pully ? Machine Learning project"
+        title="Covid 19 study"
+        bodyText="Lab project - study PCR design, protein-protein binding affinity and inverstigate new vaccine"
         linkText="Learn More"
         cardContent={<div>
             <h3 align="left">Context</h3>
@@ -43,4 +43,4 @@ const Parapully = () => {
   );
 }
 
-export default Parapully;
+export default Covid;

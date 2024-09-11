@@ -18,24 +18,18 @@ const Contacts = () => {
     <Container className="my-5 mx-10">
         <h1>Contacts</h1>&nbsp;
       <Row className="justify-content-md-center gap-3">
-        <Col> 
         <Button variant="primary" onClick={() =>window.open(tel)}>
             <IoIosPhonePortrait />&nbsp;
             +33 6 58 81 40 83
         </Button>
-        </Col>
-        <Col>
         <Button variant="primary" onClick={() =>window.open(email)}>
             <TfiEmail />&nbsp;
             jade.therras@epfl.ch
         </Button>
-        </Col>
-        <Col> 
         <Button variant="primary" onClick={() =>window.open(linkedin)}>
                 <FaLinkedin />&nbsp;
                 jade therras
         </Button>
-        </Col>
       </Row>
     </Container>
   );

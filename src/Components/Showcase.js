@@ -17,12 +17,17 @@ import Parapully from './Projects/Parapully/parapully';
 import Haptic from './Projects/HapticEMG/Haptic';
 
 import Bacteria from '../Animation/Bacteria';
+import Lantern from '../Animation/Lantern/Lantern';
+
 
 const Showcase = () => {
   const [isIGEMExpanded, setIsIGEMExpanded] = useState(false);
+  const [isVRExpanded, setIsVRExpanded] = useState(false);
 
   return (
     <Container className="my-5 mx-10 ">
+    {isVRExpanded &&
+      <><Lantern/><Lantern/><Lantern/><Lantern/><Lantern/></>}
       {isIGEMExpanded && <><Bacteria />
       <Bacteria /><Bacteria /><Bacteria /><Bacteria /></>}
       <h1>Projects</h1>&nbsp;
@@ -40,7 +45,7 @@ const Showcase = () => {
           <JumpingRobot style={{zIndex: 2}}/>
         <TNE style={{zIndex: 2}}/>
         <LAPD style={{zIndex: 2}}/>
-        <VR style={{zIndex: 2}}/>
+        <VR isVRExpanded={isVRExpanded} setIsVRExpanded={setIsVRExpanded} style={{zIndex: 2}}/>
         <Bachelor style={{zIndex: 2}}/>
         <Parapully style={{zIndex: 2}}/>
         <Haptic style={{zIndex: 2}}/>

@@ -12,7 +12,7 @@ import { FaGithub } from "react-icons/fa";
 import { PiPresentationChart } from "react-icons/pi";
 import { FaFileAlt } from "react-icons/fa";
 
-const VR = () => {
+const VR = ({isVRExpanded, setIsVRExpanded}) => {
   const git ="https://github.com/jadetherras/HOVR"
   const course="https://edu.epfl.ch/coursebook/fr/virtual-reality-CS-444"
   const video="https://youtu.be/cdpJOEH0v8c"
@@ -22,6 +22,7 @@ const VR = () => {
         bodyText="A virtual reality puzzle game"
         linkText="Learn More"
         cardContent={<div>
+          <h3 align="left">Click on "lantern" on the screen !</h3>
           <div align="center"><ReactPlayer url={video} width="100%" /></div> <br/>
            <h3 align="left">Context</h3>
            <p align="left">
@@ -68,6 +69,7 @@ become who you really are.
                 </div>
           }
         backgroundImage={logo}
+        onExpand={setIsVRExpanded}
       />
   );
 }

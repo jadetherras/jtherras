@@ -63,10 +63,10 @@ the meteo data with MLP layers. <br/>
 To know more about the models and result, see the project report.
           </p>
           <h3 align="left">Personal work</h3>
+          <p align="left">
           We worked in collaboration for all the structures of the models. I personnally deep into the study of CNN and LSTM, 
           vision transformer and developped custom features such as a cloud detector. 
-          <p align="left">
-            
+          
             </p>
                 <div>
                 <button class="button-48" role="button" onClick={() =>window.open(git)}><span class="text"><FaGithub/>Go to git repository</span></button><br/>

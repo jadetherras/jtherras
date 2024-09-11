@@ -15,40 +15,45 @@ import { Box } from '@mui/material';
 import VR from './Projects/VR/VR';
 import Parapully from './Projects/Parapully/parapully';
 import Haptic from './Projects/HapticEMG/Haptic';
+import Rocket from './Projects/RocketTeam/Rocket';
 
 import Bacteria from '../Animation/Bacteria';
 import Lantern from '../Animation/Lantern/Lantern';
+import TheRocket from '../Animation/Rocket/rocket';
 
 
 const Showcase = () => {
   const [isIGEMExpanded, setIsIGEMExpanded] = useState(false);
   const [isVRExpanded, setIsVRExpanded] = useState(false);
+  const [isRocketExpanded, setIsRocketExpanded] = useState(false);
 
   return (
     <Container className="my-5 mx-10 ">
+      {isRocketExpanded && <TheRocket/>}
     {isVRExpanded &&
       <><Lantern/><Lantern/><Lantern/><Lantern/><Lantern/></>}
       {isIGEMExpanded && <><Bacteria />
       <Bacteria /><Bacteria /><Bacteria /><Bacteria /></>}
       <h1>Projects</h1>&nbsp;
         <Col align="justify-content-md-center"> 
-          <Box class="highlight" style={{zIndex: 2}}>
+          <Box class="highlight" >
           <h1>Highlight</h1>&nbsp;
           <Row className="justify-content-md-center gap-3">
-          <Helpie style={{zIndex: 2}}/>
-        <IGEM isIGEMExpanded={isIGEMExpanded} setIsIGEMExpanded={setIsIGEMExpanded} style={{zIndex: 2}}/>
-        <NeuralInterface style={{zIndex: 2}}/>
+          <Helpie />
+        <IGEM isIGEMExpanded={isIGEMExpanded} setIsIGEMExpanded={setIsIGEMExpanded} />
+        <NeuralInterface />
         </Row>
           </Box>
           <br/><br/>
           <Row className="justify-content-md-center gap-3">
-          <JumpingRobot style={{zIndex: 2}}/>
-        <TNE style={{zIndex: 2}}/>
-        <LAPD style={{zIndex: 2}}/>
-        <VR isVRExpanded={isVRExpanded} setIsVRExpanded={setIsVRExpanded} style={{zIndex: 2}}/>
-        <Bachelor style={{zIndex: 2}}/>
-        <Parapully style={{zIndex: 2}}/>
-        <Haptic style={{zIndex: 2}}/>
+          <JumpingRobot />
+        <TNE />
+        <LAPD />
+        <VR isVRExpanded={isVRExpanded} setIsVRExpanded={setIsVRExpanded} />
+        <Bachelor />
+        <Parapully />
+        <Haptic />
+        <Rocket isRocketExpanded={isRocketExpanded} setIsRocketExpanded={setIsRocketExpanded} />
         </Row>
         </Col>
     </Container>

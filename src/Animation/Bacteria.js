@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-const Background = () => {
+const Bacteria = () => {
   const imgRef = useRef(null);
   const speed = 0.75;
   let dirR = speed; // Smaller increments for smooth movement
@@ -111,4 +111,4 @@ const Background = () => {
   );
 };
 
-export default Background;
+export default Bacteria;

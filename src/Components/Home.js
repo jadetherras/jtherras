@@ -4,6 +4,7 @@ import About from './About';
 import { Container } from 'react-bootstrap';
 import Showcase from './Showcase';
 import Contacts from './Contacts';
+import Footer from './Footer';
 
 const Divider = () => {
     return (
@@ -30,6 +31,7 @@ const Home = () => {
                 <Divider/>
                 <Contacts/>
             </section>
+            <Footer/>
             
         </>
     )

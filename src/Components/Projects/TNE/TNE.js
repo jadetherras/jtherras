@@ -12,6 +12,7 @@ import { PiPresentationChart } from "react-icons/pi";
 
 const TNE = () => {
   const course = "https://edu.epfl.ch/coursebook/en/translational-neuroengineering-NX-423"
+  
   return (
         <Card
         title={<p align="left">BCI with<br/> sensory feedback</p>}

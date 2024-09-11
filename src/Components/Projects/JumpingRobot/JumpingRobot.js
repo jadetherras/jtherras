@@ -19,6 +19,7 @@ const JumpingRobot = () => {
   const git ="https://github.com/alifuatsahin/Jumping-Robot-Design/tree/main"
   const course = "https://edu.epfl.ch/coursebook/en/data-driven-design-fabrication-methods-ME-428"
   const lab = "https://www.epfl.ch/labs/create/"
+
   return (
         <Card
         title="Jumping Robot"

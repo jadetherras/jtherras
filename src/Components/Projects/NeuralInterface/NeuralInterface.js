@@ -13,6 +13,7 @@ import { ImLab } from "react-icons/im";
 
 const NeuralInterface = () => {
   const course="https://edu.epfl.ch/coursebook/en/neural-interfaces-NX-422"
+
   return (
         <Card
         title="wearable EMG"

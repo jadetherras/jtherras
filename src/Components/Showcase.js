@@ -16,15 +16,15 @@ import VR from './Projects/VR/VR';
 import Parapully from './Projects/Parapully/parapully';
 import Haptic from './Projects/HapticEMG/Haptic';
 
-import Background from './Background';
+import Bacteria from '../Animation/Bacteria';
 
 const Showcase = () => {
   const [isIGEMExpanded, setIsIGEMExpanded] = useState(false);
 
   return (
     <Container className="my-5 mx-10 ">
-      {isIGEMExpanded && <><Background />
-      <Background /><Background /><Background /><Background /></>}
+      {isIGEMExpanded && <><Bacteria />
+      <Bacteria /><Bacteria /><Bacteria /><Bacteria /></>}
       <h1>Projects</h1>&nbsp;
         <Col align="justify-content-md-center"> 
           <Box class="highlight" style={{zIndex: 2}}>

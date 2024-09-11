@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './card.css';
 
-const Card = ({ title, bodyText, linkText, cardContent, backgroundImage, onExpand }) => {
+const empty = () => {
+  return;
+};
+
+const Card = ({ title, bodyText, linkText, cardContent, backgroundImage, onExpand= empty}) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [animationState, setAnimationState] = useState('initial');
   const [bodyState, setBodyState] = useState('visible');

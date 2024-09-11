@@ -13,6 +13,7 @@ import { PiPresentationChart } from "react-icons/pi";
 
 const Haptic = () => {
   const course="https://edu.epfl.ch/coursebook/fr/haptic-human-robot-interfaces-MICRO-553"
+  
   return (
         <Card
         title={<div align="left">Haptic human/robot <br/>EMG interfaces</div>}

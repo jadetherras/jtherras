@@ -29,6 +29,7 @@ const Helpie = () => {
   const HH = "https://www.hackahealth.ch/"
   const make = "https://www.epfl.ch/education/educational-initiatives/discovery-learning-program-2/interdisciplinary-projects/"
   const euroteck = "https://euroteq.eurotech-universities.eu/news/euroteqathon-2024-celebrating-connection-through-innovation-and-impact/"
+  
   return (
         <Card
         title="Helpie"

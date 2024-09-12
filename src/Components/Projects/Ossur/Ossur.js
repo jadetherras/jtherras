@@ -18,9 +18,9 @@ const Ossur = () => {
   const ossur = "https://www.ossur.com/de-ch"
   
   return (
-        <Card
-        title="Össur - intership"
-        bodyText="R&D biomecanical solution - knee and foot prosthesis"
+         <Card
+        title="Össur - internship"
+        bodyText="R&D biomechanical solution - knee and foot prosthesis"
         linkText="Learn More"
         cardContent={<div>
           <h3 align="left">Össur </h3>
@@ -28,14 +28,14 @@ const Ossur = () => {
           Össur is a company based in Iceland that develops, 
           manufactures and sells non-invasive equipment for orthopaedics, 
           including bracing and support products, compression therapy, and prosthetics. <br/>
-          I had the incredible opportunity to do a 6 months internship in the R&D biomecanical solution departement 
+          I had the incredible opportunity to do a 6 months internship in the R&D biomechanical solution department 
           of Össur. 
          </p>
          <h3 align="left">Internship subject </h3>
           <p align="left">
             My main goal was to improve a hydraulic knee prototype using a carbon spring, starting from Mauch knee. 
             Along other project, I worked on a small test for a piece on total knee. I also worked on a friction test, and 
-            created a userfriendly interface with python. Finally I worked on a new pyramid fixature for the pro-flex modular feet. 
+            created a user friendly interface with python. Finally I worked on a new pyramid fixture for the pro-flex modular feet. 
             <br/>
             I worked with solidWork (modelling and stress simulation), 3D printing, prototyping, python. 
           </p>
@@ -44,14 +44,16 @@ const Ossur = () => {
             <Col>
           <Image src={total} alt="total"  width="100%" rounded fluid className="position-relative z-index-1" />
           </Col><Col>
-          <Image src={mauch} alt="mauch" width="100%" rounded fluid className="position-relative z-index-1" />
+          <Image src={feet} alt="team" width="100%" rounded fluid className="position-relative z-index-1" />
+          
           </Col>
           <Col>
-          <Image src={feet} alt="team" width="100%" rounded fluid className="position-relative z-index-1" />
+          <Image src={mauch} alt="mauch" width="100%" rounded fluid className="position-relative z-index-1" />
+          
           </Col>
           </Row>
           </Col>
-                <p>Total knee - mauch knee - proflex modular</p>
+                <p>Total knee - proflex modular - mauch knee</p>
                 <div>
                 <button class="button-48" role="button" onClick={() =>window.open(ossur)}><span class="text"><CgWebsite />Visit Össur website</span></button><br/>
                  </div>

@@ -33,7 +33,7 @@ const Helpie = () => {
   return (
         <Card
         title="Helpie"
-        bodyText="An app to help neurodivergent and mental impaired people use public transport"
+        bodyText="An app to help neurodivergent and mentally impaired people use public transport"
         linkText="Learn More"
         cardContent={<div>
           <h3 align="left">Why Helpie ? </h3>
@@ -61,9 +61,8 @@ const Helpie = () => {
           </p>
           <h3 align="left">EuroTeQ </h3>
           <p align="left">
-          The project had the honnor to be selected to represent EPFL in the 2024 EuroTeQaThon in Paris, organized by <hard>EuroTeQ</hard>. </p>
+          The project had the honor to be selected to represent EPFL in the 2024 EuroTeQaThon in Paris, organized by <hard>EuroTeQ</hard>. </p>
  
-          
                 <br/>
                 <Image src={team} alt="EPFL ATC team at EuroTeQ" rounded fluid className="position-relative z-index-1" />
                 <br/>

@@ -8,6 +8,7 @@ import Button from 'react-bootstrap/Button';
 import { IoIosPhonePortrait } from "react-icons/io";
 import { TfiEmail } from "react-icons/tfi";
 import { FaLinkedin } from "react-icons/fa";
+import "./button.css";
 
 
 const Contacts = () => {
@@ -17,19 +18,22 @@ const Contacts = () => {
     return (
     <Container className="my-5 mx-10">
         <h1>Contacts</h1>&nbsp;
+        
       <Row className="justify-content-md-center gap-3">
-        <Button variant="primary" onClick={() =>window.open(tel)}>
-            <IoIosPhonePortrait />&nbsp;
-            +33 6 58 81 40 83
-        </Button>
-        <Button variant="primary" onClick={() =>window.open(email)}>
-            <TfiEmail />&nbsp;
-            jade.therras@epfl.ch
-        </Button>
-        <Button variant="primary" onClick={() =>window.open(linkedin)}>
-                <FaLinkedin />&nbsp;
-                jade therras
-        </Button>
+      <button class="button-48" role="button" 
+        onClick={() =>window.open(tel)}
+        ><span class="text"><IoIosPhonePortrait />&nbsp;
+        +33 6 58 81 40 83</span></button>
+
+        <button class="button-48" role="button" 
+        onClick={() =>window.open(email)}
+        ><span class="text"><TfiEmail />&nbsp;
+            jade.therras@epfl.ch</span></button>
+
+        <button class="button-48" role="button" 
+        onClick={() =>window.open(linkedin)}
+        ><span class="text"><FaLinkedin />&nbsp;
+                jade Therras</span></button>
       </Row>
     </Container>
   );

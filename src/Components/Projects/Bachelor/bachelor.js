@@ -25,7 +25,7 @@ const Bachelor = () => {
             <p align="left">
             The project have been hosted by the laboratory of topology and neurosciences of EPFL. <br/><br/>
             Reducing and visualizing high dimensional data is a complex challenge, yet is an essential element of
-research in computational biology. This paper examinate a particular type of high dimensional
+research in computational biology. This paper examine a particular type of high dimensional
 data called RNA velocity, which consists of a point cloud of single cell RNA expression values along with
 RNA velocity vectors. Visualizing RNA velocity in low dimensions requires a method to embed both the
 point cloud and the velocity vector field.<br/><br/>

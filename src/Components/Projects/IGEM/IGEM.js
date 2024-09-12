@@ -40,8 +40,8 @@ const IGEM = ({ isIGEMExpanded, setIsIGEMExpanded }) => {
            <div align="center"><ReactPlayer url={introdvideo} width="100%" /></div> <br/>
            <h3 align="left">What is 48C ?</h3>
            <p align="left">
-            IGEM is an international synthetic biology competition in which teams design and implement engineered biological-based systems to address problems. <br/>
-            Human practices are at the center of the project. Along with biology, teams organise events, collaborate and meet professionals.
+            IGEM is an international synthetic biology competition : each team design and implement engineered biological-based systems to address problems. <br/>
+            Human practices are central to the project. Along with biology, teams organize events, collaborate, enhance education and meet professionals.
            <br/><br/>
            Cadmium stands as one of the most detrimental heavy metals to human health.
            The dangerous nature of cadmium has led in the past decade to the introduction of measures restricting its use in Europe. 
@@ -51,16 +51,16 @@ const IGEM = ({ isIGEMExpanded, setIsIGEMExpanded }) => {
            <br/><br/>
            The EPFL IGEM team have engineered an E. Coli strain to produce two key proteins: a mucus-binding protein called SpaC and a cadmium-specific binding protein known as EC20.<br/>
 The mucus-binding protein will implant our probiotic into the intestine and our cadmium binding protein will allow it to collect any cadmium ions present there. As the mucus naturally turns over, our probiotic will eventually exit the body, cleansing it of cadmium.
-As a safety precaution, the production of the SpaC protein is halted once it enters the body, and the protein naturally degrades over time, allowing the bacteria to be released. To prevent environmental spread and genetic exchange with other organisms, the bacteria are auxotrophic and have specific genetic mutations that prevent horizontal gene transfer.
+As a safety precaution, the production of the SpaC protein is halted once it enters the body, and the protein naturally degrades over time, allowing the bacteria to be released. To prevent environmental spread and genetic exchange with other organisms, the bacteria are autotroph and have specific genetic mutations that prevent horizontal gene transfer.
            </p>
           <h3 align="left">Bioquest - An educational game !</h3>
           <table cellspacing="50">
           <tr>
           <td>
-          <p align="left">Education about synthetic biology is a major concern. 48C have deep into vulgarisation by developping and proposing a game, Bioquest, introducing synthetic biology basics to the public. <br/>
+          <p align="left">Education about synthetic biology is a major concern. 48C have deep into vulgarization by developing and proposing a game, Bioquest, introducing synthetic biology basics to the public. <br/>
           The game is divided into two different parts. <br/>
           The main game takes the player into the discovery of some of synthetic biology’s main advancement (such as GFP, ampicillin…) through 48C’s project: catching cadmium. 
-          Fifteen different minigames will take the player through lab work and safety as well as some biological concepts. <br/>
+          Fifteen different mini-games will take the player through lab work and safety as well as some biological concepts. <br/>
           Moreover, 48C have created a mini-IGEM competition, BSGV, for younger student in our local town in switzerland.
           </p>
           </td>
@@ -72,7 +72,9 @@ As a safety precaution, the production of the SpaC protein is halted once it ent
           <img src={videobioquest} alt="tutorial of bioquest" width="75%" ></img>
           <h3 align="left">Awards</h3>
           <p align="left">
-            Our team had the honor to receive a gold medal, the best education prize and 2 nominations (best therapeutics project, safety and security award)
+            Our team had the honor to receive a gold medal, 
+            the best education prize and 2 nominations 
+            (best therapeutics project, safety and security award)
           </p>
                 <br/>
                 <Col> 

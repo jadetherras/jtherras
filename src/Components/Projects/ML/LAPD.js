@@ -20,7 +20,7 @@ const LAPD = () => {
   return (
         <Card
         title="GHI predictor"
-        bodyText="Predicting GHI from webcam images and meteo data using CNN, LSTM and visual transformer"
+        bodyText="Predicting GHI from webcam images and weather data using CNN, LSTM and visual transformer"
         linkText="Learn More"
         cardContent={<div>
             <h3 align="left">The project</h3>
@@ -40,7 +40,7 @@ To this day, GHI predictions are predominantly supplied
 by meteorological companies that rely on satellite imagery and complex algorithms. However, these predictions
 often lack spatial resolution i.e. they are not precise for small
 areas. Moreover, they may not be highly accurate for specific
-timeframes. Consequently, the objective of this project is to
+timescales. Consequently, the objective of this project is to
 develop a machine learning algorithm capable of generating
 accurate local predictions of the GHI two hours after the
 sampling of meteorological data (such as wind, current GHI,
@@ -53,13 +53,13 @@ situated on the EPFL campus.
           Three distinct model architectures were built on
 this basis. The first two models use a combination of Convolutional Neural Network (CNN)
 and Long Short Term Memory (LSTM) units and combine
-images and meteo data in distinct ways. The third one is
+images and weather data in distinct ways. The third one is
 based on an image-free dataset and therefore only relies on
 Multi-Layer Perceptron (MLP) combinations with LSTMs.
 Finally, an entirely different architecture has been put in
 place to make a fourth model which uses vision
 transformers on the images and finally combines it with
-the meteo data with MLP layers. <br/>
+the weather data with MLP layers. <br/>
 To know more about the models and result, see the project report.
           </p>
           <h3 align="left">Personal work</h3>

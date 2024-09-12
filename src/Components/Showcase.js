@@ -45,6 +45,7 @@ const Showcase = () => {
       <Bacteria /><Bacteria /><Bacteria /><Bacteria /></>}
       <h1>Projects</h1>&nbsp;
         <Col align="justify-content-md-center"> 
+         
           <Box class="highlight" >
           <h1>Highlight</h1>&nbsp;
           <Row className="justify-content-md-center gap-3">
@@ -53,6 +54,7 @@ const Showcase = () => {
         <NeuralInterface />
         </Row>
           </Box>
+
           <br/><br/>
           <Row className="justify-content-md-center gap-3">
             <Ossur/>

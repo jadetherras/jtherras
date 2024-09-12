@@ -15,7 +15,7 @@ const TNE = () => {
   
   return (
         <Card
-        title={<p align="left">BCI with<br/> sensory feedback</p>}
+        title={<p align="left">A BCI with<br/> sensory feedback</p>}
         bodyText={<div>Restoring natural motor and sensory
 function after spinal cord injury
             </div>}
@@ -23,10 +23,11 @@ function after spinal cord injury
         cardContent={<div>
             <h3 align="left">The project</h3>
             <p align="left">
- This project, conducted for the course of Translational neuroengineering of EPFL, explore possibilities for restoring sensory feedback in patients already implanted with a brain-spine interface (BSI) for motor control. <br/><br/>
- A BSI is a system aiming to create a digital bridge between the brain and the spinal cord to restore information flow after a
+ This project, conducted for the course of Translational neuro-engineering of EPFL,
+  explore possibilities for restoring sensory feedback in patients already implanted with a brain-spine interface (BSI) for motor control. <br/><br/>
+ A brain computer interface (BSI) is a system aiming to create a digital bridge between the brain and the spinal cord to restore information flow after a
 spinal cord injury. Sensory feedback restitution, especially proprioception, would be a sensible improvement for patients. <br/>
-          The project focussed on research. We explored the state of the art and how we may improve the feedback with both non-invasive (vibrostimulation) and more invasible methods (Spinal cord or brain stimulation). 
+          The project focussed on research. We explored the state of the art and how we may improve the feedback with both non-invasive (vibrostimulation) and more invasive methods (Spinal cord or brain stimulation). 
           We developed a device using sensors along the legs and foot, electrodes for brain stimulations and explored stimulation pattern and generators. 
           The project also proposed a plan for approvals and clinical trials, and explored the project limitations. 
           </p>

@@ -23,13 +23,13 @@ const Parapully = () => {
         cardContent={<div>
             <h3 align="left">Context</h3>
             <p align="left">Will it rain tomorrow at Pully ? Do we need a ParaPully ? Here is the machine learning project proposed by the EPFL introduction to machine learning course. <br/>
-            We had to code a machine that computes the probability of rain the next day in Pully.This prediction should be done based on the data collected over a few days from several meteo stations in Switzerland.
+            We had to code a machine that computes the probability of rain the next day in Pully. This prediction should be done based on the data collected over a few days from several weather stations in Switzerland.
             </p>
             <h3 align="left">Technical overview</h3>
             <p align="left">
             The machine was coded in Julia on Pluto notebooks. 
-            In deep data cleaning, vizualisation and exploration was done. 
-            Following this step, multiple models was inverstigated : Logistic classifier, KNN classifier, RandomForest classifier and
+            In deep data cleaning, visualization and exploration was done. 
+            Following this step, multiple models was investigated : Logistic classifier, KNN classifier, RandomForest classifier and
             NeuralNetwork classifier.</p>
                 <div>
                 <button class="button-48" role="button" onClick={() =>window.open(git)}><span class="text"><FaGithub/>Go to git repository</span></button><br/>

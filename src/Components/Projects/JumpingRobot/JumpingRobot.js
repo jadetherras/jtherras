@@ -28,7 +28,7 @@ const JumpingRobot = () => {
   return (
         <Card
         title="Jumping Robot"
-        bodyText={<div>Optimise the jump of an homemade robot using data driven methods
+        bodyText={<div>Optimize the jump of an homemade robot using data driven methods
             </div>}
         linkText="Learn More"
         cardContent={<div>
@@ -46,7 +46,7 @@ practical applicability of our optimized design. This study showcases the potent
           </p>
           <h3 align="left">Personal work</h3>
           <p align="left">
- I was charged with the data-driven optimization part, implementing Genetic algorithm and Bayesian optimisation in Python, and developing a workflow to find the best parameters. 
+ I was charged with the data-driven optimization part, implementing Genetic algorithm and Bayesian optimization in Python, and developing a workflow to find the best parameters. 
  I was also involved in preliminary research, problem definition and parameters choice. 
             </p>
           <Image src={SR} alt="robot"  width="100%" rounded fluid className="position-relative z-index-1" />

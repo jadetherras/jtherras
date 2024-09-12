@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -28,9 +28,17 @@ const Showcase = () => {
   const [isVRExpanded, setIsVRExpanded] = useState(false);
   const [isRocketExpanded, setIsRocketExpanded] = useState(false);
 
+  const cardRef = useRef(null);
+
+  const closeCard = () => {
+    if (cardRef.current) {
+      cardRef.current.closeCard(); 
+    }
+  };
+
   return (
     <Container className="my-5 mx-10 ">
-      {isRocketExpanded && <TheRocket/>}
+    {isRocketExpanded && <TheRocket/>}
     {isVRExpanded &&
       <><Lantern/><Lantern/><Lantern/><Lantern/><Lantern/></>}
       {isIGEMExpanded && <><Bacteria />

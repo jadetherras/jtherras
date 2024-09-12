@@ -10,25 +10,24 @@ import "./About.css";
 const About = () => {
   return (
     <Container className="my-5 mx-10">
-      <Row>
-        <Col xs={12} md={4} className="position-relative">  
+      <Row className="d-flex align-items-stretch">
+        <Col xs={12} md={4} className="d-flex align-items-center justify-content-center">  
           <Image style={{zIndex: 2}} src={me} alt="Responsive image" roundedCircle fluid className="position-relative z-index-1 me" />
-          
         </Col>
-        <Col xs={12} md={8}  className="text-start">  
-          <h2>About Me</h2> 
-          <p>
-            Hi ! I'm Jade Therras. <br/>
+        <Col xs={12} md={8}  className="d-flex align-items-center justify-content-center">  
+          <p align="left">
+          <h2 align="left">About Me</h2><br/>
+            Hi ! I'm Jade Therras. <br/><br/>
             I have always wanted to understand how living individuals work, and aimed to have a, humble, good contribution to the world. 
             I believe that everyone should have a chance to live as he want, and have been quickly interested in rehabilitation, prosthesis and neursciences. 
-            Particularly, I'm passionate about assistive technology. <br/>
+            Particularly, I'm passionate about assistive technology. <br/><br/>
 
             Currently finishing a Master of Neurotechnology at EPFL, after a life sciences bachelor's degree in the same university, I'm now searching for a challenging master 
             project. <br/>
             I'm determined and have a lot of energy ! I also love to share and teach, at least as much as I love to learn. <br/>
             My values? Curiosity,
 polyvalence and courage
-            <br/>
+            <br/><br/>
             You will find below a selection of past projects.
           </p>  
         </Col>

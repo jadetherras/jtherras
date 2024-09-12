@@ -1,7 +1,7 @@
 
 .button-48 {
   appearance: none;
-  background-color: #ffffff5a;
+  background-color: var(--primary-color);
   border-width: 0;
   box-sizing: border-box;
   color: #000000;

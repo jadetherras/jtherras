@@ -119,6 +119,52 @@
   transition: opacity 1s ease;
 }
 
+.card.expanded .card-content > *:not(.card-title .card-content-container),
+.card.expanded .card-content {
+  opacity: 1;
+  transition: opacity 1s ease;
+  transform: translateY(0);
+  transition-delay: 0ms;
+}
+
+.card.expanded .card-title::after {
+  transform: scaleX(1);
+}
+
+.card.expanded .button {
+  opacity: 1;
+}
+
+/* Existing hover/focus-within styles */
+@media (hover) {
+  .card:hover .card-content > *:not(.card-title .card-content-container),
+  .card:focus-within .card-content > *:not(.card-title .card-content-container) {
+    opacity: 1;
+    transition: opacity 1s ease;
+    transition-delay: 0ms;
+  }
+
+  .card:hover .card-content,
+  .card:focus-within .card-content {
+    transform: translateY(0);
+    transition-delay: 00ms;
+  }
+
+  .card:focus-within .card-content {
+    transition-duration: 0ms;
+  }
+
+  .card:hover .card-title::after,
+  .card:focus-within .card-title::after {
+    transform: scaleX(1);
+  }
+
+  .card:hover .button,
+  .card:focus-within .button {
+    opacity: 1;
+  }
+}
+
   @media (hover) {
   
     .card:hover .card-content > *:not(.card-title .card-content-container),
@@ -155,11 +201,11 @@
     padding: 0.5em 1.25em;
     border-radius: 0.25rem;
     opacity: 0;
+    transition: opacity 0.5s ease;
   }
   
   .button:hover,
   .button:focus {
     background-color: var(--blanck-color);
   }
-
   

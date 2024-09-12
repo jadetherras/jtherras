@@ -1,31 +1,31 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, forwardRef, useImperativeHandle } from 'react';
 import './card.css';
 
 const empty = () => {
   return;
 };
 
-const Card = ({ title, bodyText, linkText, cardContent, backgroundImage, onExpand= empty}) => {
+const Card = forwardRef(({ title, bodyText, linkText, cardContent, backgroundImage, onExpand= empty}, ref) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [animationState, setAnimationState] = useState('initial');
   const [bodyState, setBodyState] = useState('visible');
   const [containerState, setContainerState] = useState('hidden');
 
+  useImperativeHandle(ref, () => ({
+    closeCard
+  }));
+
+
   const handleExpandClick = () => {
     if (isExpanded) {
-      setContainerState('visible');
-      setBodyState('fading-out');
-      setTimeout(() => {
-        setAnimationState('collapsing');
-        onExpand(false);
-      }, 1000);
-        setTimeout(() => {
-          setContainerState('hidden');
-          setTimeout(() => {
-            setBodyState('fading-in');
-          }, 1000);
-        }, 1000);
+      closeCard();
     } else {
+      openCard();
+    }
+  };
+
+  const openCard = () => {
+    if (!isExpanded) {
       setAnimationState('expanding');
       setBodyState('fading-out');
       setTimeout(() => {
@@ -33,9 +33,26 @@ const Card = ({ title, bodyText, linkText, cardContent, backgroundImage, onExpan
         setTimeout(() => {
           setBodyState('fading-in');
           setContainerState('fading-in');
-        }, 2000); 
+        }, 1500);
       }, 1000);
       onExpand(true);
+    }
+  };
+
+  const closeCard = () => {
+    if (isExpanded) {
+      setContainerState('visible');
+      setBodyState('fading-out');
+      setTimeout(() => {
+        setAnimationState('collapsing');
+        onExpand(false);
+      }, 1000);
+      setTimeout(() => {
+        setContainerState('hidden');
+        setTimeout(() => {
+          setBodyState('fading-in');
+        }, 1000);
+      }, 1000);
     }
   };
 
@@ -72,12 +89,12 @@ const Card = ({ title, bodyText, linkText, cardContent, backgroundImage, onExpan
             {cardContent}
           </div>
         </div>
-        <button className="button" onClick={handleExpandClick}>
-          {isExpanded ? 'Collapse' : linkText}
+        <button className={'button ${animationState}'} onClick={handleExpandClick}>
+          {isExpanded ? 'Close' : linkText}
         </button>
       </div>
     </div>
   );
-};
+});
 
 export default Card;

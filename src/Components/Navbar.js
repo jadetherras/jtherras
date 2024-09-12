@@ -48,7 +48,7 @@ const Header = () => {
               </Overlay>
             </div>
             <Nav.Link onClick={() =>window.open("https://github.com/jadetherras")}>Github</Nav.Link>
-            <Nav.Link href="#Contacts">Contacts</Nav.Link>
+            <Nav.Link href="#Contacts">Contact</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

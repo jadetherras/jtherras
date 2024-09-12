@@ -17,7 +17,7 @@ const Contacts = () => {
     const tel = "tel:+33658814083"
     return (
     <Container className="my-5 mx-10">
-        <h1>Contacts</h1>&nbsp;
+        <h1>Contact</h1>&nbsp;
         
       <Row className="justify-content-md-center gap-3">
       <button class="button-48" role="button" 

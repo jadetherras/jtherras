@@ -77,8 +77,10 @@ const Card = forwardRef(({ title, bodyText, linkText, cardContent, backgroundIma
       className={`card ${animationState}`}
       style={{ '--background-image': `url(${backgroundImage})` }}
     >
+       
       <div className="card-content">
         <div className="card-main-content">
+       
           <h2 className="card-title">{title}</h2>
           <p className={`card-body ${bodyState}`}>
               {bodyText}

@@ -60,13 +60,17 @@
     transform: scaleX(0);
   }
 
-/* Body text moves below the title and above the container */
 .card-body {
   color: rgb(255, 255, 255 / 0.85);
   opacity: 1;
   transform: translateY(0);
   margin: 0;
   transition: opacity 1s ease;
+  }
+
+  .short {
+    position: absolute;
+    align-content: top right;
   }
 
   .card-body.fading-out {

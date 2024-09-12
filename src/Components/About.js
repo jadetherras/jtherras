@@ -18,12 +18,18 @@ const About = () => {
         <Col xs={12} md={8}  className="text-start">  
           <h2>About Me</h2> 
           <p>
-            Hi ! I'm Jade. <br/>
+            Hi ! I'm Jade Therras. <br/>
+            I have always wanted to understand how living individuals work, and aimed to have a, humble, good contribution to the world. 
+            I believe that everyone should have a chance to live as he want, and have been quickly interested in rehabilitation, prosthesis and neursciences. 
+            Particularly, I'm passionate about assistive technology. <br/>
+
+            Currently finishing a Master of Neurotechnology at EPFL, after a life sciences bachelor's degree in the same university, I'm now searching for a challenging master 
+            project. <br/>
+            I'm determined and have a lot of energy ! I also love to share and teach, at least as much as I love to learn. <br/>
+            My values? Curiosity,
+polyvalence and courage
             <br/>
-            I'm a student at EPFL. I did a bachelor in life sciences ingenieuring, and I'm currently finishing a master degree in neurotechnology.<br/>
-            I'm highly interested in assistive technology, as well as education and prototyping.<br/>
-            <br/>
-            You will find below a collection of past projects.
+            You will find below a selection of past projects.
           </p>  
         </Col>
       </Row>

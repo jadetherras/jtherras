@@ -1,0 +1,24 @@
+.spacer {
+  margin-top: 50px;
+  padding: 20px; 
+  width: 100%; 
+  position: relative;
+  font-size: 30px;
+
+  .mask {
+    overflow: hidden;
+    height: 20px;
+
+    &:after {
+      content: '';
+      display: block;
+      margin: -25px auto 0;
+      width: 100%;
+      height: 25px;
+
+      /* Replace compass border-radius with native CSS */
+      border-radius: 125px / 12px;
+      box-shadow: 0 0 8px rgb(0, 0, 0);
+    }
+  }
+}

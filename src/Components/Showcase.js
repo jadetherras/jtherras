@@ -22,6 +22,8 @@ import Lantern from '../Animation/Lantern/Lantern';
 import TheRocket from '../Animation/Rocket/rocket';
 import Ossur from './Projects/Ossur/Ossur';
 
+import Separator from './separator';
+
 
 const Showcase = () => {
   const [isIGEMExpanded, setIsIGEMExpanded] = useState(false);
@@ -55,18 +57,37 @@ const Showcase = () => {
         </Row>
           </Box>
 
-          <br/><br/>
+          <Separator Text="Rehabilitation and neurosciences"/>
           <Row className="justify-content-md-center gap-3">
             <Ossur/>
-          <Haptic />
-        <TNE />
-        <LAPD />
-        <VR isVRExpanded={isVRExpanded} setIsVRExpanded={setIsVRExpanded} />
-        <JumpingRobot />
-       <Bachelor />
-        <Rocket isRocketExpanded={isRocketExpanded} setIsRocketExpanded={setIsRocketExpanded} />
-        <Parapully />
-        </Row>
+            <Haptic />
+            <TNE />
+            <NeuralInterface />
+            </Row>
+
+            <Separator Text="Machine Learning"/>
+            <Row className="justify-content-md-center gap-3">
+              <LAPD />
+              <Parapully />
+            </Row>
+
+            <Separator Text="Associative and MAKE projects"/>
+            <Row className="justify-content-md-center gap-3">
+            <Helpie />
+            <IGEM isIGEMExpanded={isIGEMExpanded} setIsIGEMExpanded={setIsIGEMExpanded} />
+            <Rocket isRocketExpanded={isRocketExpanded} setIsRocketExpanded={setIsRocketExpanded} />
+            </Row>
+
+            <Separator Text="Other projects"/>
+            <Row className="justify-content-md-center gap-3">
+            <JumpingRobot />
+            <VR isVRExpanded={isVRExpanded} setIsVRExpanded={setIsVRExpanded} />
+            <Bachelor />
+            </Row>
+        
+        
+        
+        
         </Col>
     </Container>
   );

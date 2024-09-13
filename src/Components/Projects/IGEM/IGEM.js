@@ -95,6 +95,8 @@ As a safety precaution, the production of the SpaC protein is halted once it ent
           }
         backgroundImage={logo}
         onExpand ={setIsIGEMExpanded}
+        time="2023 - 2024"
+        type="International competition"
       />
   );
 }

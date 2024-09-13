@@ -61,6 +61,8 @@ practical applicability of our optimized design. This study showcases the potent
                 </div>
           }
         backgroundImage={JR}
+        time="Spring 2024"
+        type="Course project"
       />
   );
 }

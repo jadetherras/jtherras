@@ -38,6 +38,8 @@ spinal cord injury. Sensory feedback restitution, especially proprioception, wou
                 </div>
           }
         backgroundImage={device}
+        time="Spring 2023"
+        type="Course project"
       />
   );
 }

@@ -60,6 +60,8 @@ const Ossur = () => {
                 </div>
           }
         backgroundImage={logo}
+        time="Winter 2022"
+        type="Internship"
       />
   );
 }

@@ -77,6 +77,8 @@ To know more about the models and result, see the project report.
                 </div>
           }
         backgroundImage={sky}
+        time="Winter 2023"
+        type="Course project"
       />
   );
 }

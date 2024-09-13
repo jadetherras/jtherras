@@ -66,6 +66,8 @@ become who you really are.
           }
         backgroundImage={logo}
         onExpand={setIsVRExpanded}
+        time="Spring 2023"
+        type="Course project"
       />
   );
 }

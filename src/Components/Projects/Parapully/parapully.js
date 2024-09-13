@@ -39,6 +39,8 @@ const Parapully = () => {
                 </div>
           }
         backgroundImage={sky}
+        time="Winter 2021"
+        type="Course project"
       />
   );
 }

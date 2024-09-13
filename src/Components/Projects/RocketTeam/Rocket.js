@@ -58,6 +58,8 @@ const Rocket = ({isRocketExpanded, setIsRocketExpanded}) => {
           }
         backgroundImage={couv}
         onExpand={setIsRocketExpanded}
+        time="2020 - 2021"
+        type="Associative project"
       />
   );
 }

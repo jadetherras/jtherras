@@ -70,6 +70,8 @@ const NeuralInterface = () => {
                 </div>
           }
         backgroundImage={couv}
+        time="Winter 2023"
+        type="Course project / personal"
       />
   );
 }

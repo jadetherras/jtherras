@@ -51,6 +51,8 @@ field by current embedding methods.
                 </div>
           }
         backgroundImage={image}
+        time="Spring 2022"
+        type="semester project"
       />
   );
 }

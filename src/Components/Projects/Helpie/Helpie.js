@@ -81,6 +81,8 @@ const Helpie = () => {
                 </div>
           }
         backgroundImage={helpie}
+        time="Spring 2024"
+        type = "Course project"
       />
   );
 }

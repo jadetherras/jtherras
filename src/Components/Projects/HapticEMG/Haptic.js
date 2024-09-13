@@ -40,6 +40,8 @@ const Haptic = () => {
                 </div>
           }
         backgroundImage={couv}
+        time="Spring 2024"
+        type="Course project"
       />
   );
 }

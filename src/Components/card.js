@@ -1,11 +1,15 @@
 import React, { useState, useEffect, forwardRef, useImperativeHandle } from 'react';
 import './card.css';
+import { IoTimer } from "react-icons/io5";
+import { FaLightbulb } from "react-icons/fa6";
+
+
 
 const empty = () => {
   return;
 };
 
-const Card = forwardRef(({ title, bodyText, linkText, cardContent, backgroundImage, onExpand= empty}, ref) => {
+const Card = forwardRef(({ title, bodyText, linkText, cardContent, backgroundImage, time = "",type = "",onExpand= empty}, ref) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [animationState, setAnimationState] = useState('initial');
   const [bodyState, setBodyState] = useState('visible');
@@ -77,8 +81,10 @@ const Card = forwardRef(({ title, bodyText, linkText, cardContent, backgroundIma
       className={`card ${animationState}`}
       style={{ '--background-image': `url(${backgroundImage})` }}
     >
-       
+      
       <div className="card-content">
+      <div className="short">{time}<IoTimer style={{width: '25px', height: '25px' }}/><br/>
+      {type}<FaLightbulb style={{width: '25px', height: '25px' }}/></div>
         <div className="card-main-content">
        
           <h2 className="card-title">{title}</h2>

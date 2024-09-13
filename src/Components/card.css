@@ -19,7 +19,7 @@
     background-color: aliceblue;
     background-size: cover;
     background-position: center center;
-    padding: 5rem 0 0;
+    padding: 0rem 0 0;
     max-width: 35ch;
     width: 100%;
     border-radius: 0.5rem;
@@ -69,8 +69,24 @@
   }
 
   .short {
+    position: relative;
+    text-align: right;
+    padding: 0 0 4rem;
+    font-size: 1rem;
+    opacity: 0;
+  }
+
+  .short::after {
+    content: "";
     position: absolute;
-    align-content: top right;
+    height: calc(100% );
+    width: 4px;
+    right: -10px;
+    top: calc(var(--padding) * -1);
+    background: var(--primary-color);
+    transform-origin: top;
+    transition: transform 700ms ease;
+    transform: scaleY(0);
   }
 
   .card-body.fading-out {
@@ -137,11 +153,14 @@
   transform: scaleX(1);
 }
 
+.card.expanded .short::after {
+  transform: scaleX(1);
+}
+
 .card.expanded .button {
   opacity: 1;
 }
 
-/* Existing hover/focus-within styles */
 @media (hover) {
   .card:hover .card-content > *:not(.card-title .card-content-container),
   .card:focus-within .card-content > *:not(.card-title .card-content-container) {
@@ -165,38 +184,23 @@
     transform: scaleX(1);
   }
 
+  .card:hover .short::after,
+  .card:focus-within .short::after {
+    transform: scaleX(1);
+  }
+
   .card:hover .button,
   .card:focus-within .button {
     opacity: 1;
   }
+
+  .card:hover .short,
+  .card:focus-within .short {
+    opacity: 1;
+    
+  }
+
 }
-
-  @media (hover) {
-  
-    .card:hover .card-content > *:not(.card-title .card-content-container),
-    .card:focus-within .card-content > *:not(.card-title .card-content-container) {
-      opacity: 1;
-      transition: opacity 1s ease;
-      transition-delay: 0ms;
-    }
-  
-    .card:hover .card-content,
-    .card:focus-within .card-content {
-      transform: translateY(0);
-      transition-delay: 00ms;
-    }
-  
-    .card:focus-within .card-content {
-      transition-duration: 0ms;
-    }
-
-    .card:hover .card-title::after,
-  .card:focus-within .card-title::after {
-    transform: scaleX(1);
-  }
-  
-  }
-  
   .button {
     align-self: center;
     margin-top: auto;

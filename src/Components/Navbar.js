@@ -87,7 +87,7 @@ const Header = ({setANIM}) => {
           <div ref={ref2} className="d-flex align-items-center ms-auto"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}>
-              <div className="navbar-text" >Animation</div>
+              <div className="anim-text" >Animation</div>
               <Overlay
                 show={show2}
                 target={target2}

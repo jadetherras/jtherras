@@ -10,9 +10,16 @@
     
 }
 
+.anim-text {
+    text-align: center;
+    color: var(--bg-color);
+    background-color: var(--primary-color);
+    
+}
+
 
 @media (max-width: 768px) {
-    .navbar-text {
+    .anim-text {
         opacity: 0;
     }
 

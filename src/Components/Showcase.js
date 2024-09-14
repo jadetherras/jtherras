@@ -25,17 +25,14 @@ import Rain from '../Animation/rain/rain';
 
 
 import Separator from './separator';
-
-
 const Showcase = ({Animation}) => {
-
   const [isIGEMExpanded, setIsIGEMExpanded] = useState(false);
   const [isVRExpanded, setIsVRExpanded] = useState(false);
   const [isRocketExpanded, setIsRocketExpanded] = useState(false);
   const [isRaining, setIsRaining] = useState(false);
 
   return (
-    <Container className="my-5 mx-10 ">
+    <Container>
     {Animation && isRaining && <Rain/>}
     {Animation && isRocketExpanded && <TheRocket/>}
     {Animation && isVRExpanded &&
@@ -43,11 +40,13 @@ const Showcase = ({Animation}) => {
       {Animation && isIGEMExpanded && <><Bacteria />
       <Bacteria /><Bacteria /><Bacteria /><Bacteria /></>}
       <h1>Projects</h1>&nbsp;
+
+
         <Col align="justify-content-md-center"> 
          
           <Box class="highlight" >
           <h1>Highlight</h1>&nbsp;
-          <Row className="justify-content-md-center gap-3">
+          <Row className="d-flex justify-content-center gap-3">
           <Helpie />
         <IGEM setIsIGEMExpanded={setIsIGEMExpanded} />
         <NeuralInterface />
@@ -55,7 +54,7 @@ const Showcase = ({Animation}) => {
           </Box>
 
           <Separator Text="Rehabilitation and neurosciences"/>
-          <Row className="justify-content-md-center gap-3">
+          <Row className="d-flex justify-content-center gap-3">
             <Ossur/>
             <Haptic />
             <TNE />
@@ -63,20 +62,20 @@ const Showcase = ({Animation}) => {
             </Row>
 
             <Separator Text="Machine Learning"/>
-            <Row className="justify-content-md-center gap-3">
+            <Row className="d-flex justify-content-center gap-3">
               <LAPD setIsLAPDExpanded={setIsRaining}/>
               <Parapully setIsPPExpanded={setIsRaining}/>
             </Row>
 
             <Separator Text="Associative and MAKE projects"/>
-            <Row className="justify-content-md-center gap-3">
+            <Row className="d-flex justify-content-center gap-3">
             <Helpie />
             <IGEM setIsIGEMExpanded={setIsIGEMExpanded} />
             <Rocket setIsRocketExpanded={setIsRocketExpanded} />
             </Row>
 
             <Separator Text="Other projects"/>
-            <Row className="justify-content-md-center gap-3">
+            <Row className="d-flex justify-content-center gap-3">
             <JumpingRobot />
             <VR setIsVRExpanded={setIsVRExpanded} />
             <Bachelor />

@@ -1,24 +1,22 @@
-import React, { useState, useEffect, forwardRef, useImperativeHandle } from 'react';
+import React, { useState, useEffect, forwardRef, useImperativeHandle, useRef } from 'react';
 import './card.css';
 import { IoTimer } from "react-icons/io5";
 import { FaLightbulb } from "react-icons/fa6";
 
+const empty = () => {};
 
-
-const empty = () => {
-  return;
-};
-
-const Card = forwardRef(({ title, bodyText, linkText, cardContent, backgroundImage, time = "",type = "",onExpand= empty}, ref) => {
+const Card = forwardRef(({ title, bodyText, linkText, cardContent, backgroundImage, time = "", type = "", onExpand = empty }, ref) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [animationState, setAnimationState] = useState('initial');
   const [bodyState, setBodyState] = useState('visible');
   const [containerState, setContainerState] = useState('hidden');
+  const [isVisible, setIsVisible] = useState(false);
+  
+  const cardRef = useRef(null); // Ref for the card element
 
   useImperativeHandle(ref, () => ({
     closeCard
   }));
-
 
   const handleExpandClick = () => {
     if (isExpanded) {
@@ -61,6 +59,26 @@ const Card = forwardRef(({ title, bodyText, linkText, cardContent, backgroundIma
   };
 
   useEffect(() => {
+    // Use IntersectionObserver to detect visibility
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { threshold: 1.0 } // Adjust this value as needed
+    );
+
+    if (cardRef.current) {
+      observer.observe(cardRef.current);
+    }
+
+    return () => {
+      if (cardRef.current) {
+        observer.unobserve(cardRef.current);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
     let timer;
     if (animationState === 'expanding') {
       timer = setTimeout(() => {
@@ -78,26 +96,26 @@ const Card = forwardRef(({ title, bodyText, linkText, cardContent, backgroundIma
 
   return (
     <div
-      className={`card ${animationState}`}
+      ref={cardRef}
+      className={`card ${animationState} ${isVisible ? 'visible-on-screen' : ''}`}
       style={{ '--background-image': `url(${backgroundImage})` }}
     >
-      
       <div className="card-content">
-      <div className="short">{time}<IoTimer style={{width: '25px', height: '25px' }}/><br/>
-      {type}<FaLightbulb style={{width: '25px', height: '25px' }}/></div>
+        <div className="short">
+          {time}<IoTimer style={{ width: '25px', height: '25px' }} /><br />
+          {type}<FaLightbulb style={{ width: '25px', height: '25px' }} />
+        </div>
         <div className="card-main-content">
-       
           <h2 className="card-title">{title}</h2>
           <p className={`card-body ${bodyState}`}>
-              {bodyText}
-            </p>
-          
+            {bodyText}
+          </p>
 
           <div className={`card-content-container ${containerState}`}>
             {cardContent}
           </div>
         </div>
-        <button className={'button ${animationState}'} onClick={handleExpandClick}>
+        <button className={`button ${animationState}`} onClick={handleExpandClick}>
           {isExpanded ? 'Close' : linkText}
         </button>
       </div>

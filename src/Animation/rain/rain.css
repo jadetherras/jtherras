@@ -1,0 +1,29 @@
+.rain-container {
+  position: fixed; /* Ensures it stays in place and covers the full page */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  pointer-events: none; /* Makes sure the raindrops don't interfere with user interactions */
+  overflow: hidden; /* Ensures no content spills out */
+  z-index: 100; /* Ensures it's above other content */
+}
+
+.rain-container i {
+  position: absolute;
+  height: 100px; /* Set height for raindrop */
+  display: block;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fall {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(100vh); /* Moves the raindrop down the full height */
+  }
+}
+  

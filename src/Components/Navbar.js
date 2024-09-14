@@ -10,9 +10,25 @@ import cvfr from "../Assets/CVfr.pdf";
 import cven from "../Assets/CVen.pdf";
 import './Navbar.css';
 
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Switch from '@mui/material/Switch';
 
-const Header = () => {
+const theme = createTheme({
+  components: {
+    MuiSwitch: {
+      styleOverrides: {
+        thumb: {
+          backgroundColor: 'rgba(255, 255, 255, 1)',
+        },
+        track: {
+          backgroundColor: 'rgba(255, 255, 255, 1)',
+        }
+      },
+    },
+  },
+});
 
+const Header = ({setANIM}) => {
     const [show, setShow] = useState(false);
     const [target, setTarget] = useState(null);
     const ref = useRef(null);
@@ -21,12 +37,30 @@ const Header = () => {
       setShow(!show);
       setTarget(event.target);
     };
+
+    const [show2, setShow2] = useState(false);
+    const [target2, setTarget2] = useState(null);
+    const ref2 = useRef(null);
+    
+    const handleMouseEnter = () => {
+      setShow2(true);
+      setTarget2(ref2.current);
+    };
+  
+    const handleMouseLeave = () => {
+      setShow2(false);
+    };
+
+    const handleSwitchChange = (event) => {
+      setANIM(event.target.checked);
+    };
+
   return (
     <>
       <Navbar className='navbar' data-bs-theme="dark" sticky="top" >
-        <Container>
-          <Nav className="mx-auto">
-            <Nav.Link href="#About">Jade Therras</Nav.Link>
+        <Container className="position-relative d-flex align-items-center justify-content-between">
+          <Nav className="position-absolute start-50 translate-middle-x">
+            <Nav.Link href="#About">About</Nav.Link>
             <Nav.Link href="#Showcase">Showcase</Nav.Link>
             <div ref={ref}>
               <Nav.Link onClick={handleClick}>CV</Nav.Link>
@@ -50,8 +84,31 @@ const Header = () => {
             <Nav.Link onClick={() =>window.open("https://github.com/jadetherras")}>Github</Nav.Link>
             <Nav.Link href="#Contacts">Contact</Nav.Link>
           </Nav>
-        </Container>
+          <div ref={ref2} className="d-flex align-items-center ms-auto"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}>
+              <div className="navbar-text" >Animation</div>
+              <Overlay
+                show={show2}
+                target={target2}
+                placement="bottom"
+                container={ref2}
+                containerPadding={20}
+              >
+              <Popover id="popover-contained" style={{ position: 'absolute' }}>
+              <Popover.Body>
+                Fun animations appear for some projects ! You can desactivate them if needed
+              </Popover.Body>
+              </Popover>
+              </Overlay>
+              <ThemeProvider theme={theme}>
+                        <Switch defaultChecked onChange={handleSwitchChange} />
+                        </ThemeProvider>
+                    </div>
+          </Container>
       </Navbar>
+      
+      
     </>
   );
 }

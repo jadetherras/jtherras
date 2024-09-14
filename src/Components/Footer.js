@@ -18,15 +18,8 @@ const Footer = () => {
     };
   return (
     <>
-      <Navbar className='navbar' data-bs-theme="dark">
-        <Container>
-        <Nav className="mx-auto">
-        <Nav.Link href="#About" >Website by Jade Therras</Nav.Link>
-        </Nav>
-        </Container>
-      </Navbar>
       <div className="navbar-text">
-    <p>Build with React, homemade graphical assets and animations</p>
+    <p>Website by Jade Therras</p>
   </div>
     </>
   );

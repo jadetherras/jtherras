@@ -1,4 +1,4 @@
-﻿import React from 'react'
+﻿import React, { useState } from 'react';
 import Header from "./Navbar";
 import About from './About';
 import { Container } from 'react-bootstrap';
@@ -15,16 +15,18 @@ const Divider = () => {
 };
 
 const Home = () => {
+    const [ANIMATION, setANIMATION] = useState(false);
+
     return (
         <>
-            <Header/>
+            <Header setANIM = {setANIMATION}/>
             <section id = "About">
                 <About/>
             </section>
-            
-            <section id = "Showcase">
+        
+            <section id = "Showcase" >
                 <Divider/>
-                <Showcase/>
+                <Showcase Animation = {ANIMATION}/>
             </section>
             
             <section id = "Contacts">

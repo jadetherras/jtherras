@@ -11,7 +11,7 @@ import { FaGithub } from "react-icons/fa";
 import { PiPresentationChart } from "react-icons/pi";
 
 
-const Parapully = () => {
+const Parapully = ({setIsPPExpanded }) => {
   const git="https://github.com/jadetherras/ParaPully"
   const course="https://edu.epfl.ch/coursebook/en/introduction-to-machine-learning-for-bioengineers-BIO-322"
 
@@ -39,6 +39,7 @@ const Parapully = () => {
                 </div>
           }
         backgroundImage={sky}
+        onExpand ={setIsPPExpanded}
         time="Winter 2021"
         type="Course project"
       />

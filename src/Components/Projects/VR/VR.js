@@ -12,7 +12,7 @@ import { FaGithub } from "react-icons/fa";
 import { PiPresentationChart } from "react-icons/pi";
 import { FaFileAlt } from "react-icons/fa";
 
-const VR = ({isVRExpanded, setIsVRExpanded}) => {
+const VR = ({setIsVRExpanded}) => {
   const git ="https://github.com/jadetherras/HOVR"
   const course="https://edu.epfl.ch/coursebook/fr/virtual-reality-CS-444"
   const video="https://youtu.be/cdpJOEH0v8c"

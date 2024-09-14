@@ -16,34 +16,31 @@ import VR from './Projects/VR/VR';
 import Parapully from './Projects/Parapully/parapully';
 import Haptic from './Projects/HapticEMG/Haptic';
 import Rocket from './Projects/RocketTeam/Rocket';
+import Ossur from './Projects/Ossur/Ossur';
 
 import Bacteria from '../Animation/Bacteria';
 import Lantern from '../Animation/Lantern/Lantern';
 import TheRocket from '../Animation/Rocket/rocket';
-import Ossur from './Projects/Ossur/Ossur';
+import Rain from '../Animation/rain/rain';
+
 
 import Separator from './separator';
 
 
-const Showcase = () => {
+const Showcase = ({Animation}) => {
+
   const [isIGEMExpanded, setIsIGEMExpanded] = useState(false);
   const [isVRExpanded, setIsVRExpanded] = useState(false);
   const [isRocketExpanded, setIsRocketExpanded] = useState(false);
-
-  const cardRef = useRef(null);
-
-  const closeCard = () => {
-    if (cardRef.current) {
-      cardRef.current.closeCard(); 
-    }
-  };
+  const [isRaining, setIsRaining] = useState(false);
 
   return (
     <Container className="my-5 mx-10 ">
-    {isRocketExpanded && <TheRocket/>}
-    {isVRExpanded &&
+    {Animation && isRaining && <Rain/>}
+    {Animation && isRocketExpanded && <TheRocket/>}
+    {Animation && isVRExpanded &&
       <><Lantern/><Lantern/><Lantern/><Lantern/><Lantern/></>}
-      {isIGEMExpanded && <><Bacteria />
+      {Animation && isIGEMExpanded && <><Bacteria />
       <Bacteria /><Bacteria /><Bacteria /><Bacteria /></>}
       <h1>Projects</h1>&nbsp;
         <Col align="justify-content-md-center"> 
@@ -52,7 +49,7 @@ const Showcase = () => {
           <h1>Highlight</h1>&nbsp;
           <Row className="justify-content-md-center gap-3">
           <Helpie />
-        <IGEM isIGEMExpanded={isIGEMExpanded} setIsIGEMExpanded={setIsIGEMExpanded} />
+        <IGEM setIsIGEMExpanded={setIsIGEMExpanded} />
         <NeuralInterface />
         </Row>
           </Box>
@@ -67,21 +64,21 @@ const Showcase = () => {
 
             <Separator Text="Machine Learning"/>
             <Row className="justify-content-md-center gap-3">
-              <LAPD />
-              <Parapully />
+              <LAPD setIsLAPDExpanded={setIsRaining}/>
+              <Parapully setIsPPExpanded={setIsRaining}/>
             </Row>
 
             <Separator Text="Associative and MAKE projects"/>
             <Row className="justify-content-md-center gap-3">
             <Helpie />
-            <IGEM isIGEMExpanded={isIGEMExpanded} setIsIGEMExpanded={setIsIGEMExpanded} />
-            <Rocket isRocketExpanded={isRocketExpanded} setIsRocketExpanded={setIsRocketExpanded} />
+            <IGEM setIsIGEMExpanded={setIsIGEMExpanded} />
+            <Rocket setIsRocketExpanded={setIsRocketExpanded} />
             </Row>
 
             <Separator Text="Other projects"/>
             <Row className="justify-content-md-center gap-3">
             <JumpingRobot />
-            <VR isVRExpanded={isVRExpanded} setIsVRExpanded={setIsVRExpanded} />
+            <VR setIsVRExpanded={setIsVRExpanded} />
             <Bachelor />
             </Row>
         

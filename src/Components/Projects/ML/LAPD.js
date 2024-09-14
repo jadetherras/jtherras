@@ -12,7 +12,7 @@ import { FaGithub } from "react-icons/fa";
 import { PiPresentationChart } from "react-icons/pi";
 
 
-const LAPD = () => {
+const LAPD = ({setIsLAPDExpanded}) => {
   const git="https://github.com/CS-433/ml-project-2-lapd"
   const lab="https://www.epfl.ch/labs/lapd/"
   const course="https://edu.epfl.ch/coursebook/en/machine-learning-CS-433"
@@ -77,6 +77,7 @@ To know more about the models and result, see the project report.
                 </div>
           }
         backgroundImage={sky}
+        onExpand ={setIsLAPDExpanded}
         time="Winter 2023"
         type="Course project"
       />

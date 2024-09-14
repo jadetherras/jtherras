@@ -10,7 +10,7 @@ import team from "./pictureRocket.JPG"
 
 import { CgWebsite } from "react-icons/cg";
 
-const Rocket = ({isRocketExpanded, setIsRocketExpanded}) => {
+const Rocket = ({setIsRocketExpanded}) => {
   const RocketTeam="https://epflrocketteam.ch/"
   const SR = "https://epflrocketteam.ch/our-projects/space-race/"
   const video = "https://youtube.com/shorts/yRU7_JLZNSw?feature=share"
@@ -18,7 +18,7 @@ const Rocket = ({isRocketExpanded, setIsRocketExpanded}) => {
   return (
         <Card
         title={<div align="left">Rocket team <br/>ECHO</div>}
-        bodyText="A small engeniered rocket -  Space Race project - Team leader recovery"
+        bodyText="A small engineered rocket -  Space Race project - Team leader recovery"
         linkText="Learn More"
         cardContent={<div>
           <h3 align="left">The Space race</h3>

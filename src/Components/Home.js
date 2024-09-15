@@ -15,7 +15,7 @@ const Divider = () => {
 };
 
 const Home = () => {
-    const [ANIMATION, setANIMATION] = useState(false);
+    const [ANIMATION, setANIMATION] = useState(true);
 
     return (
         <>

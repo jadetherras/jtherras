@@ -27,6 +27,14 @@ nav .link {
     
 }
 
+@media (max-width: 1000px) {
+    .anim-text {
+        opacity: 0;
+    }
+
+   
+}
+
 
 @media (max-width: 768px) {
     .anim-text {
@@ -40,6 +48,7 @@ nav .link {
 
     nav .link {
         margin-right: 10px;
+        font-size: small;
     }
 
     .ms-auto {

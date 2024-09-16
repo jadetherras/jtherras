@@ -53,33 +53,49 @@ const Showcase = ({Animation}) => {
         </Row>
           </Box>
 
-          <Separator Text="Rehabilitation and neurosciences"/>
-          <Row className="d-flex justify-content-center gap-3">
+          <Separator Text="Rehabilitation and neurosciences"
+          children={
+            <Row className="d-flex justify-content-center gap-3">
+              <div/><div/>
             <Ossur/>
             <Haptic />
             <TNE />
             <NeuralInterface />
+            <div/><div/>
             </Row>
+          }/>
+          
 
-            <Separator Text="Machine Learning"/>
-            <Row className="d-flex justify-content-center gap-3">
+            <Separator Text="Machine Learning"
+            children={
+              <Row className="d-flex justify-content-center gap-3">
+                <div/><div/>
               <LAPD setIsLAPDExpanded={setIsRaining}/>
               <Parapully setIsPPExpanded={setIsRaining}/>
+              <div/><div/>
             </Row>
+            }/>
+            
+            
+            <Separator Text="Associative and MAKE projects"
+            children={<Row className="d-flex justify-content-center gap-3">
+              <div/><div/>
+              <Helpie />
+              <IGEM setIsIGEMExpanded={setIsIGEMExpanded} />
+              <Rocket setIsRocketExpanded={setIsRocketExpanded} />
+              <div/><div/>
+              </Row>}/>
+            
 
-            <Separator Text="Associative and MAKE projects"/>
-            <Row className="d-flex justify-content-center gap-3">
-            <Helpie />
-            <IGEM setIsIGEMExpanded={setIsIGEMExpanded} />
-            <Rocket setIsRocketExpanded={setIsRocketExpanded} />
-            </Row>
-
-            <Separator Text="Other projects"/>
-            <Row className="d-flex justify-content-center gap-3">
-            <JumpingRobot />
-            <VR setIsVRExpanded={setIsVRExpanded} />
-            <Bachelor />
-            </Row>
+            <Separator Text="Other projects"
+            children={<Row className="d-flex justify-content-center gap-3">
+              <div/><div/>
+              <JumpingRobot />
+              <VR setIsVRExpanded={setIsVRExpanded} />
+              <Bachelor />
+              <div/><div/>
+              </Row>}/>
+            
         
         
         

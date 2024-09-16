@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jtherras/static/css/main.94ecfffb.css",
-    "main.js": "/jtherras/static/js/main.85be962e.js",
+    "main.css": "/jtherras/static/css/main.606ca5bd.css",
+    "main.js": "/jtherras/static/js/main.55910bf4.js",
     "reactPlayerPreview.js": "/jtherras/static/js/reactPlayerPreview.8775a16a.chunk.js",
     "reactPlayerSoundCloud.js": "/jtherras/static/js/reactPlayerSoundCloud.01f2f79d.chunk.js",
     "reactPlayerVimeo.js": "/jtherras/static/js/reactPlayerVimeo.f9c9edc0.chunk.js",
@@ -23,8 +23,8 @@
     "static/media/ML4Science.pdf": "/jtherras/static/media/ML4Science.cbfb212efa3f003139d2.pdf",
     "static/media/Final Presentation.pdf": "/jtherras/static/media/Final Presentation.9decfd94eb1a3159d18f.pdf",
     "static/media/HHRI_Lab_EMG.pdf": "/jtherras/static/media/HHRI_Lab_EMG.d825248276deac7072b0.pdf",
-    "static/media/CVfr.pdf": "/jtherras/static/media/CVfr.dd5d83a620136e45b1ef.pdf",
-    "static/media/CVen.pdf": "/jtherras/static/media/CVen.d206146ec995ebbf75cf.pdf",
+    "static/media/CVfr.pdf": "/jtherras/static/media/CVfr.8d9c55429ee68d52beb3.pdf",
+    "static/media/CVen.pdf": "/jtherras/static/media/CVen.cb1fa5b6a60e41cfebdf.pdf",
     "static/media/HHRI_Lab_2___report.pdf": "/jtherras/static/media/HHRI_Lab_2___report.389afb1659e5a7cf9622.pdf",
     "static/media/ATC.pdf": "/jtherras/static/media/ATC.55ead97d2b97bb4a8df8.pdf",
     "static/media/JumpingRobot.pdf": "/jtherras/static/media/JumpingRobot.985bf2758ea55d286afe.pdf",
@@ -59,8 +59,8 @@
     "static/media/pro-flex modular.PNG": "/jtherras/static/media/pro-flex modular.624c6312bc250c9d5894.PNG",
     "static/media/helpie.png": "/jtherras/static/media/helpie.6229a1c3a85a6baff3ec.png",
     "index.html": "/jtherras/index.html",
-    "main.94ecfffb.css.map": "/jtherras/static/css/main.94ecfffb.css.map",
-    "main.85be962e.js.map": "/jtherras/static/js/main.85be962e.js.map",
+    "main.606ca5bd.css.map": "/jtherras/static/css/main.606ca5bd.css.map",
+    "main.55910bf4.js.map": "/jtherras/static/js/main.55910bf4.js.map",
     "reactPlayerPreview.8775a16a.chunk.js.map": "/jtherras/static/js/reactPlayerPreview.8775a16a.chunk.js.map",
     "reactPlayerSoundCloud.01f2f79d.chunk.js.map": "/jtherras/static/js/reactPlayerSoundCloud.01f2f79d.chunk.js.map",
     "reactPlayerVimeo.f9c9edc0.chunk.js.map": "/jtherras/static/js/reactPlayerVimeo.f9c9edc0.chunk.js.map",
@@ -77,7 +77,7 @@
     "453.c42b2d90.chunk.js.map": "/jtherras/static/js/453.c42b2d90.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.94ecfffb.css",
-    "static/js/main.85be962e.js"
+    "static/css/main.606ca5bd.css",
+    "static/js/main.55910bf4.js"
   ]
 }

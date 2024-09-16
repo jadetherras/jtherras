@@ -21,11 +21,13 @@ const Home = () => {
         <>
             <Header setANIM = {setANIMATION}/>
             <section id = "About">
+                <br/><br/>
                 <About/>
             </section>
         
             <section id = "Showcase" >
                 <Divider/>
+                <br/><br/>
                 <Showcase Animation = {ANIMATION}/>
             </section>
             

@@ -11,6 +11,7 @@ import { ImLab } from "react-icons/im";
 import { FaGithub } from "react-icons/fa";
 import { PiPresentationChart } from "react-icons/pi";
 
+import SUP from '../../../SUP.js';
 
 const LAPD = ({setIsLAPDExpanded}) => {
   const git="https://github.com/CS-433/ml-project-2-lapd"
@@ -19,8 +20,8 @@ const LAPD = ({setIsLAPDExpanded}) => {
 
   return (
         <Card
-        title="GHI predictor"
-        bodyText="Predicting GHI from webcam images and weather data using CNN, LSTM and visual transformer"
+        title={<div> GHI <SUP ID = "GHI"/> predictor</div>}
+        bodyText={<div>Predicting GHI from webcam images and weather data using CNN<SUP ID = "CNN"/>, LSTM<SUP ID = "LSTM"/> and visual transformer</div>}
         linkText="Learn More"
         cardContent={<div>
             <h3 align="left">The project</h3>

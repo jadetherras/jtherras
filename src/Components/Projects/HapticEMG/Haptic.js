@@ -10,13 +10,14 @@ import report3 from "./HHRI_Lab_EMG.pdf"
 
 import { FaFileAlt } from "react-icons/fa";
 import { PiPresentationChart } from "react-icons/pi";
+import SUP from '../../../SUP';
 
 const Haptic = () => {
   const course="https://edu.epfl.ch/coursebook/fr/haptic-human-robot-interfaces-MICRO-553"
   
   return (
         <Card
-        title={<div align="left">An Haptic <br/> human/robot EMG<br/> interface</div>}
+        title={<div align="left">An Haptic <br/> human/robot EMG<SUP ID = "EMG"/><br/> interface</div>}
         bodyText="Control a haptic paddle with EMG signals"
         linkText="Learn More"
         cardContent={<div>

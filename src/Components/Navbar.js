@@ -59,11 +59,10 @@ const Header = ({setANIM}) => {
     <>
       <Navbar className='navbar' data-bs-theme="dark" sticky="top" >
         <Container className="position-relative d-flex align-items-center justify-content-between">
+          
           <Nav className="position-absolute start-50 translate-middle-x">
-            <Nav.Link href="#About">About</Nav.Link>
-            <Nav.Link href="#Showcase">Showcase</Nav.Link>
-            <div ref={ref}>
-              <Nav.Link onClick={handleClick}>CV</Nav.Link>
+          <div ref={ref}>
+              <a class = "link" onClick={handleClick}>CV</a>
               <Overlay
                 show={show}
                 target={target}
@@ -81,8 +80,10 @@ const Header = ({setANIM}) => {
               </Popover>
               </Overlay>
             </div>
-            <Nav.Link onClick={() =>window.open("https://github.com/jadetherras")}>Github</Nav.Link>
-            <Nav.Link href="#Contacts">Contact</Nav.Link>
+            <a class = "link" href="#About">About </a>
+            <a class = "link" href="#Showcase">Showcase </a>
+            <a class = "link" href="#Contacts">Contact </a>
+            <a class = "link" onClick={() =>window.open("https://github.com/jadetherras")}>Github</a>
           </Nav>
           <div ref={ref2} className="d-flex align-items-center ms-auto"
           onMouseEnter={handleMouseEnter}

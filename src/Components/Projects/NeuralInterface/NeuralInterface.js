@@ -18,12 +18,14 @@ import { ImLab } from "react-icons/im";
 import Img1 from "./photo groupe 1.jpg"
 import Img2 from "./photo groupe 2.jpg"
 
+import SUP from '../../../SUP';
+
 const NeuralInterface = () => {
   const course="https://edu.epfl.ch/coursebook/en/neural-interfaces-NX-422"
 
   return (
         <Card
-        title="A wearable EMG"
+        title= {<div align = "left">A wearable EMG<SUP ID = "EMG"/> <br/>sensor</div>}
         bodyText="A wireless active flexible microneedle-array-electrode system for long-term recording of EMG signals in part of a closed-loop neuro-rehabilitation feedback system"
         linkText="Learn More"
         cardContent={<div>

@@ -9,13 +9,15 @@ import device from "./overview_device.png"
 import { FaFileAlt } from "react-icons/fa";
 import { PiPresentationChart } from "react-icons/pi";
 
+import SUP from '../../../SUP';
+
 
 const TNE = () => {
   const course = "https://edu.epfl.ch/coursebook/en/translational-neuroengineering-NX-423"
   
   return (
         <Card
-        title={<p align="left">A BCI with<br/> sensory feedback</p>}
+        title={<p align="left">A BCI<SUP ID = "BCI"/> with<br/> sensory feedback</p>}
         bodyText={<div>Restoring natural motor and sensory
 function after spinal cord injury
             </div>}

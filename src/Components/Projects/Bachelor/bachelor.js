@@ -10,6 +10,7 @@ import { FaFileAlt } from "react-icons/fa";
 import { ImLab } from "react-icons/im";
 import { FaGithub } from "react-icons/fa";
 
+import SUP from '../../../SUP.js';
 
 const Bachelor = () => {
   const git="https://github.com/jadetherras/bachelor_project"
@@ -17,7 +18,7 @@ const Bachelor = () => {
 
   return (
         <Card
-        title={<p>A STUDY OF TDA<br/> METHODS FOR<br/> SCRNA VELOCITY</p>}
+        title={<p>A STUDY OF TDA<SUP ID = "TDA"/><br/> METHODS FOR<br/> SCRNA VELOCITY</p>}
         bodyText="Use topology to reduce dimension on biological data - Bachelor project"
         linkText="Learn More"
         cardContent={<div>

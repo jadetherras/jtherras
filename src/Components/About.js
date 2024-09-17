@@ -22,7 +22,7 @@ const About = () => {
             I believe that everyone should have a chance to live as they want, which is why I've developed a strong interest in rehabilitation, prosthetics, and neuroscience. 
             In particular, I'm passionate about assistive technology. <br/><br/>
             Currently finishing a Master in Neuro-technology at École Polytechnique Fédérale de Lausanne (EPFL), after a life sciences Bachelor's degree in the same university, I'm now searching for a challenging 6 months master 
-            thesis. <br/><br/>
+            thesis starting in february/march. <br/><br/>
             I'm determined and have a lot of energy ! I also love to share and teach, at least as much as I love to learn. <br/>
             My values are curiosity, polyvalence and honesty.
             <br/><br/>

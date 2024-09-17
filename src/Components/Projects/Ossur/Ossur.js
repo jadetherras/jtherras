@@ -12,6 +12,7 @@ import mauch from "./mauch.png"
 import feet from "./pro-flex modular.PNG"
 import { CgWebsite } from "react-icons/cg";
 
+import SUP from '../../../SUP';
 
 
 const Ossur = () => {
@@ -19,8 +20,8 @@ const Ossur = () => {
   
   return (
          <Card
-        title="Össur - internship"
-        bodyText="R&D biomechanical solution - knee and foot prosthesis"
+        title={<p align="left">R&D<SUP ID="R&D"/> for knee<br/> and foot prosthesis</p>}
+        bodyText="working on the biomechanical solution departement at Össur"
         linkText="Learn More"
         cardContent={<div>
           <h3 align="left">Össur </h3>

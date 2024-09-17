@@ -2,7 +2,6 @@ import React, { useState, useRef } from 'react';
 import { FaQuestionCircle } from "react-icons/fa";
 import Overlay from 'react-bootstrap/Overlay';
 import Popover from 'react-bootstrap/Popover';
-import zIndex from '@mui/material/styles/zIndex';
 
 
 const SUP = ({ID="id"}) => {
@@ -39,6 +38,10 @@ const SUP = ({ID="id"}) => {
             return "Long short-term memory (LSTM) : Category of machine learning model, can detain long-term dependencies."
         case "TDA":
             return "Topological data analysis (TDA) : Method for analyzing the shape and structure of data using concepts from topology. It helps find patterns, clusters, and relationships in complex datasets."
+        case "IGEM":
+                return "International Genetically Engineered Machine (IGEM) : The iGEM competition is a worldwide synthetic biology competition. The IGEM foundation is an independent, non-profit organization dedicated to the advancement of synthetic biology, education and competition."
+        case "R&D":
+            return "Research and development (R&D)"   
         default :
             return "definition here"
         }
@@ -52,7 +55,7 @@ const SUP = ({ID="id"}) => {
                 show={show}
                 target={target}
                 placement="bottom"
-                container={ref}
+                container={document.body}
                 containerPadding={20}
               >
               <Popover id="popover-contained" style={{ zIndex: 9999 }}>

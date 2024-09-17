@@ -18,7 +18,7 @@ import { GiTargetPrize } from "react-icons/gi";
 import { CgWebsite } from "react-icons/cg";
 import { FaVideo } from "react-icons/fa";
 
-
+import SUP from '../../../SUP';
 
 
 
@@ -33,8 +33,8 @@ const IGEM = ({setIsIGEMExpanded}) => {
   
   return (
         <Card
-        title={<p align= "left">48C - IGEM</p> }
-        bodyText="A cadmium catcher live biotherapeutic product"
+        title={<p align= "left">A cadmium catcher<br/> live biotherapeutic<br/> product</p> }
+        bodyText={<p>48C : the IGEM<SUP ID ="IGEM"/> participation of the EPFL team</p>}
         linkText="Learn More"
         cardContent={<div>
            <div align="center"><ReactPlayer url={introdvideo} width="100%" /></div> <br/>

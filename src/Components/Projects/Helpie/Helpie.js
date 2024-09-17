@@ -82,7 +82,7 @@ const Helpie = () => {
           }
         backgroundImage={helpie}
         time="Spring 2024"
-        type = "Course project"
+        type = "Course/MAKE project"
       />
   );
 }

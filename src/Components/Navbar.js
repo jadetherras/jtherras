@@ -63,7 +63,7 @@ const Header = ({setANIM}) => {
           
           <Nav className="position-absolute start-50 translate-middle-x">
           <div ref={ref}>
-              <a class = "link" onClick={handleClick}>CV</a>
+              <a class = "link" onClick={handleClick}>Resume</a>
               <Overlay
                 show={show}
                 target={target}

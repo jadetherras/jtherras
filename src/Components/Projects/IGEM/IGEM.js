@@ -22,7 +22,7 @@ import { FaVideo } from "react-icons/fa";
 
 
 
-const IGEM = ({setIsIGEMExpanded }) => {
+const IGEM = ({setIsIGEMExpanded}) => {
 
   const wiki = "https://2023.igem.wiki/epfl/"
   const igem = "https://igem.org/"

@@ -1,14 +1,19 @@
-import React, { useState, useRef, useLayoutEffect } from 'react';
+import React, { useState, useRef, useLayoutEffect, useImperativeHandle, forwardRef } from 'react';
 import './separator.css';
 
-const Separator = ({ Text = '', children }) => {
+const empty = () => {};
+const Separator = forwardRef(({ Text = '', children, OnToggle = empty}, ref) => {
   const [isOpen, setIsOpen] = useState(false);
   const [height, setHeight] = useState('0px');
   const panelRef = useRef(null);
   const contentRef = useRef(null);
 
-  const toggleAccordion = () => {
+  const toggleAccordion = (type) => {
     setIsOpen(prevIsOpen => !prevIsOpen);
+  };
+
+  const getOpen = () => {
+    return isOpen;
   };
 
   // Update height based on content size
@@ -25,7 +30,6 @@ const Separator = ({ Text = '', children }) => {
       resizeObserver.observe(contentRef.current);
     }
 
-    // Clean up on component unmount
     return () => {
       if (contentRef.current) {
         resizeObserver.unobserve(contentRef.current);
@@ -37,9 +41,14 @@ const Separator = ({ Text = '', children }) => {
     updateHeight(); // Update height when the panel opens or closes
   }, [isOpen, children]); // Depend on children to update height when content changes
 
+  useImperativeHandle(ref, () => ({
+    toggleAccordion,
+    getOpen
+  }));
+
   return (
     <div className="spacer">
-      <div className="separator-header" onClick={toggleAccordion}>
+      <div className="separator-header" onClick={OnToggle}>
         <div className="separator-text">{Text}</div>
         <div className={`arrow ${isOpen ? 'open' : ''}`}>&#9662;</div>
       </div>
@@ -51,11 +60,10 @@ const Separator = ({ Text = '', children }) => {
         <div ref={contentRef}>
           {children}
         </div>
-       
       </div>
       <div className="mask"></div>
     </div>
   );
-};
+});
 
 export default Separator;

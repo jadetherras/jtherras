@@ -25,11 +25,41 @@ import Rain from '../Animation/rain/rain';
 
 
 import Separator from './separator';
+import { Button } from 'react-bootstrap';
 const Showcase = ({Animation}) => {
   const [isIGEMExpanded, setIsIGEMExpanded] = useState(false);
   const [isVRExpanded, setIsVRExpanded] = useState(false);
   const [isRocketExpanded, setIsRocketExpanded] = useState(false);
   const [isRaining, setIsRaining] = useState(false);
+  
+  const separatorRefs = [
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null)
+  ];  
+  //const separatorRef = useRef(null);
+  var open_index = null;
+
+  const handleToggle = (index) => {
+    if (separatorRefs[index].current) {
+      
+      if (open_index != null) {
+        if (open_index == index) {
+          separatorRefs[index].current.toggleAccordion();
+          open_index = null;
+        } else {
+          separatorRefs[open_index].current.toggleAccordion();
+          separatorRefs[index].current.toggleAccordion();
+          open_index = index;
+        }
+      } else {
+        separatorRefs[index].current.toggleAccordion();
+        open_index = index;
+      }
+    }
+  };
+  
 
   return (
     <Container>
@@ -52,7 +82,7 @@ const Showcase = ({Animation}) => {
         <NeuralInterface />
         </Row>
           </Box>
-
+          
           <Separator Text="Rehabilitation and neurosciences"
           children={
             <Row className="d-flex justify-content-center gap-3">
@@ -63,10 +93,14 @@ const Showcase = ({Animation}) => {
             <NeuralInterface />
             <div/><div/>
             </Row>
-          }/>
+          }
+          ref={separatorRefs[0]}
+          OnToggle={() => handleToggle(0)}
+          />
           
 
-            <Separator Text="Machine Learning"
+            <Separator ref={separatorRefs[1]}
+            OnToggle={() => handleToggle(1)}  Text="Machine Learning"
             children={
               <Row className="d-flex justify-content-center gap-3">
                 <div/><div/>
@@ -77,7 +111,8 @@ const Showcase = ({Animation}) => {
             }/>
             
             
-            <Separator Text="Associative and MAKE projects"
+            <Separator ref={separatorRefs[2]}
+            OnToggle={() => handleToggle(2)}  Text="Associative and MAKE projects"
             children={<Row className="d-flex justify-content-center gap-3">
               <div/><div/>
               <Helpie />
@@ -87,7 +122,8 @@ const Showcase = ({Animation}) => {
               </Row>}/>
             
 
-            <Separator Text="Other projects"
+            <Separator ref={separatorRefs[3]}
+            OnToggle={() => handleToggle(3)} Text="Other projects"
             children={<Row className="d-flex justify-content-center gap-3">
               <div/><div/>
               <JumpingRobot />
@@ -95,10 +131,6 @@ const Showcase = ({Animation}) => {
               <Bachelor />
               <div/><div/>
               </Row>}/>
-            
-        
-        
-        
         
         </Col>
     </Container>

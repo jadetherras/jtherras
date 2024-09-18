@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jtherras/static/css/main.a358f7b5.css",
-    "main.js": "/jtherras/static/js/main.a6b22028.js",
+    "main.css": "/jtherras/static/css/main.e3437d5a.css",
+    "main.js": "/jtherras/static/js/main.2c5844e7.js",
     "reactPlayerPreview.js": "/jtherras/static/js/reactPlayerPreview.8775a16a.chunk.js",
     "reactPlayerSoundCloud.js": "/jtherras/static/js/reactPlayerSoundCloud.01f2f79d.chunk.js",
     "reactPlayerVimeo.js": "/jtherras/static/js/reactPlayerVimeo.f9c9edc0.chunk.js",
@@ -46,8 +46,8 @@
     "static/media/screen.png": "/jtherras/static/media/screen.8185e7f456daf21b7caf.png",
     "static/media/IMG_6712.JPG": "/jtherras/static/media/IMG_6712.040851ae9e73d738f92b.JPG",
     "static/media/transcript.pdf": "/jtherras/static/media/transcript.eff4e31577d37099523c.pdf",
-    "static/media/CVfr.pdf": "/jtherras/static/media/CVfr.f34dbce800f8a0cb7023.pdf",
-    "static/media/CVen.pdf": "/jtherras/static/media/CVen.15c32e5e28dfacc41e48.pdf",
+    "static/media/CVfr.pdf": "/jtherras/static/media/CVfr.dc140f0be5411209c699.pdf",
+    "static/media/CVen.pdf": "/jtherras/static/media/CVen.a7ae8afa88ac177782fe.pdf",
     "static/media/overview_device.png": "/jtherras/static/media/overview_device.6c0c8b974242c37d2570.png",
     "static/media/SpaCdown.png": "/jtherras/static/media/SpaCdown.85e29be9f6f221be122d.png",
     "static/media/couv.jpg": "/jtherras/static/media/couv.f897d8d8e6f5614d35bb.jpg",
@@ -60,8 +60,8 @@
     "static/media/pro-flex modular.PNG": "/jtherras/static/media/pro-flex modular.624c6312bc250c9d5894.PNG",
     "static/media/helpie.png": "/jtherras/static/media/helpie.6229a1c3a85a6baff3ec.png",
     "index.html": "/jtherras/index.html",
-    "main.a358f7b5.css.map": "/jtherras/static/css/main.a358f7b5.css.map",
-    "main.a6b22028.js.map": "/jtherras/static/js/main.a6b22028.js.map",
+    "main.e3437d5a.css.map": "/jtherras/static/css/main.e3437d5a.css.map",
+    "main.2c5844e7.js.map": "/jtherras/static/js/main.2c5844e7.js.map",
     "reactPlayerPreview.8775a16a.chunk.js.map": "/jtherras/static/js/reactPlayerPreview.8775a16a.chunk.js.map",
     "reactPlayerSoundCloud.01f2f79d.chunk.js.map": "/jtherras/static/js/reactPlayerSoundCloud.01f2f79d.chunk.js.map",
     "reactPlayerVimeo.f9c9edc0.chunk.js.map": "/jtherras/static/js/reactPlayerVimeo.f9c9edc0.chunk.js.map",
@@ -78,7 +78,7 @@
     "453.c42b2d90.chunk.js.map": "/jtherras/static/js/453.c42b2d90.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a358f7b5.css",
-    "static/js/main.a6b22028.js"
+    "static/css/main.e3437d5a.css",
+    "static/js/main.2c5844e7.js"
   ]
 }

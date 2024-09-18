@@ -3,6 +3,19 @@
     transition: font-weight 0.5s;
 }
 
+.navbar {
+    height: 2cm;
+}
+
+.NavBig {
+    display:block;
+}
+
+.NavSmall {
+    display: none;
+}
+
+
 nav .link {
     color: white;  
     font-weight: bold; 
@@ -41,14 +54,22 @@ nav .link {
         opacity: 0;
     }
 
+    .NavBig {
+        display:none;
+    }
+    
+    .NavSmall {
+        display: block;
+    }
+
     .navbar {
         flex-direction: column;
         align-items: flex-start;
+        height: 3cm;
     }
 
     nav .link {
         margin-right: 10px;
-        font-size: small;
     }
 
     .ms-auto {

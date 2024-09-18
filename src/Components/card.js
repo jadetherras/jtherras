@@ -64,7 +64,7 @@ const Card = forwardRef(({ title, bodyText, linkText, cardContent, backgroundIma
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
       },
-      { threshold: 1.0 } // Adjust this value as needed
+      { threshold: 0.8 } // Adjust this value as needed
     );
 
     if (cardRef.current) {

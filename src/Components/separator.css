@@ -25,6 +25,8 @@
 }
 
 .accordion-panel {
+  margin-left: -2cm;
+  margin-right: -2cm;
   height: 0; /* Start closed */
   overflow: hidden; /* Hide content when closed */
   transition: height 0.2s ease; /* Smooth height transition */

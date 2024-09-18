@@ -62,6 +62,7 @@ const Header = ({setANIM}) => {
       <Navbar className='navbar' data-bs-theme="dark" sticky="top" >
         <Container className="position-relative d-flex align-items-center justify-content-between">
           
+          <div class='NavBig'>
           <Nav className="position-absolute start-50 translate-middle-x">
           <div ref={ref}>
               <a class = "link" onClick={handleClick}>Resume</a>
@@ -88,6 +89,36 @@ const Header = ({setANIM}) => {
             <a class = "link" onClick={() =>window.open("https://github.com/jadetherras")}>Github</a>
             <a class = "link" onClick={() =>window.open(T)}>Transcript</a>
           </Nav>
+          </div>
+          <div class='NavSmall'>
+          <Nav className="position-absolute start-50 translate-middle-x">
+          <div ref={ref}>
+              <a class = "link" onClick={handleClick}>Resume</a>
+              <Overlay
+                show={show}
+                target={target}
+                placement="bottom"
+                container={ref}
+                containerPadding={20}
+              >
+              <Popover id="popover-contained" onMouseLeave={handleMouseLeave} >
+              <Popover.Body>
+                <Row>
+                <Col onClick={() =>window.open(cven)}><span className='langage'>English</span></Col>
+                <Col onClick={() =>window.open(cvfr)}><span className='langage'>Français</span></Col>
+                </Row>
+              </Popover.Body>
+              </Popover>
+              </Overlay>
+            </div>
+            <a class = "link" href="#About">About </a>
+            <a class = "link" href="#Showcase">Showcase </a>
+            </Nav><Nav className="position-absolute start-50 top-100 translate-middle-x">
+            <a class = "link" href="#Contacts">Contact </a>
+            <a class = "link" onClick={() =>window.open("https://github.com/jadetherras")}>Github</a>
+            <a class = "link" onClick={() =>window.open(T)}>Transcript</a>
+          </Nav>
+          </div>
           <div ref={ref2} className="d-flex align-items-center ms-auto"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}>

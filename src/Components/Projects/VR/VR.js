@@ -6,13 +6,14 @@ import "../../button.css";
 import logo from "./tree.jpg"
 import report from "./I_don_t_want_to_be_human_anymore_.pdf"
 import ReactPlayer from 'react-player/youtube'
+import { Box } from '@mui/material';
 
 
 import { FaGithub } from "react-icons/fa";
 import { PiPresentationChart } from "react-icons/pi";
 import { FaFileAlt } from "react-icons/fa";
 
-const VR = ({setIsVRExpanded}) => {
+const VR = ({setIsVRExpanded, foundCount = 0,totalCount = 0}) => {
   const git ="https://github.com/jadetherras/HOVR"
   const course="https://edu.epfl.ch/coursebook/fr/virtual-reality-CS-444"
   const video="https://youtu.be/cdpJOEH0v8c"
@@ -23,6 +24,7 @@ const VR = ({setIsVRExpanded}) => {
         linkText="Learn More"
         cardContent={<div>
           <h3 align="center" >If a lantern (diamond) appear, click to activate!</h3>
+          <div align="center"><Box className="counter">Found : {foundCount}/{totalCount}</Box></div>
           <div align="center"><ReactPlayer url={video} width="100%" /></div> <br/>
            <h3 align="left">Context</h3>
            <p align="left">

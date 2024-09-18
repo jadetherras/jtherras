@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect} from 'react';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -24,13 +24,16 @@ import TheRocket from '../Animation/Rocket/rocket';
 import Rain from '../Animation/rain/rain';
 
 import Separator from './separator';
-import { Button } from 'react-bootstrap';
 
 const Showcase = ({ Animation }) => {
   const [isIGEMExpanded, setIsIGEMExpanded] = useState(false);
-  const [isVRExpanded, setIsVRExpanded] = useState(false);
   const [isRocketExpanded, setIsRocketExpanded] = useState(false);
   const [isRaining, setIsRaining] = useState(false);
+
+  const [isVRExpanded, setIsVRExpanded] = useState(false);
+  
+  const [lanternCount, setLanternCount] = useState(0);
+  const [totalCount, setTotalCount] = useState(0);
 
   const separatorRefs = [
     useRef(null),
@@ -61,21 +64,43 @@ const Showcase = ({ Animation }) => {
     }
   };
 
+  const handleLanternCountChange = (newLanternCount, newTotalCount) => {
+    setLanternCount(newLanternCount);
+    setTotalCount(newTotalCount);
+  };
+
+  /*useEffect(() => {
+    if (totalCount != 0 && lanternCount === totalCount) {
+      document.getElementById("major-lantern").scrollIntoView({ behavior: "smooth" });
+    }
+  }, [lanternCount, totalCount]);*/
+
   return (
     <Container>
       {Animation && isRaining && <Rain />}
       {Animation && isRocketExpanded && <TheRocket />}
+      {Animation && isIGEMExpanded && <>
+      <Bacteria />
+      <Bacteria />
+      <Bacteria />
+      <Bacteria />
+      <Bacteria /></>}
       {Animation && isVRExpanded && (
         <>
-          <Lantern /><Lantern /><Lantern /><Lantern /><Lantern />
-        </>
-      )}
-      {Animation && isIGEMExpanded && (
-        <>
-          <Bacteria />
-          <Bacteria />
-          <Bacteria />
-          <Bacteria />
+          {/* Render the normal lanterns */}
+          <Lantern onCountChange={handleLanternCountChange} />
+          <Lantern onCountChange={handleLanternCountChange} />
+          <Lantern onCountChange={handleLanternCountChange} />
+          <Lantern onCountChange={handleLanternCountChange} />
+          <Lantern onCountChange={handleLanternCountChange} />
+
+          {/*{/* Conditionally render the MAJOR lantern only when all other lanterns are found *
+          {totalCount !=0 && lanternCount === totalCount && (
+            <>
+            {console.log("MAJOR Lantern created")}
+            <Lantern onCountChange={handleLanternCountChange} major={true} id="major-lantern" />
+            </>
+          )}*/}
         </>
       )}
       <h1>Projects</h1>&nbsp;
@@ -143,7 +168,10 @@ const Showcase = ({ Animation }) => {
             <Row className="d-flex justify-content-center gap-3">
               <div /><div />
               <JumpingRobot />
-              <VR setIsVRExpanded={setIsVRExpanded} />
+              <VR setIsVRExpanded={setIsVRExpanded}
+              foundCount = {lanternCount}
+              totalCount = {totalCount}
+                />
               <Bachelor />
               <div /><div />
             </Row>

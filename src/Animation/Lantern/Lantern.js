@@ -1,22 +1,49 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 import Red from "./SpaCLred.png"
 import Green from "./SpaCLgreen.png"
 
-const Lantern = () => {
+let totalCount = 0;
+let lanternCount = 0;
+
+const Lantern = ({onCountChange, major = false}) => {
+
   const imgRef = useRef(null);
 
-  const imageWidth = 100; // Set the width of the image
-  const imageHeight = 100; // Set the width of the image
+  let imageWidth = 100; // Set the width of the image
+  let imageHeight = 100; // Set the width of the image
 
-  const maxWidth = document.documentElement.clientWidth - imageWidth;
-  const maxHeight = document.documentElement.scrollHeight - imageHeight;
+  let maxWidth = document.documentElement.clientWidth - imageWidth;
+  let maxHeight = document.documentElement.scrollHeight - imageHeight;
+
+  const [leftPos, setLeftPos] = useState(0);
+  const [topPos, setTopPos] = useState(0);
 
   // Initialize random position
   const getRandomPosition = (Max) => {
     const random = Math.random() * Max;
     return random;
   };
+
+  // Constructor-like useEffect: Runs only once on creation
+  useEffect(() => {
+    if (major) {
+      imageHeight = 5*imageHeight;
+      imageWidth = 5*imageWidth;
+      setLeftPos(document.documentElement.clientWidth/2-imageWidth);
+      setTopPos(document.documentElement.scrollHeight/2-imageHeight);
+      console.log('Left Position:', leftPos, 'Top Position:', topPos);
+    } else {
+      setLeftPos(getRandomPosition(maxWidth));
+      setTopPos(getRandomPosition(maxHeight));
+    }
+
+    totalCount += 1/2; //double call (quick fix)
+    if (onCountChange) {
+      onCountChange(lanternCount, totalCount); 
+    }
+    return () => {};}, []);
+
 
   // Function to handle smooth opacity transition
   const fadeOut = (element) => {
@@ -32,6 +59,8 @@ const Lantern = () => {
   };
 
   const animate = () => {
+    lanternCount +=1;
+    onCountChange(lanternCount, totalCount);
     if (imgRef.current) {
     imgRef.current.src = Green;
     }
@@ -41,15 +70,16 @@ const Lantern = () => {
   };
   
 
-  return (
-    <img className='lantern'
+ return (
+    <img 
+      className='lantern'
       ref={imgRef}
       src={Red}
       alt="lantern !"
       style={{
         position: 'absolute',
-        left: getRandomPosition(maxWidth),
-        top: getRandomPosition(maxHeight),
+        left: leftPos,
+        top: topPos,
         width: imageWidth,
         zIndex: 1
       }}

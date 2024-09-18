@@ -17,6 +17,18 @@
   z-index: 2;
 }
 
+.counter {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  border-radius: 1rem;
+  width: fit-content;
+  height: auto;
+  color: var(--blanck-color);
+  z-index: 2;
+  text-align: center;
+  align-content: center;
+}
+
 .circle {
     width: 200px;
     height: 300px;

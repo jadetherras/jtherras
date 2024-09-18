@@ -53,7 +53,7 @@ field by current embedding methods.
           }
         backgroundImage={image}
         time="Spring 2022"
-        type="semester project"
+        type="Semester project"
       />
   );
 }

@@ -38,7 +38,7 @@ const IGEM = ({setIsIGEMExpanded}) => {
         linkText="Learn More"
         cardContent={<div>
            <div align="center"><ReactPlayer url={introdvideo} width="100%" /></div> <br/>
-           <h3 align="left">What is 48C ?</h3>
+           <h3 align="left">What is 48C?</h3>
            <p align="left">
             IGEM is an international synthetic biology competition : each team design and implement engineered biological-based systems to address problems. <br/>
             Human practices are central to the project. Along with biology, teams organize events, collaborate, enhance education and meet professionals.
@@ -53,7 +53,7 @@ const IGEM = ({setIsIGEMExpanded}) => {
 The mucus-binding protein will implant our probiotic into the intestine and our cadmium binding protein will allow it to collect any cadmium ions present there. As the mucus naturally turns over, our probiotic will eventually exit the body, cleansing it of cadmium.
 As a safety precaution, the production of the SpaC protein is halted once it enters the body, and the protein naturally degrades over time, allowing the bacteria to be released. To prevent environmental spread and genetic exchange with other organisms, the bacteria are autotroph and have specific genetic mutations that prevent horizontal gene transfer.
            </p>
-          <h3 align="left">Bioquest - An educational game !</h3>
+          <h3 align="left">Bioquest - An educational game!</h3>
           <table cellspacing="50">
           <tr>
           <td>

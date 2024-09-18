@@ -49,7 +49,8 @@ const Header = ({setANIM}) => {
     };
   
     const handleMouseLeave = () => {
-      setShow2(false);
+        setShow2(false);
+        setShow(false);
     };
 
     const handleSwitchChange = (event) => {
@@ -71,7 +72,7 @@ const Header = ({setANIM}) => {
                 container={ref}
                 containerPadding={20}
               >
-              <Popover id="popover-contained">
+              <Popover id="popover-contained" onMouseLeave={handleMouseLeave} >
               <Popover.Body>
                 <Row>
                 <Col onClick={() =>window.open(cven)}><span className='langage'>English</span></Col>
@@ -100,7 +101,7 @@ const Header = ({setANIM}) => {
               >
               <Popover id="popover-contained" style={{ position: 'absolute' }}>
               <Popover.Body>
-                Fun animations appear for some projects ! You can desactivate them if needed
+                Fun animations appear for some projects ! You can deactivate them if needed
               </Popover.Body>
               </Popover>
               </Overlay>

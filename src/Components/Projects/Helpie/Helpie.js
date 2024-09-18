@@ -36,7 +36,7 @@ const Helpie = () => {
         bodyText="An app to help neurodivergent and mentally impaired people use public transport"
         linkText="Learn More"
         cardContent={<div>
-          <h3 align="left">Why Helpie ? </h3>
+          <h3 align="left">Why Helpie? </h3>
           <p align="left">
  Nowadays in Switzerland, public transport can get you nearly everywhere.
  We use it daily, to go to work, see friends, make groceries...<br/>

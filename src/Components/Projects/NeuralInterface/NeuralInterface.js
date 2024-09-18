@@ -62,9 +62,9 @@ const NeuralInterface = () => {
           </Col>
           </Row>
           </Col>
-          <p align="center">The team, with some precious boards !</p>
+          <p align="center">The team, with some precious boards!</p>
                 <div>
-                <button class="button-48" role="button" onClick={() =>window.open(prop)}><span class="text"><FaFileAlt />See project proposition report</span></button><br/>  
+                <button class="button-48" role="button" onClick={() =>window.open(prop)}><span class="text"><FaFileAlt />See project proposal report</span></button><br/>  
                 <button class="button-48" role="button" onClick={() =>window.open(report)}><span class="text"><FaFileAlt />See final project report</span></button><br/>  
                 <button class="button-48" role="button"><span class="text"><ImLab />See hosting lab</span></button><br/>
                 <button class="button-48" role="button" onClick={() =>window.open(course)}><span class="text"><PiPresentationChart />See corresponding course</span></button><br/>
@@ -73,7 +73,7 @@ const NeuralInterface = () => {
           }
         backgroundImage={couv}
         time="Winter 2023"
-        type="Course project / personal"
+        type="Course project / Personal"
       />
   );
 }

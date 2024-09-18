@@ -18,11 +18,11 @@ const VR = ({setIsVRExpanded}) => {
   const video="https://youtu.be/cdpJOEH0v8c"
   return (
         <Card
-        title={<p align= "left">I don't want to be <br/>  human anymore !</p> }
+        title={<p align= "left">I don't want to be <br/>  human anymore!</p> }
         bodyText="A virtual reality puzzle game"
         linkText="Learn More"
         cardContent={<div>
-          <h3 align="center" >If a lantern (diamonds) appear, click to activate !</h3>
+          <h3 align="center" >If a lantern (diamond) appear, click to activate!</h3>
           <div align="center"><ReactPlayer url={video} width="100%" /></div> <br/>
            <h3 align="left">Context</h3>
            <p align="left">
@@ -32,7 +32,7 @@ const VR = ({setIsVRExpanded}) => {
             <h3 align="left">The game</h3>
            <p align="left">
            Find and activate all lanterns (diamonds) to get to the
-next level ! <br/>
+next level! <br/>
 The game play a lot with size and interaction, as you have 2 mode. In human mode, you are on the island and can interact with objects, enter buildings, activate lanterns... 
 In god mode, you stand in front of the island. You are enormous, and can now move buildings, kill monsters, move your human body... <br/>
 To master a puzzle, you will have to combine widely this two mode. 

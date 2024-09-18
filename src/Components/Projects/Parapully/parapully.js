@@ -22,7 +22,7 @@ const Parapully = ({setIsPPExpanded }) => {
         linkText="Learn More"
         cardContent={<div>
             <h3 align="left">Context</h3>
-            <p align="left">Will it rain tomorrow at Pully ? Do we need a ParaPully ? Here is the machine learning project proposed by the EPFL introduction to machine learning course. <br/>
+            <p align="left">Will it rain tomorrow at Pully? Do we need a ParaPully? Here is the machine learning project proposed by the EPFL introduction to machine learning course. <br/>
             We had to code a machine that computes the probability of rain the next day in Pully. This prediction should be done based on the data collected over a few days from several weather stations in Switzerland.
             </p>
             <h3 align="left">Technical overview</h3>

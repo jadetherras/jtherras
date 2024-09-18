@@ -33,7 +33,7 @@ const Contacts = () => {
         <button class="button-48" role="button" 
         onClick={() =>window.open(linkedin)}
         ><span class="text"><FaLinkedin />&nbsp;
-                jade Therras</span></button>
+                Jade Therras</span></button>
       </Row>
     </Container>
   );

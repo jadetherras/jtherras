@@ -42,24 +42,25 @@ const Showcase = ({ Animation }) => {
     useRef(null)
   ];
   
-  let open_index = null; // Ensure this is not `var` but `let` or `const`
+  const [openIndex, setOpenIndex] = useState(null);
 
   const handleToggle = (index) => {
+
     if (separatorRefs[index].current) {
-      if (open_index !== null) {
-        if (open_index === index) {
+      if (openIndex !== null) {
+        if (openIndex === index) {
           separatorRefs[index].current.toggleAccordion();
-          open_index = null;
+          setOpenIndex(null)
         } else {
-          separatorRefs[open_index].current.toggleAccordion();
+          separatorRefs[openIndex].current.toggleAccordion();
           separatorRefs[index].current.toggleAccordion();
-          separatorRefs[index].current.scrollIntoView(); // scrollIntoView for new element
-          open_index = index;
+          separatorRefs[index].current.scrollIntoView();
+          setOpenIndex(index)
         }
       } else {
         separatorRefs[index].current.toggleAccordion();
-        separatorRefs[index].current.scrollIntoView(); // scrollIntoView for first element
-        open_index = index;
+        separatorRefs[index].current.scrollIntoView();
+        setOpenIndex(index)
       }
     }
   };
@@ -116,6 +117,8 @@ const Showcase = ({ Animation }) => {
         </Box>
 
         <Separator
+         ref={separatorRefs[0]}
+         OnToggle={() => handleToggle(0)}
           Text="Rehabilitation and neurosciences"
           children={
             <Row className="d-flex justify-content-center gap-3">
@@ -127,8 +130,6 @@ const Showcase = ({ Animation }) => {
               <div /><div />
             </Row>
           }
-          ref={separatorRefs[0]}
-          OnToggle={() => handleToggle(0)}
         />
 
         <Separator

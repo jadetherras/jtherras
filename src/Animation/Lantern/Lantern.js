@@ -3,8 +3,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import Red from "./SpaCLred.png"
 import Green from "./SpaCLgreen.png"
 
-let totalCount = 0;
 let lanternCount = 0;
+let totalCount =0;
 
 const Lantern = ({onCountChange, major = false}) => {
 
@@ -38,7 +38,7 @@ const Lantern = ({onCountChange, major = false}) => {
       setTopPos(getRandomPosition(maxHeight));
     }
 
-    totalCount += 1/2; //double call (quick fix)
+    totalCount += 1; 
     if (onCountChange) {
       onCountChange(lanternCount, totalCount); 
     }
@@ -59,7 +59,7 @@ const Lantern = ({onCountChange, major = false}) => {
   };
 
   const animate = () => {
-    lanternCount +=1;
+    lanternCount += 1; 
     onCountChange(lanternCount, totalCount);
     if (imgRef.current) {
     imgRef.current.src = Green;

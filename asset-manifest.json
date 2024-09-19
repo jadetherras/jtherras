@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jtherras/static/css/main.94a89150.css",
-    "main.js": "/jtherras/static/js/main.51859ca5.js",
+    "main.css": "/jtherras/static/css/main.e25a06b2.css",
+    "main.js": "/jtherras/static/js/main.ef170eab.js",
     "reactPlayerPreview.js": "/jtherras/static/js/reactPlayerPreview.8775a16a.chunk.js",
     "reactPlayerSoundCloud.js": "/jtherras/static/js/reactPlayerSoundCloud.01f2f79d.chunk.js",
     "reactPlayerVimeo.js": "/jtherras/static/js/reactPlayerVimeo.f9c9edc0.chunk.js",
@@ -18,7 +18,6 @@
     "static/js/453.c42b2d90.chunk.js": "/jtherras/static/js/453.c42b2d90.chunk.js",
     "static/media/bachelor_project.pdf": "/jtherras/static/media/bachelor_project.b48f38a220313152c068.pdf",
     "static/media/Neural_interface___rendu.pdf": "/jtherras/static/media/Neural_interface___rendu.bd3209eb5153e73b825f.pdf",
-    "static/media/image.png": "/jtherras/static/media/image.dd60020ba806b1e79d64.png",
     "static/media/Clinical_vignette.pdf": "/jtherras/static/media/Clinical_vignette.e0eadd53ba07ecb41add.pdf",
     "static/media/ML4Science.pdf": "/jtherras/static/media/ML4Science.cbfb212efa3f003139d2.pdf",
     "static/media/Final Presentation.pdf": "/jtherras/static/media/Final Presentation.9decfd94eb1a3159d18f.pdf",
@@ -36,7 +35,9 @@
     "static/media/tree.jpg": "/jtherras/static/media/tree.7a346ba3d4d45c516c29.jpg",
     "static/media/photo groupe 1.jpg": "/jtherras/static/media/photo groupe 1.8e994ed460179c304d93.jpg",
     "static/media/photo groupe 2.jpg": "/jtherras/static/media/photo groupe 2.6ef024050b8b8b937bf9.jpg",
+    "static/media/image.png": "/jtherras/static/media/image.dd60020ba806b1e79d64.png",
     "static/media/simreal.png": "/jtherras/static/media/simreal.f707bd8e4587299fbd4b.png",
+    "static/media/image.webp": "/jtherras/static/media/image.49bb31eb5af61a424dc6.webp",
     "static/media/IMG_6710.JPG": "/jtherras/static/media/IMG_6710.d23890e6e6c58fc37177.JPG",
     "static/media/icon.svg": "/jtherras/static/media/icon.1ccfefc97a080e8cce74a42e0ef48adb.svg",
     "static/media/JR.png": "/jtherras/static/media/JR.9a2e5ecdda8cc79f7ee3.png",
@@ -60,8 +61,8 @@
     "static/media/pro-flex modular.PNG": "/jtherras/static/media/pro-flex modular.624c6312bc250c9d5894.PNG",
     "static/media/helpie.png": "/jtherras/static/media/helpie.6229a1c3a85a6baff3ec.png",
     "index.html": "/jtherras/index.html",
-    "main.94a89150.css.map": "/jtherras/static/css/main.94a89150.css.map",
-    "main.51859ca5.js.map": "/jtherras/static/js/main.51859ca5.js.map",
+    "main.e25a06b2.css.map": "/jtherras/static/css/main.e25a06b2.css.map",
+    "main.ef170eab.js.map": "/jtherras/static/js/main.ef170eab.js.map",
     "reactPlayerPreview.8775a16a.chunk.js.map": "/jtherras/static/js/reactPlayerPreview.8775a16a.chunk.js.map",
     "reactPlayerSoundCloud.01f2f79d.chunk.js.map": "/jtherras/static/js/reactPlayerSoundCloud.01f2f79d.chunk.js.map",
     "reactPlayerVimeo.f9c9edc0.chunk.js.map": "/jtherras/static/js/reactPlayerVimeo.f9c9edc0.chunk.js.map",
@@ -78,7 +79,7 @@
     "453.c42b2d90.chunk.js.map": "/jtherras/static/js/453.c42b2d90.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.94a89150.css",
-    "static/js/main.51859ca5.js"
+    "static/css/main.e25a06b2.css",
+    "static/js/main.ef170eab.js"
   ]
 }

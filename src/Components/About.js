@@ -3,7 +3,7 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
-import me from '../Assets/image.png';
+import me from '../Assets/image.webp';
 import "../Style.css";
 import "./About.css";
 

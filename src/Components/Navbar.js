@@ -65,23 +65,8 @@ const Header = ({setANIM}) => {
           <div class='NavBig'>
           <Nav className="position-absolute start-50 translate-middle-x">
           <div ref={ref}>
-              <a class = "link" onClick={handleClick}>Resume</a>
-              <Overlay
-                show={show}
-                target={target}
-                placement="bottom"
-                container={ref}
-                containerPadding={20}
-              >
-              <Popover id="popover-contained" onMouseLeave={handleMouseLeave} >
-              <Popover.Body>
-                <Row>
-                <Col onClick={() =>window.open(cven)}><span className='langage'>English</span></Col>
-                <Col onClick={() =>window.open(cvfr)}><span className='langage'>Français</span></Col>
-                </Row>
-              </Popover.Body>
-              </Popover>
-              </Overlay>
+              <a class = "link" onClick={() =>window.open(cven)}>Resume</a>
+              
             </div>
             <a class = "link" href="#About">About </a>
             <a class = "link" href="#Showcase">Showcase </a>
@@ -93,23 +78,7 @@ const Header = ({setANIM}) => {
           <div class='NavSmall'>
           <Nav className="position-absolute start-50 translate-middle-x">
           <div ref={ref}>
-              <a class = "link" onClick={handleClick}>Resume</a>
-              <Overlay
-                show={show}
-                target={target}
-                placement="bottom"
-                container={ref}
-                containerPadding={20}
-              >
-              <Popover id="popover-contained" onMouseLeave={handleMouseLeave} >
-              <Popover.Body>
-                <Row>
-                <Col onClick={() =>window.open(cven)}><span className='langage'>English</span></Col>
-                <Col onClick={() =>window.open(cvfr)}><span className='langage'>Français</span></Col>
-                </Row>
-              </Popover.Body>
-              </Popover>
-              </Overlay>
+              <a class = "link" onClick={() =>window.open(cven)} >Resume</a>
             </div>
             <a class = "link" href="#About">About </a>
             <a class = "link" href="#Showcase">Showcase </a>
@@ -152,3 +121,20 @@ const Header = ({setANIM}) => {
 }
 
 export default Header;
+
+/*<Overlay
+                show={show}
+                target={target}
+                placement="bottom"
+                container={ref}
+                containerPadding={20}
+              >
+              <Popover id="popover-contained" onMouseLeave={handleMouseLeave} >
+              <Popover.Body>
+                <Row>
+                <Col onClick={() =>window.open(cven)}><span className='langage'>English</span></Col>
+                <Col onClick={() =>window.open(cvfr)}><span className='langage'>Français</span></Col>
+                </Row>
+              </Popover.Body>
+              </Popover>
+              </Overlay>*/

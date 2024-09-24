@@ -41,7 +41,9 @@ const SUP = ({ID="id"}) => {
         case "IGEM":
                 return "International Genetically Engineered Machine (IGEM) : The iGEM competition is a worldwide synthetic biology competition. The IGEM foundation is an independent, non-profit organization dedicated to the advancement of synthetic biology, education and competition."
         case "R&D":
-            return "Research and development (R&D)"   
+            return "Research and development (R&D)" 
+        case "LCA":
+            return " Life Cycle Analysis (LCA) : Methodology for assessing environmental impacts associated with all the stages of the life cycle of a commercial product, process, or service."  
         default :
             return "definition here"
         }

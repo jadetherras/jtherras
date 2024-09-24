@@ -17,6 +17,7 @@ import Parapully from './Projects/Parapully/parapully';
 import Haptic from './Projects/HapticEMG/Haptic';
 import Rocket from './Projects/RocketTeam/Rocket';
 import Ossur from './Projects/Ossur/Ossur';
+import LCA from './Projects/LCA/LCA';
 
 import Bacteria from '../Animation/Bacteria';
 import Lantern from '../Animation/Lantern/Lantern';
@@ -169,6 +170,7 @@ const Showcase = ({ Animation }) => {
             <Row className="d-flex justify-content-center gap-3">
               <div /><div />
               <JumpingRobot />
+              <LCA />
               <VR setIsVRExpanded={setIsVRExpanded}
               foundCount = {lanternCount}
               totalCount = {totalCount}

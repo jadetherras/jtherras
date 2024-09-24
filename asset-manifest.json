@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jtherras/static/css/main.76677899.css",
-    "main.js": "/jtherras/static/js/main.f73e5b32.js",
+    "main.js": "/jtherras/static/js/main.4b03bda7.js",
     "reactPlayerPreview.js": "/jtherras/static/js/reactPlayerPreview.8775a16a.chunk.js",
     "reactPlayerSoundCloud.js": "/jtherras/static/js/reactPlayerSoundCloud.01f2f79d.chunk.js",
     "reactPlayerVimeo.js": "/jtherras/static/js/reactPlayerVimeo.f9c9edc0.chunk.js",
@@ -20,9 +20,12 @@
     "static/media/Neural_interface___rendu.pdf": "/jtherras/static/media/Neural_interface___rendu.bd3209eb5153e73b825f.pdf",
     "static/media/Clinical_vignette.pdf": "/jtherras/static/media/Clinical_vignette.e0eadd53ba07ecb41add.pdf",
     "static/media/ML4Science.pdf": "/jtherras/static/media/ML4Science.cbfb212efa3f003139d2.pdf",
+    "static/media/P_openSim.pdf": "/jtherras/static/media/P_openSim.26d0073919d38787a57b.pdf",
+    "static/media/P_scone.pdf": "/jtherras/static/media/P_scone.6a399be1d36d67903345.pdf",
     "static/media/Final Presentation.pdf": "/jtherras/static/media/Final Presentation.9decfd94eb1a3159d18f.pdf",
     "static/media/HHRI_Lab_EMG.pdf": "/jtherras/static/media/HHRI_Lab_EMG.d825248276deac7072b0.pdf",
     "static/media/HHRI_Lab_2___report.pdf": "/jtherras/static/media/HHRI_Lab_2___report.389afb1659e5a7cf9622.pdf",
+    "static/media/locomotion_1.pdf": "/jtherras/static/media/locomotion_1.dcb5a5c6f51719776b60.pdf",
     "static/media/ATC.pdf": "/jtherras/static/media/ATC.55ead97d2b97bb4a8df8.pdf",
     "static/media/JumpingRobot.pdf": "/jtherras/static/media/JumpingRobot.985bf2758ea55d286afe.pdf",
     "static/media/I_don_t_want_to_be_human_anymore_.pdf": "/jtherras/static/media/I_don_t_want_to_be_human_anymore_.ad773717b0914a6b1bc3.pdf",
@@ -32,6 +35,7 @@
     "static/media/LCA_assessment.pdf": "/jtherras/static/media/LCA_assessment.80ae2a104f85f4119535.pdf",
     "static/media/team.png": "/jtherras/static/media/team.8d8501882d53fe1ea6d8.png",
     "static/media/pictureRocket.JPG": "/jtherras/static/media/pictureRocket.0570b371e5a388668cbf.JPG",
+    "static/media/pouf.png": "/jtherras/static/media/pouf.6f6617086a1117e3b700.png",
     "static/media/First_draft.pdf": "/jtherras/static/media/First_draft.a2313a4992dabe398a6b.pdf",
     "static/media/tree.jpg": "/jtherras/static/media/tree.7a346ba3d4d45c516c29.jpg",
     "static/media/photo groupe 1.jpg": "/jtherras/static/media/photo groupe 1.8e994ed460179c304d93.jpg",
@@ -42,6 +46,7 @@
     "static/media/image.webp": "/jtherras/static/media/image.49bb31eb5af61a424dc6.webp",
     "static/media/IMG_6710.JPG": "/jtherras/static/media/IMG_6710.d23890e6e6c58fc37177.JPG",
     "static/media/icon.svg": "/jtherras/static/media/icon.1ccfefc97a080e8cce74a42e0ef48adb.svg",
+    "static/media/P_SLIP.pdf": "/jtherras/static/media/P_SLIP.06d547e5ea2094c10a09.pdf",
     "static/media/JR.png": "/jtherras/static/media/JR.9a2e5ecdda8cc79f7ee3.png",
     "static/media/mauch.png": "/jtherras/static/media/mauch.8907ff1cb8fa000e3d6d.png",
     "static/media/total knee.png": "/jtherras/static/media/total knee.e34d242b8e4891841114.png",
@@ -64,7 +69,7 @@
     "static/media/helpie.png": "/jtherras/static/media/helpie.6229a1c3a85a6baff3ec.png",
     "index.html": "/jtherras/index.html",
     "main.76677899.css.map": "/jtherras/static/css/main.76677899.css.map",
-    "main.f73e5b32.js.map": "/jtherras/static/js/main.f73e5b32.js.map",
+    "main.4b03bda7.js.map": "/jtherras/static/js/main.4b03bda7.js.map",
     "reactPlayerPreview.8775a16a.chunk.js.map": "/jtherras/static/js/reactPlayerPreview.8775a16a.chunk.js.map",
     "reactPlayerSoundCloud.01f2f79d.chunk.js.map": "/jtherras/static/js/reactPlayerSoundCloud.01f2f79d.chunk.js.map",
     "reactPlayerVimeo.f9c9edc0.chunk.js.map": "/jtherras/static/js/reactPlayerVimeo.f9c9edc0.chunk.js.map",
@@ -82,6 +87,6 @@
   },
   "entrypoints": [
     "static/css/main.76677899.css",
-    "static/js/main.f73e5b32.js"
+    "static/js/main.4b03bda7.js"
   ]
 }

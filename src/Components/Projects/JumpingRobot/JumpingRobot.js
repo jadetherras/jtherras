@@ -15,7 +15,7 @@ import { TfiLayoutSlider } from "react-icons/tfi";
 import { ImLab } from "react-icons/im";
 import { PiPresentationChart } from "react-icons/pi";
 import { Image } from 'react-bootstrap';
-import ReactPlayer from 'react-player/youtube'
+import ReactPlayer from 'react-player/youtube';
 
 
 

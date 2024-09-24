@@ -43,8 +43,14 @@ const SUP = ({ID="id"}) => {
         case "R&D":
             return "Research and development (R&D)" 
         case "LCA":
-            return " Life Cycle Analysis (LCA) : Methodology for assessing environmental impacts associated with all the stages of the life cycle of a commercial product, process, or service."  
-        default :
+            return "Life Cycle Analysis (LCA) : Methodology for assessing environmental impacts associated with all the stages of the life cycle of a commercial product, process, or service."  
+        case "SCI":
+            return "Spinal Cord Injury (SCI) : damage to the spinal cord that causes temporary or permanent changes in its function, for example partial or total paralysis"
+        case "EES":
+            return "Epidural Electrical Stimulation (EES) : rehabilitative training using electrical currents on the spinal cord below the level of the injury to stimulate the nerves directly, bypassing the traditional brain-to-spinal-cord pathways"
+        case "PCA":
+            return "Principal Component Analysis (PCA) : linear dimensionality reduction technique useful for data analysis, visualization (for example clustering) and data preprocessing."
+            default :
             return "definition here"
         }
     }

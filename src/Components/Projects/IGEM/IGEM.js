@@ -5,7 +5,7 @@ import "../../button.css";
 import { Image } from 'react-bootstrap';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import ReactPlayer from 'react-player/youtube'
+import ReactPlayer from 'react-player/youtube';
 
 import T1 from "./IMG_6710.JPG"
 import T2 from "./IMG_6712.JPG"

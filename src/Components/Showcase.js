@@ -18,6 +18,7 @@ import Haptic from './Projects/HapticEMG/Haptic';
 import Rocket from './Projects/RocketTeam/Rocket';
 import Ossur from './Projects/Ossur/Ossur';
 import LCA from './Projects/LCA/LCA';
+import Locomotion from './Projects/Locomotion/Locomotion';
 
 import Bacteria from '../Animation/Bacteria';
 import Lantern from '../Animation/Lantern/Lantern';
@@ -126,8 +127,9 @@ const Showcase = ({ Animation }) => {
               <div /><div />
               <Ossur />
               <Haptic />
-              <TNE />
               <NeuralInterface />
+              <TNE />
+              <Locomotion />
               <div /><div />
             </Row>
           }

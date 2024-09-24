@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jtherras/static/css/main.76677899.css",
-    "main.js": "/jtherras/static/js/main.b8dfb43c.js",
+    "main.js": "/jtherras/static/js/main.05e8e917.js",
     "reactPlayerPreview.js": "/jtherras/static/js/reactPlayerPreview.8775a16a.chunk.js",
     "reactPlayerSoundCloud.js": "/jtherras/static/js/reactPlayerSoundCloud.01f2f79d.chunk.js",
     "reactPlayerVimeo.js": "/jtherras/static/js/reactPlayerVimeo.f9c9edc0.chunk.js",
@@ -29,11 +29,13 @@
     "static/media/Report_ParaPully_project.pdf": "/jtherras/static/media/Report_ParaPully_project.6d80e799af7abedd1d5e.pdf",
     "static/media/rocket.JPG": "/jtherras/static/media/rocket.5b1f7639b65bb94ab9c9.JPG",
     "static/media/HHRI_Lab_3___report.pdf": "/jtherras/static/media/HHRI_Lab_3___report.64bed1f49e12ca480739.pdf",
+    "static/media/LCA_assessment.pdf": "/jtherras/static/media/LCA_assessment.80ae2a104f85f4119535.pdf",
     "static/media/team.png": "/jtherras/static/media/team.8d8501882d53fe1ea6d8.png",
     "static/media/pictureRocket.JPG": "/jtherras/static/media/pictureRocket.0570b371e5a388668cbf.JPG",
     "static/media/First_draft.pdf": "/jtherras/static/media/First_draft.a2313a4992dabe398a6b.pdf",
     "static/media/tree.jpg": "/jtherras/static/media/tree.7a346ba3d4d45c516c29.jpg",
     "static/media/photo groupe 1.jpg": "/jtherras/static/media/photo groupe 1.8e994ed460179c304d93.jpg",
+    "static/media/book.jpg": "/jtherras/static/media/book.70153e5a5ce7083c7ea0.jpg",
     "static/media/photo groupe 2.jpg": "/jtherras/static/media/photo groupe 2.6ef024050b8b8b937bf9.jpg",
     "static/media/image.png": "/jtherras/static/media/image.dd60020ba806b1e79d64.png",
     "static/media/simreal.png": "/jtherras/static/media/simreal.f707bd8e4587299fbd4b.png",
@@ -62,7 +64,7 @@
     "static/media/helpie.png": "/jtherras/static/media/helpie.6229a1c3a85a6baff3ec.png",
     "index.html": "/jtherras/index.html",
     "main.76677899.css.map": "/jtherras/static/css/main.76677899.css.map",
-    "main.b8dfb43c.js.map": "/jtherras/static/js/main.b8dfb43c.js.map",
+    "main.05e8e917.js.map": "/jtherras/static/js/main.05e8e917.js.map",
     "reactPlayerPreview.8775a16a.chunk.js.map": "/jtherras/static/js/reactPlayerPreview.8775a16a.chunk.js.map",
     "reactPlayerSoundCloud.01f2f79d.chunk.js.map": "/jtherras/static/js/reactPlayerSoundCloud.01f2f79d.chunk.js.map",
     "reactPlayerVimeo.f9c9edc0.chunk.js.map": "/jtherras/static/js/reactPlayerVimeo.f9c9edc0.chunk.js.map",
@@ -80,6 +82,6 @@
   },
   "entrypoints": [
     "static/css/main.76677899.css",
-    "static/js/main.b8dfb43c.js"
+    "static/js/main.05e8e917.js"
   ]
 }

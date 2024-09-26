@@ -24,6 +24,7 @@ import Bacteria from '../Animation/Bacteria';
 import Lantern from '../Animation/Lantern/Lantern';
 import TheRocket from '../Animation/Rocket/rocket';
 import Rain from '../Animation/rain/rain';
+import BL from './Projects/Brainlike/BrainLike';
 
 import Separator from './separator';
 
@@ -143,7 +144,9 @@ const Showcase = ({ Animation }) => {
             <Row className="d-flex justify-content-center gap-3">
               <div /><div />
               <LAPD setIsLAPDExpanded={setIsRaining} />
+              <BL/>
               <Parapully setIsPPExpanded={setIsRaining} />
+
               <div /><div />
             </Row>
           }

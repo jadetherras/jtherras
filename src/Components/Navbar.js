@@ -60,13 +60,12 @@ const Header = ({setANIM}) => {
   return (
     <>
       <Navbar className='navbar' data-bs-theme="dark" sticky="top" >
+  
         <Container className="position-relative d-flex align-items-center justify-content-between">
-          
           <div class='NavBig'>
           <Nav className="position-absolute start-50 translate-middle-x">
           <div ref={ref}>
               <a class = "link" onClick={() =>window.open(cven)}>Resume</a>
-              
             </div>
             <a class = "link" href="#About">About </a>
             <a class = "link" href="#Showcase">Showcase </a>

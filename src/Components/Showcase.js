@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect} from 'react';
+import React, { useState, useRef} from 'react';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -19,12 +19,15 @@ import Rocket from './Projects/RocketTeam/Rocket';
 import Ossur from './Projects/Ossur/Ossur';
 import LCA from './Projects/LCA/LCA';
 import Locomotion from './Projects/Locomotion/Locomotion';
+import BL from './Projects/Brainlike/BrainLike';
+import ADA from './Projects/ADA/ADA';
 
 import Bacteria from '../Animation/Bacteria';
 import Lantern from '../Animation/Lantern/Lantern';
 import TheRocket from '../Animation/Rocket/rocket';
 import Rain from '../Animation/rain/rain';
-import BL from './Projects/Brainlike/BrainLike';
+import Blood from '../Animation/Blood/blood';
+
 
 import Separator from './separator';
 
@@ -32,6 +35,9 @@ const Showcase = ({ Animation }) => {
   const [isIGEMExpanded, setIsIGEMExpanded] = useState(false);
   const [isRocketExpanded, setIsRocketExpanded] = useState(false);
   const [isRaining, setIsRaining] = useState(false);
+
+  const [isADAExpanded, setIsADAExpanded] = useState(false); 
+  const [isRed, setRed] = useState(false); 
 
   const [isVRExpanded, setIsVRExpanded] = useState(false);
   
@@ -73,11 +79,12 @@ const Showcase = ({ Animation }) => {
     setTotalCount(newTotalCount);
   };
 
-  /*useEffect(() => {
-    if (totalCount != 0 && lanternCount === totalCount) {
-      document.getElementById("major-lantern").scrollIntoView({ behavior: "smooth" });
-    }
-  }, [lanternCount, totalCount]);*/
+
+  const switchColor = (color) => {
+    const root = document.documentElement;
+    root.style.setProperty('--primary-color',color);
+    setRed(!isRed);
+  };
 
   return (
     <Container>
@@ -97,16 +104,15 @@ const Showcase = ({ Animation }) => {
           <Lantern onCountChange={handleLanternCountChange} />
           <Lantern onCountChange={handleLanternCountChange} />
           <Lantern onCountChange={handleLanternCountChange} />
-
-          {/*{/* Conditionally render the MAJOR lantern only when all other lanterns are found *
-          {totalCount !=0 && lanternCount === totalCount && (
-            <>
-            {console.log("MAJOR Lantern created")}
-            <Lantern onCountChange={handleLanternCountChange} major={true} id="major-lantern" />
-            </>
-          )}*/}
         </>
       )}
+
+      {Animation && isADAExpanded && <Blood />}
+      
+      {Animation && !isRed && isADAExpanded && switchColor('#780202') && <Blood />}
+      {Animation && isRed && !isADAExpanded && switchColor('#db5c13')}
+      
+
       <h1>Projects</h1>&nbsp;
 
       <Col align="justify-content-md-center">
@@ -139,10 +145,11 @@ const Showcase = ({ Animation }) => {
         <Separator
           ref={separatorRefs[1]}
           OnToggle={() => handleToggle(1)}
-          Text="Machine Learning"
+          Text="Machine Learning / Data analysis"
           children={
             <Row className="d-flex justify-content-center gap-3">
               <div /><div />
+              <ADA setIsADAExpanded={setIsADAExpanded}/>
               <LAPD setIsLAPDExpanded={setIsRaining} />
               <BL/>
               <Parapully setIsPPExpanded={setIsRaining} />

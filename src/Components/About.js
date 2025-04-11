@@ -20,9 +20,10 @@ const About = () => {
             Hi ! I'm Jade Therras. <br/><br/>
             I've always been driven by a desire to understand living beings and contribute humbly and positively to the world. <br/>
             I believe that everyone should have a chance to live as they want, which is why I've developed a strong interest in rehabilitation, prosthetics, and neuroscience. 
-            In particular, I'm passionate about assistive technology. <br/><br/>
-            Currently finishing a Master in Neuro-technology at École Polytechnique Fédérale de Lausanne (EPFL), after a life sciences Bachelor's degree in the same university, I'm now searching for a challenging 6 months master 
-            thesis starting in february/march. <br/><br/>
+            In particular, I'm passionate about assistive technology. 
+            <br/><br/>
+            I have completed a bachelor in biotechnology and I'm finising a master in Neuro-engineering.<br/>
+            I'm currently working in the Motion Analysis Lab of Harvard Medical School for master thesis, at Spaulding rehabilitation hospital, in Boston USA. <br/><br/>
             I'm determined and have a lot of energy ! I also love to share and teach, at least as much as I love to learn. <br/>
             My values are curiosity, polyvalence and honesty.
             <br/><br/>

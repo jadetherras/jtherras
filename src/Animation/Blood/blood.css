@@ -13,7 +13,7 @@
     transform: scaleX(0.3) scaleY(2.5);
   }
   100% {
-    top: 2000vh;
+    top: 200vw;
     opacity: 0;
     transform: scaleX(0.3) scaleY(3);
   }
@@ -22,7 +22,7 @@
 .drop {
   position: absolute;
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-  animation: drop 15s cubic-bezier(1, .19, .66, .12) forwards;
+  animation: drop 10s cubic-bezier(1, .19, .66, .12) forwards;
   background: radial-gradient(circle at 30% 30%, #660000, #ff0000);
   box-shadow: 0 0 10px rgba(244, 0, 0, 0.692);
 }

@@ -61,7 +61,6 @@ become who you really are.
                 <button class="button-48" role="button" onClick={() =>window.open(report)}><span class="text"><FaFileAlt />See project report</span></button><br/>
                 <button class="button-48" role="button" onClick={() =>window.open(git)}><span class="text"><FaGithub />Go to git repository</span></button><br/>  
                 <button class="button-48" role="button" onClick={() =>window.open(course)}><span class="text"><PiPresentationChart />See corresponding course</span></button><br/>
-                <button class="button-48" role="button" onClick={() =>window.open(git)}><span class="text"><GiConsoleController /> Download the game prototype</span></button><br/>
                 </div>
                 </div>
           }
@@ -74,3 +73,6 @@ become who you really are.
 }
 
 export default VR;
+
+//<button class="button-48" role="button" onClick={() =>window.open(git)}><span class="text"><GiConsoleController /> Download the game prototype</span></button><br/>
+                

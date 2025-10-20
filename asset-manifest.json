@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jtherras/static/css/main.9a884f92.css",
-    "main.js": "/jtherras/static/js/main.d18b91fb.js",
+    "main.js": "/jtherras/static/js/main.14c1bf99.js",
     "reactPlayerPreview.js": "/jtherras/static/js/reactPlayerPreview.a00c6eac.chunk.js",
     "reactPlayerSoundCloud.js": "/jtherras/static/js/reactPlayerSoundCloud.80217438.chunk.js",
     "reactPlayerVimeo.js": "/jtherras/static/js/reactPlayerVimeo.b2d80cee.chunk.js",
@@ -18,9 +18,12 @@
     "static/js/453.c42b2d90.chunk.js": "/jtherras/static/js/453.c42b2d90.chunk.js",
     "static/media/bachelor_project.pdf": "/jtherras/static/media/bachelor_project.b48f38a220313152c068.pdf",
     "static/media/Neural_interface___rendu.pdf": "/jtherras/static/media/Neural_interface___rendu.bd3209eb5153e73b825f.pdf",
+    "static/media/show.MOV": "/jtherras/static/media/show.d457b56661355bf8d2ca.MOV",
     "static/media/Clinical_vignette.pdf": "/jtherras/static/media/Clinical_vignette.e0eadd53ba07ecb41add.pdf",
     "static/media/ML4Science.pdf": "/jtherras/static/media/ML4Science.cbfb212efa3f003139d2.pdf",
     "static/media/P_openSim.pdf": "/jtherras/static/media/P_openSim.26d0073919d38787a57b.pdf",
+    "static/media/walker.jpeg": "/jtherras/static/media/walker.76322814282e1860fcdc.jpeg",
+    "static/media/concept.jpeg": "/jtherras/static/media/concept.999d97e6e337c41fd95c.jpeg",
     "static/media/P_scone.pdf": "/jtherras/static/media/P_scone.6a399be1d36d67903345.pdf",
     "static/media/Final Presentation.pdf": "/jtherras/static/media/Final Presentation.9decfd94eb1a3159d18f.pdf",
     "static/media/HHRI_Lab_EMG.pdf": "/jtherras/static/media/HHRI_Lab_EMG.d825248276deac7072b0.pdf",
@@ -71,7 +74,7 @@
     "static/media/helpie.png": "/jtherras/static/media/helpie.6229a1c3a85a6baff3ec.png",
     "index.html": "/jtherras/index.html",
     "main.9a884f92.css.map": "/jtherras/static/css/main.9a884f92.css.map",
-    "main.d18b91fb.js.map": "/jtherras/static/js/main.d18b91fb.js.map",
+    "main.14c1bf99.js.map": "/jtherras/static/js/main.14c1bf99.js.map",
     "reactPlayerPreview.a00c6eac.chunk.js.map": "/jtherras/static/js/reactPlayerPreview.a00c6eac.chunk.js.map",
     "reactPlayerSoundCloud.80217438.chunk.js.map": "/jtherras/static/js/reactPlayerSoundCloud.80217438.chunk.js.map",
     "reactPlayerVimeo.b2d80cee.chunk.js.map": "/jtherras/static/js/reactPlayerVimeo.b2d80cee.chunk.js.map",
@@ -89,6 +92,6 @@
   },
   "entrypoints": [
     "static/css/main.9a884f92.css",
-    "static/js/main.d18b91fb.js"
+    "static/js/main.14c1bf99.js"
   ]
 }

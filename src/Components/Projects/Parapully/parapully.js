@@ -6,9 +6,9 @@ import "../../button.css";
 import sky from "./leman.jpeg"
 import report from "./Report_ParaPully_project.pdf"
 
-import { FaFileAlt } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { PiPresentationChart } from "react-icons/pi";
+
+import {FaGithub,FaFileAlt,PiPresentationChart} from "../../../icons";
+
 
 
 const Parapully = ({setIsPPExpanded }) => {

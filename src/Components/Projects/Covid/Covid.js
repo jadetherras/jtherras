@@ -6,10 +6,7 @@ import "../../button.css";
 import sky from "./leman.jpeg"
 import report from "./Covid_19_Project.pdf"
 
-import { FaFileAlt } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { PiPresentationChart } from "react-icons/pi";
-
+import SUP from '../../../SUP.js';
 
 const Covid = () => {
   const git="https://github.com/jadetherras/ParaPully"

@@ -6,11 +6,8 @@ import "../../button.css";
 import result from "./result.png"
 import report from "./Report.pdf"
 
-import { FaFileAlt } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { PiPresentationChart } from "react-icons/pi";
+import {FaGithub,FaFileAlt,PiPresentationChart} from "../../../icons";
 
-import SUP from '../../../SUP.js';
 
 const BL = () => {
   const git="https://github.com/jadetherras/brain-like"

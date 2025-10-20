@@ -12,14 +12,8 @@ import T2 from "./IMG_6712.JPG"
 import bioquest from "./icon.svg"
 import logo from "./48C.png"
 
-
-import { FaGithub } from "react-icons/fa";
-import { GiTargetPrize } from "react-icons/gi";
-import { CgWebsite } from "react-icons/cg";
-import { FaVideo } from "react-icons/fa";
-
 import SUP from '../../../SUP';
-
+import {FaGithub,FaVideo,GiTargetPrize,CgWebsite,GiConsoleController} from "../../../icons";
 
 
 const IGEM = ({setIsIGEMExpanded}) => {
@@ -30,11 +24,12 @@ const IGEM = ({setIsIGEMExpanded}) => {
   const video = "https://www.youtube.com/watch?v=SaA0YtPz03s"
   const git ="https://gitlab.igem.org/2023/software-tools/epfl"
   const videobioquest = "https://static.igem.wiki/teams/4888/wiki/tutorial-xk8tsjb4.gif"
+  const driveJeu = "https://drive.google.com/drive/folders/1H-4W0A03qS9c02kNHEzeER4AwsEUCHcr"
   
   return (
         <Card
-        title={<p align= "left">A cadmium catcher<br/> live biotherapeutic<br/> product</p> }
-        bodyText={<p>48C : the IGEM<SUP ID ="IGEM"/> participation of the EPFL team</p>}
+        title={<p align= "left">Catching cadmium<br/> & vulgarizing</p> }
+        bodyText={<p>IGEM<SUP ID ="IGEM"/>, developing a cadmium catcher live biotherapeutic product while vulgarizing synthetic biology with a game : Bioquest</p>}
         linkText="Learn More"
         cardContent={<div>
            <div align="center"><ReactPlayer url={introdvideo} width="100%" /></div> <br/>
@@ -87,8 +82,9 @@ As a safety precaution, the production of the SpaC protein is halted once it ent
                 <div>
                 <button class="button-48" role="button" onClick={() =>window.open(wiki)}><span class="text"><CgWebsite />Check our website !</span></button><br/>
                 <button class="button-48" role="button" onClick={() =>window.open(video)}><span class="text"><FaVideo />See the presentation video (15min)</span></button><br/>
-                <button class="button-48" role="button" onClick={() =>window.open(git)}><span class="text"><FaGithub /> Go to Bioquest git</span></button><br/>
-                <button class="button-48" role="button" onClick={() =>window.open(igem)}><span class="text"><GiTargetPrize /> See IGEM competition</span></button><br/>
+                <button class="button-48" role="button" onClick={() =>window.open(git)}><span class="text"><GiConsoleController /> Drive to download the game</span></button><br/>
+                <button class="button-48" role="button" onClick={() =>window.open(git)}><span class="text"><FaGithub /> Git of the game</span></button><br/>
+                <button class="button-48" role="button" onClick={() =>window.open(igem)}><span class="text"><GiTargetPrize /> More about the IGEM competition</span></button><br/>
               
                 </div>
                 </div>

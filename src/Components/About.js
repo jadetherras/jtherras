@@ -16,18 +16,23 @@ const About = () => {
         </Col>
         <Col xs={12} md={8}  className="d-flex align-items-center justify-content-center">  
           <p align="left">
-          <h2 align="left">About Me</h2><br/>
-            Hi ! I'm Jade Therras. <br/><br/>
-            I've always been driven by a desire to understand living beings and contribute humbly and positively to the world. <br/>
-            I believe that everyone should have a chance to live as they want, which is why I've developed a strong interest in rehabilitation, prosthetics, and neuroscience. 
-            In particular, I'm passionate about assistive technology. 
-            <br/><br/>
-            I have completed a bachelor in biotechnology and I'm finising a master in Neuro-engineering.<br/>
-            I'm currently working in the Motion Analysis Lab of Harvard Medical School for master thesis, at Spaulding rehabilitation hospital, in Boston USA. <br/><br/>
-            I'm determined and have a lot of energy ! I also love to share and teach, at least as much as I love to learn. <br/>
-            My values are curiosity, polyvalence and honesty.
-            <br/><br/>
-            You will find below a selection of past projects.
+          <h2 align="left">Jade Therras</h2>
+          Biomedical engineer <br/><br/>
+             Hi, welcome to my portfolio !<br/><br/>
+              I'm a polyvalent engineer driven by the desire to contribute humbly and positively to the world. <br/><br/>
+              I believe that everyone should have a chance to live as they want, which is why I've developed a strong interest in rehabilitation, prosthetics, and neuroscience.
+              In particular, I'm passionate about assistive technology. 
+                          <br/><br/>
+              Apart from medical devices, I have a strong background in programming for software, web and mobile development, as well as machine learning and data analysis. 
+              I have completed a bachelor in Biotechnology and a master in Neuro-engineering at EPFL.<br/><br/>
+              I'm now looking for a first job that aligns with my values. I'm determined and have a lot of energy! <br/><br/>
+              I also love to share and teach, at least as much as I love to learn.<br/>
+              My values are curiosity, polyvalence and honesty.
+                          <br/><br/>
+              You will find a selection of past projects below.
+                          <br/><br/>
+              Best<br/>
+              Jade
           </p>  
         </Col>
       </Row>

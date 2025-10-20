@@ -11,14 +11,13 @@ import couv from "./couv.jpg"
 import report from "./Neural_interface___rendu.pdf"
 import prop from "./First_draft.pdf"
 
-import { FaFileAlt } from "react-icons/fa";
-import { PiPresentationChart } from "react-icons/pi";
-import { ImLab } from "react-icons/im";
 
 import Img1 from "./photo groupe 1.jpg"
 import Img2 from "./photo groupe 2.jpg"
 
 import SUP from '../../../SUP';
+import {FaFileAlt,PiPresentationChart,ImLab} from "../../../icons";
+
 
 const NeuralInterface = () => {
   const course="https://edu.epfl.ch/coursebook/en/neural-interfaces-NX-422"

@@ -3,13 +3,9 @@ import "../../../Style.css";
 import Card from '../../card';
 import "../../button.css";
 
-
-import { CgWebsite } from "react-icons/cg";
-import { PiPresentationChart } from "react-icons/pi";
-import { FaGithub } from "react-icons/fa";
-
 import Croco from './couvCroco.png';
 
+import {FaGithub,CgWebsite,PiPresentationChart} from "../../../icons";
 
 const ADA = ({setIsADAExpanded}) => {
   const website="https://jadetherras.github.io/ADAlligators_website/"

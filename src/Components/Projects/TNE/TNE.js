@@ -6,10 +6,9 @@ import "../../button.css";
 import report from "./Clinical_vignette.pdf"
 import device from "./overview_device.png"
 
-import { FaFileAlt } from "react-icons/fa";
-import { PiPresentationChart } from "react-icons/pi";
-
 import SUP from '../../../SUP';
+import {FaFileAlt,PiPresentationChart} from "../../../icons";
+
 
 
 const TNE = () => {

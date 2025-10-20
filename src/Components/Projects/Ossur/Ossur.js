@@ -10,9 +10,9 @@ import logo from "./logo.png"
 import total from "./total knee.png"
 import mauch from "./mauch.png"
 import feet from "./pro-flex modular.PNG"
-import { CgWebsite } from "react-icons/cg";
 
 import SUP from '../../../SUP';
+import {CgWebsite} from "../../../icons";
 
 
 const Ossur = () => {

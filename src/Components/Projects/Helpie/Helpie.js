@@ -9,15 +9,7 @@ import screen from "./screen.png"
 import team from "./team.png"
 import report from "./ATC.pdf"
 
-
-import { FaGithub } from "react-icons/fa";
-import { FaFileAlt } from "react-icons/fa";
-import { RiGuideFill } from "react-icons/ri";
-import { MdArticle } from "react-icons/md";
-import { GiTargetPrize } from "react-icons/gi";
-import { GiHealthNormal } from "react-icons/gi";
-
-
+import {FaGithub,FaFileAlt,GiTargetPrize,GiHealthNormal,RiGuideFill,MdArticle} from "../../../icons";
 
 
 
@@ -32,8 +24,8 @@ const Helpie = () => {
   
   return (
         <Card
-        title="Helpie"
-        bodyText="An app to help neurodivergent and mentally impaired people use public transport"
+        title={<p align= "left">Helpie <br/> leverage mobility</p>}
+        bodyText="An app to help neurodivergent and mentally impaired people use public transport in switzerland"
         linkText="Learn More"
         cardContent={<div>
           <h3 align="left">Why Helpie? </h3>

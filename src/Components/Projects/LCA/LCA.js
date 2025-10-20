@@ -6,10 +6,9 @@ import "../../button.css";
 import image from "./book.jpg"
 import report from "./LCA_assessment.pdf";
 
-import { FaFileAlt } from "react-icons/fa";
-import { PiPresentationChart } from "react-icons/pi";
-
 import SUP from '../../../SUP.js';
+import {FaFileAlt,PiPresentationChart} from "../../../icons";
+
 
 const LCA = () => {
   const course="https://edu.epfl.ch/coursebook/en/lifecycle-performance-of-product-systems-ME-516"

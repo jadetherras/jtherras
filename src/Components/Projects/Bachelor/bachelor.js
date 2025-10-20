@@ -6,11 +6,10 @@ import "../../button.css";
 import image from "./image.png"
 import report from "./bachelor_project.pdf"
 
-import { FaFileAlt } from "react-icons/fa";
-import { ImLab } from "react-icons/im";
-import { FaGithub } from "react-icons/fa";
 
 import SUP from '../../../SUP.js';
+import {FaGithub,FaFileAlt,ImLab} from "../../../icons";
+
 
 const Bachelor = () => {
   const git="https://github.com/jadetherras/bachelor_project"

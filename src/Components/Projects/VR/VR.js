@@ -8,10 +8,8 @@ import report from "./I_don_t_want_to_be_human_anymore_.pdf"
 import ReactPlayer from 'react-player/youtube'
 import { Box } from '@mui/material';
 
+import {FaGithub,FaFileAlt,PiPresentationChart,GiConsoleController} from "../../../icons";
 
-import { FaGithub } from "react-icons/fa";
-import { PiPresentationChart } from "react-icons/pi";
-import { FaFileAlt } from "react-icons/fa";
 
 const VR = ({setIsVRExpanded, foundCount = 0,totalCount = 0}) => {
   const git ="https://github.com/jadetherras/HOVR"
@@ -20,7 +18,7 @@ const VR = ({setIsVRExpanded, foundCount = 0,totalCount = 0}) => {
   return (
         <Card
         title={<p align= "left">I don't want to be <br/>  human anymore!</p> }
-        bodyText="A virtual reality puzzle game"
+        bodyText="Developing a virtual reality puzzle game"
         linkText="Learn More"
         cardContent={<div>
           <h3 align="center" >If a lantern (diamond) appear, click to activate!</h3>
@@ -63,6 +61,7 @@ become who you really are.
                 <button class="button-48" role="button" onClick={() =>window.open(report)}><span class="text"><FaFileAlt />See project report</span></button><br/>
                 <button class="button-48" role="button" onClick={() =>window.open(git)}><span class="text"><FaGithub />Go to git repository</span></button><br/>  
                 <button class="button-48" role="button" onClick={() =>window.open(course)}><span class="text"><PiPresentationChart />See corresponding course</span></button><br/>
+                <button class="button-48" role="button" onClick={() =>window.open(git)}><span class="text"><GiConsoleController /> Download the game prototype</span></button><br/>
                 </div>
                 </div>
           }

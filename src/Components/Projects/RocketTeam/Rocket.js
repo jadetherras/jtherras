@@ -8,7 +8,8 @@ import ReactPlayer from 'react-player';
 import couv from "./rocket.JPG"
 import team from "./pictureRocket.JPG"
 
-import { CgWebsite } from "react-icons/cg";
+import {CgWebsite} from "../../../icons";
+
 
 const Rocket = ({setIsRocketExpanded}) => {
   const RocketTeam="https://epflrocketteam.ch/"

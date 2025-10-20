@@ -6,9 +6,8 @@ import Overlay from 'react-bootstrap/Overlay';
 import Popover from 'react-bootstrap/Popover';
 import '../Style.css';
 import { Col,Row } from 'react-bootstrap';
-import cvfr from "../Assets/CVfr.pdf";
-import cven from "../Assets/CVen.pdf";
-import T from "../Assets/transcript.pdf"
+import cv from "../Assets/CV.pdf";
+import T from "../Assets/supplement.pdf"
 import './Navbar.css';
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -65,26 +64,26 @@ const Header = ({setANIM}) => {
           <div class='NavBig'>
           <Nav className="position-absolute start-50 translate-middle-x">
           <div ref={ref}>
-              <a class = "link" onClick={() =>window.open(cven)}>Resume</a>
+              <a class = "link" onClick={() =>window.open(cv)}>Resume</a>
             </div>
             <a class = "link" href="#About">About </a>
             <a class = "link" href="#Showcase">Showcase </a>
             <a class = "link" href="#Contacts">Contact </a>
             <a class = "link" onClick={() =>window.open("https://github.com/jadetherras")}>Github</a>
-            <a class = "link" onClick={() =>window.open(T)}>Transcript</a>
+            <a class = "link" onClick={() =>window.open(T)}>Diploma supplement</a>
           </Nav>
           </div>
           <div class='NavSmall'>
           <Nav className="position-absolute start-50 translate-middle-x">
           <div ref={ref}>
-              <a class = "link" onClick={() =>window.open(cven)} >Resume</a>
+              <a class = "link" onClick={() =>window.open(cv)} >Resume</a>
             </div>
             <a class = "link" href="#About">About </a>
             <a class = "link" href="#Showcase">Showcase </a>
             </Nav><Nav className="position-absolute start-50 top-100 translate-middle-x">
             <a class = "link" href="#Contacts">Contact </a>
             <a class = "link" onClick={() =>window.open("https://github.com/jadetherras")}>Github</a>
-            <a class = "link" onClick={() =>window.open(T)}>Transcript</a>
+            <a class = "link" onClick={() =>window.open(T)}>Diploma supplement</a>
           </Nav>
           </div>
           <div ref={ref2} className="d-flex align-items-center ms-auto"

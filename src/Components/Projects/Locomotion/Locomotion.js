@@ -11,11 +11,9 @@ import report3 from "./P_openSim.pdf";
 import report2 from "./P_scone.pdf";
 import report1 from "./P_SLIP.pdf";
 
-
-import { FaGithub } from "react-icons/fa";
-import { FaFileAlt } from "react-icons/fa";
-import { PiPresentationChart } from "react-icons/pi";
 import SUP from '../../../SUP';
+import {FaGithub,FaFileAlt,PiPresentationChart} from "../../../icons";
+
 
 const Locomotion = () => {
   const git ="https://github.com/jadetherras/project_1_locomotion/tree/main"

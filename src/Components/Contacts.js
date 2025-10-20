@@ -13,7 +13,7 @@ import "./button.css";
 
 const Contacts = () => {
     const linkedin = "https://www.linkedin.com/in/jade-therras-873a08206/"
-    const email = "mailto:jade.therras@epfl.ch"
+    const email = "mailto:jadetherras@gmail.com"
     const tel = "tel:+33658814083"
     return (
     <Container className="my-5 mx-10">

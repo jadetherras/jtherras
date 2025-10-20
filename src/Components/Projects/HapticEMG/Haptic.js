@@ -8,9 +8,9 @@ import report1 from "./HHRI_Lab_2___report.pdf"
 import report2 from "./HHRI_Lab_3___report.pdf"
 import report3 from "./HHRI_Lab_EMG.pdf"
 
-import { FaFileAlt } from "react-icons/fa";
-import { PiPresentationChart } from "react-icons/pi";
 import SUP from '../../../SUP';
+import {FaFileAlt,PiPresentationChart} from "../../../icons";
+
 
 const Haptic = () => {
   const course="https://edu.epfl.ch/coursebook/fr/haptic-human-robot-interfaces-MICRO-553"

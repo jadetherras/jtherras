@@ -121,14 +121,17 @@ const Showcase = ({ Animation }) => {
           <Row className="d-flex justify-content-center gap-3">
             <Helpie />
             <IGEM setIsIGEMExpanded={setIsIGEMExpanded} />
-            <NeuralInterface />
+            <VR setIsVRExpanded={setIsVRExpanded}
+              foundCount = {lanternCount}
+              totalCount = {totalCount}
+                />
           </Row>
         </Box>
 
         <Separator
          ref={separatorRefs[0]}
          OnToggle={() => handleToggle(0)}
-          Text="Rehabilitation and neurosciences"
+          Text="Rehabilitation & neurosciences"
           children={
             <Row className="d-flex justify-content-center gap-3">
               <div /><div />
@@ -145,7 +148,7 @@ const Showcase = ({ Animation }) => {
         <Separator
           ref={separatorRefs[1]}
           OnToggle={() => handleToggle(1)}
-          Text="Machine Learning / Data analysis"
+          Text="Machine Learning & Data analysis"
           children={
             <Row className="d-flex justify-content-center gap-3">
               <div /><div />
@@ -162,13 +165,16 @@ const Showcase = ({ Animation }) => {
         <Separator
           ref={separatorRefs[2]}
           OnToggle={() => handleToggle(2)}
-          Text="Associative and MAKE projects"
+          Text="Software & mobile development"
           children={
             <Row className="d-flex justify-content-center gap-3">
               <div /><div />
               <Helpie />
               <IGEM setIsIGEMExpanded={setIsIGEMExpanded} />
-              <Rocket setIsRocketExpanded={setIsRocketExpanded} />
+              <VR setIsVRExpanded={setIsVRExpanded}
+              foundCount = {lanternCount}
+              totalCount = {totalCount}
+                />
               <div /><div />
             </Row>
           }
@@ -182,11 +188,8 @@ const Showcase = ({ Animation }) => {
             <Row className="d-flex justify-content-center gap-3">
               <div /><div />
               <JumpingRobot />
+              <Rocket setIsRocketExpanded={setIsRocketExpanded} />
               <LCA />
-              <VR setIsVRExpanded={setIsVRExpanded}
-              foundCount = {lanternCount}
-              totalCount = {totalCount}
-                />
               <Bachelor />
               <div /><div />
             </Row>

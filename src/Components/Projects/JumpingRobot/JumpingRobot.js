@@ -9,14 +9,10 @@ import SR from "./simreal.png"
 import report from "./JumpingRobot.pdf"
 import slide from "./Final Presentation.pdf"
 
-import { FaGithub } from "react-icons/fa";
-import { FaFileAlt } from "react-icons/fa";
-import { TfiLayoutSlider } from "react-icons/tfi";
-import { ImLab } from "react-icons/im";
-import { PiPresentationChart } from "react-icons/pi";
 import { Image } from 'react-bootstrap';
 import ReactPlayer from 'react-player/youtube';
 
+import {FaGithub,FaFileAlt,PiPresentationChart,ImLab,TfiLayoutSlider} from "../../../icons";
 
 
 const JumpingRobot = () => {

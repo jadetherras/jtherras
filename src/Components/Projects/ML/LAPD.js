@@ -6,12 +6,10 @@ import "../../button.css";
 import sky from "./sky.png"
 import report from "./ML4Science.pdf"
 
-import { FaFileAlt } from "react-icons/fa";
-import { ImLab } from "react-icons/im";
-import { FaGithub } from "react-icons/fa";
-import { PiPresentationChart } from "react-icons/pi";
 
 import SUP from '../../../SUP.js';
+import {FaGithub,FaFileAlt,PiPresentationChart,ImLab} from "../../../icons";
+
 
 const LAPD = ({setIsLAPDExpanded}) => {
   const git="https://github.com/CS-433/ml-project-2-lapd"

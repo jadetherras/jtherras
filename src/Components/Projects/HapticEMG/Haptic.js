@@ -3,7 +3,7 @@ import "../../../Style.css";
 import Card from '../../card';
 import "../../button.css";
 
-import couv from "./paddle.jpg"
+import couv from "./paddle.webp"
 import report1 from "./HHRI_Lab_2___report.pdf"
 import report2 from "./HHRI_Lab_3___report.pdf"
 import report3 from "./HHRI_Lab_EMG.pdf"

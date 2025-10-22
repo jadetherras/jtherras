@@ -7,13 +7,13 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { Image } from 'react-bootstrap';
 
-import couv from "./couv.jpg"
+import couv from "./couv.webp"
 import report from "./Neural_interface___rendu.pdf"
 import prop from "./First_draft.pdf"
 
 
-import Img1 from "./photo groupe 1.jpg"
-import Img2 from "./photo groupe 2.jpg"
+import Img1 from "./photo groupe 1.webp"
+import Img2 from "./photo groupe 2.webp"
 
 import SUP from '../../../SUP';
 import {FaFileAlt,PiPresentationChart,ImLab} from "../../../icons";

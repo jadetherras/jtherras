@@ -3,7 +3,7 @@ import "../../../Style.css";
 import Card from '../../card.js';
 import "../../button.css";
 
-import result from "./result.png"
+import result from "./result.webp"
 import report from "./Report.pdf"
 
 import {FaGithub,FaFileAlt,PiPresentationChart} from "../../../icons";

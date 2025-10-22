@@ -3,7 +3,7 @@ import "../../../Style.css";
 import Card from '../../card';
 import "../../button.css";
 
-import Croco from './couvCroco.png';
+import Croco from './couvCroco.webp';
 
 import {FaGithub,CgWebsite,PiPresentationChart} from "../../../icons";
 

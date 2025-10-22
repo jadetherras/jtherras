@@ -7,10 +7,10 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import ReactPlayer from 'react-player/youtube';
 
-import T1 from "./IMG_6710.JPG"
-import T2 from "./IMG_6712.JPG"
+import T1 from "./IMG_6710.webp"
+import T2 from "./IMG_6712.webp"
 import bioquest from "./icon.svg"
-import logo from "./48C.png"
+import logo from "./48C.webp"
 
 import SUP from '../../../SUP';
 import {FaGithub,FaVideo,GiTargetPrize,CgWebsite,GiConsoleController} from "../../../icons";

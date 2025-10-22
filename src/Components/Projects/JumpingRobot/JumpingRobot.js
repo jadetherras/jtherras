@@ -3,8 +3,8 @@ import "../../../Style.css";
 import Card from '../../card';
 import "../../button.css";
 
-import JR from "./JR.png"
-import SR from "./simreal.png"
+import JR from "./JR.webp"
+import SR from "./simreal.webp"
 
 import report from "./JumpingRobot.pdf"
 import slide from "./Final Presentation.pdf"

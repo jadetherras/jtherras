@@ -3,7 +3,7 @@ import "../../../Style.css";
 import Card from '../../card.js';
 import "../../button.css";
 
-import image from "./image.png"
+import image from "./image.webp"
 import report from "./bachelor_project.pdf"
 
 

@@ -4,9 +4,9 @@ import Card from '../../card';
 import "../../button.css";
 import { Image } from 'react-bootstrap';
 
-import helpie from "./helpie.png"
-import screen from "./screen.png"
-import team from "./team.png"
+import helpie from "./helpie.webp"
+import screen from "./screen.webp"
+import team from "./team.webp"
 import report from "./ATC.pdf"
 
 import {FaGithub,FaFileAlt,GiTargetPrize,GiHealthNormal,RiGuideFill,MdArticle} from "../../../icons";

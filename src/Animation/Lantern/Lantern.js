@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-import Red from "./SpaCLred.png"
-import Green from "./SpaCLgreen.png"
+import Red from "./SpaCLred.webp"
+import Green from "./SpaCLgreen.webp"
 
 let lanternCount = 0;
 let totalCount =0;

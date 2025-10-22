@@ -3,7 +3,7 @@ import "../../../Style.css";
 import Card from '../../card.js';
 import "../../button.css";
 
-import sky from "./sky.png"
+import sky from "./sky.webp"
 import report from "./ML4Science.pdf"
 
 

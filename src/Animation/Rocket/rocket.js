@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 
-import up from "./SpaCgo.png";
-import down from "./SpaCdown.png";
+import up from "./SpaCgo.webp";
+import down from "./SpaCdown.webp";
 
 const TheRocket= () => {
   const Up = useRef(null);
   const Down = useRef(null);
-  const speed = 2;
+  const speed = 1.5;
 
   const imageWidth = 100; // Set the width of the image
   const imageHeight = 214;

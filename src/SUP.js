@@ -26,6 +26,8 @@ const SUP = ({ID="id"}) => {
 
     const TextID = () => {
         switch (ID) {
+        case "AFO":
+            return "Ankle-Foot Orthoses (AFO) :  external biomechanical devices utilized on lower limbs, aiming to provide mechanical assistance and and promote functional movement by assisting with clearance during the swing phase and stabilization in the stance phase of walking"
         case "EMG":
             return "Electromyography (EMG) : Technique for evaluating and recording the electrical activity produced by skeletal muscles."
         case "BCI":

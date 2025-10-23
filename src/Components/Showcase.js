@@ -22,6 +22,7 @@ import Locomotion from './Projects/Locomotion/Locomotion';
 import BL from './Projects/Brainlike/BrainLike';
 import ADA from './Projects/ADA/ADA';
 import Walker from './Projects/Walker/walker';
+import Thesis from './Projects/Thesis/Thesis';
 
 import Bacteria from '../Animation/Bacteria';
 import Lantern from '../Animation/Lantern/Lantern';
@@ -136,6 +137,7 @@ const Showcase = ({ Animation }) => {
           children={
             <Row className="d-flex justify-content-center gap-3">
               <div /><div />
+              <Thesis />
               <Walker />
               <Ossur />
               <Haptic />

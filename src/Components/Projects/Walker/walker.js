@@ -21,12 +21,13 @@ import {PiPresentationChart, CgWebsite} from "../../../icons";
 
 const Walker = () => {
 
+  const docu = "https://github.com/fredericloboda/GoFast_Walker-HackaHealth_EPFL2025"
   const HH = "https://www.hackahealth.ch/"
 
   return (
         <Card
-        title= {<div align = "left">A walker promoting <br/> upper body <br/> movement</div>}
-        bodyText="Adapting a walker to promote asynchronous movement of the arms, promoting movement and rehabilitation"
+        title= {<div align = "left">GoFast : A rollator <br/>allowing upper <br/>body movement</div>}
+        bodyText="Adapting a rollator to promote asynchronous movement of the arms, promoting movement and rehabilitation"
         linkText="Learn More"
         cardContent={<div>
             
@@ -86,7 +87,7 @@ const Walker = () => {
         </Col>
           <p align="center">From the first concept to the final prototype : 3 days of hard work !</p>
                 <div>
-                <button class="button-48" role="button"><span class="text"><PiPresentationChart />Documentation to come !</span></button><br/>
+                <button class="button-48" role="button" onClick={() =>window.open(docu)}><span class="text"><PiPresentationChart />Project's documentation</span></button><br/>
                 <button class="button-48" role="button" onClick={() =>window.open(HH)}><span class="text"><CgWebsite />See HackaHealth</span></button><br/> 
                 </div>
                 </div>

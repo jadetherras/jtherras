@@ -29,8 +29,8 @@ const Thesis = () => {
 
   return (
         <Card
-        title= {<div align = "left">Assessing a <br/> customizable AFO<SUP ID="AFO"/><br/>for stroke survivor</div>}
-        bodyText="Using inertial motion capture to access the capacity of a novel active device in simulating ankle-foot orthoses"
+        title= {<div align = "left">An AFO<SUP ID="AFO"/><br/> with customizable <br/>stiffness </div>}
+        bodyText="Using inertial motion capture to access the capacity of a novel active device in simulating ankle-foot orthoses for stroke survivor rehabilitation"
         linkText="Learn More"
         cardContent={<div>
             

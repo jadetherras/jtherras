@@ -6,10 +6,10 @@ import { Image } from 'react-bootstrap';
 
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import logo from "./logo.png"
-import total from "./total knee.png"
-import mauch from "./mauch.png"
-import feet from "./pro-flex modular.PNG"
+import logo from "./logo.webp"
+import total from "./total knee.webp"
+import mauch from "./mauch.webp"
+import feet from "./pro-flex modular.webp"
 
 import SUP from '../../../SUP';
 import {CgWebsite} from "../../../icons";

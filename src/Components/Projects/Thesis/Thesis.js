@@ -10,10 +10,10 @@ import { Image } from 'react-bootstrap';
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 
-import am from "./4AM.jpeg"
-import LAB from "./LAB.jpeg"
-import Lesgo from "./LESGO.jpeg"
-import setup from "./setup.png"
+//import am from "./4AM.jpeg"
+//import LAB from "./LAB.jpeg"
+import Lesgo from "./LESGO.webp"
+import setup from "./setup.webp"
 
 import thesis from "./Thesis.pdf"
 import pres from "./Thesis_presentation.pdf"

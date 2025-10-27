@@ -3,7 +3,7 @@ import "../../../Style.css";
 import Card from '../../card';
 import "../../button.css";
 
-import logo from "./tree.jpg"
+import logo from "./tree.webp"
 import report from "./I_don_t_want_to_be_human_anymore_.pdf"
 import ReactPlayer from 'react-player/youtube'
 import { Box } from '@mui/material';

@@ -10,8 +10,8 @@ import { Image } from 'react-bootstrap';
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 
-import walker from "./walker.jpeg"
-import concept from "./concept.jpeg"
+import walker from "./walker.webp"
+import concept from "./concept.webp"
 import Video from "./show.MOV"
 
 

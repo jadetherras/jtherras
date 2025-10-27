@@ -5,8 +5,8 @@ import "../../button.css";
 import { Image } from 'react-bootstrap';
 import ReactPlayer from 'react-player';
 
-import couv from "./rocket.JPG"
-import team from "./pictureRocket.JPG"
+import couv from "./rocket.webp"
+import team from "./pictureRocket.webp"
 
 import {CgWebsite} from "../../../icons";
 

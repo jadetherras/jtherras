@@ -5,7 +5,7 @@ import Card from '../../card';
 import "../../button.css";
 import ReactPlayer from 'react-player/youtube';
 
-import couv from "./pouf.png";
+import couv from "./pouf.webp";
 import report from "./locomotion_1.pdf";
 import report3 from "./P_openSim.pdf";
 import report2 from "./P_scone.pdf";

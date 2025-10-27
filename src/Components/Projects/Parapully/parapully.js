@@ -3,7 +3,7 @@ import "../../../Style.css";
 import Card from '../../card.js';
 import "../../button.css";
 
-import sky from "./leman.jpeg"
+import sky from "./leman.webp"
 import report from "./Report_ParaPully_project.pdf"
 
 

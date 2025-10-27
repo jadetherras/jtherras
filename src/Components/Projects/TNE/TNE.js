@@ -4,7 +4,7 @@ import Card from '../../card';
 import "../../button.css";
 
 import report from "./Clinical_vignette.pdf"
-import device from "./overview_device.png"
+import device from "./overview_device.webp"
 
 import SUP from '../../../SUP';
 import {FaFileAlt,PiPresentationChart} from "../../../icons";

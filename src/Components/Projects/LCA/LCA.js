@@ -3,7 +3,7 @@ import "../../../Style.css";
 import Card from '../../card.js';
 import "../../button.css";
 
-import image from "./book.jpg"
+import image from "./book.webp"
 import report from "./LCA_assessment.pdf";
 
 import SUP from '../../../SUP.js';

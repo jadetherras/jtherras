@@ -122,6 +122,7 @@ const Showcase = ({ Animation }) => {
           <h1>Highlight</h1>&nbsp;
           <Row className="d-flex justify-content-center gap-3">
             <Helpie />
+            <Thesis />
             <IGEM setIsIGEMExpanded={setIsIGEMExpanded} />
             <VR setIsVRExpanded={setIsVRExpanded}
               foundCount = {lanternCount}

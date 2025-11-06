@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jtherras/static/css/main.9a884f92.css",
-    "main.js": "/jtherras/static/js/main.ecef9913.js",
+    "main.js": "/jtherras/static/js/main.099bbade.js",
     "reactPlayerPreview.js": "/jtherras/static/js/reactPlayerPreview.a00c6eac.chunk.js",
     "reactPlayerSoundCloud.js": "/jtherras/static/js/reactPlayerSoundCloud.80217438.chunk.js",
     "reactPlayerVimeo.js": "/jtherras/static/js/reactPlayerVimeo.b2d80cee.chunk.js",
@@ -78,7 +78,7 @@
     "static/media/helpie.webp": "/jtherras/static/media/helpie.ac9e52c58829478eb7ff.webp",
     "index.html": "/jtherras/index.html",
     "main.9a884f92.css.map": "/jtherras/static/css/main.9a884f92.css.map",
-    "main.ecef9913.js.map": "/jtherras/static/js/main.ecef9913.js.map",
+    "main.099bbade.js.map": "/jtherras/static/js/main.099bbade.js.map",
     "reactPlayerPreview.a00c6eac.chunk.js.map": "/jtherras/static/js/reactPlayerPreview.a00c6eac.chunk.js.map",
     "reactPlayerSoundCloud.80217438.chunk.js.map": "/jtherras/static/js/reactPlayerSoundCloud.80217438.chunk.js.map",
     "reactPlayerVimeo.b2d80cee.chunk.js.map": "/jtherras/static/js/reactPlayerVimeo.b2d80cee.chunk.js.map",
@@ -96,6 +96,6 @@
   },
   "entrypoints": [
     "static/css/main.9a884f92.css",
-    "static/js/main.ecef9913.js"
+    "static/js/main.099bbade.js"
   ]
 }
